@@ -1,1 +1,8 @@
-[]
+[
+  {
+    "uuid": "19995fd4-c323-4599-be07-1072e1df73eb",
+    "name": "coolshooter123",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  }
+]
