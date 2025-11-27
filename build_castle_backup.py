@@ -1,3 +1,4 @@
+#
 from mcpi.minecraft import Minecraft
 import mcpi.block as block
 import time
@@ -9,7 +10,7 @@ mc = Minecraft.create()
 pos = mc.player.getTilePos()
 
 mc.postToChat("Hello Minecraft World")
-mc.postToChat("Constructing Castle, Syllabus & Fixed Treehouse...")
+mc.postToChat("Constructing Castle, Syllabus & Improved Treehouse...")
 
 # --- Configuration ---
 base_x = pos.x + 20
@@ -200,88 +201,94 @@ def build_mega_tree_and_house(tx, tz):
 
     mc.postToChat("Building Large Treehouse Deck...")
     
-    # 4. LARGE Deck (Radius 8)
+    # 4. LARGE Deck (Radius 8) - Built BEFORE stairs
+    # Use Solid Planks
     deck_radius = 8
     mc.setBlocks(tx - deck_radius, house_floor_y, tz - deck_radius, 
                  tx + deck_radius, house_floor_y, tz + deck_radius, *SPRUCE_PLANKS)
     
-    # Fence Railing
+    # Fence Railing (Radius 8)
     for i in range(-deck_radius, deck_radius + 1):
         mc.setBlock(tx+i, house_floor_y+1, tz-deck_radius, FENCE)
         mc.setBlock(tx+i, house_floor_y+1, tz+deck_radius, FENCE)
         mc.setBlock(tx-deck_radius, house_floor_y+1, tz+i, FENCE)
         mc.setBlock(tx+deck_radius, house_floor_y+1, tz+i, FENCE)
         
-    # 5. CONTINUOUS WOOD STAIRS (Fixed Geometry)
+    # 5. CONTINUOUS WOOD STAIRS (The Drill)
+    # We drill UP through the deck we just built
     curr_y = base_y + 1
     angle = 0
-    stair_radius = 6 
+    stair_radius = 6 # Fits nicely between trunk (1) and rail (8)
     
-    # --- FOUNDATION FIX ---
-    # Place a solid block under the very first stair so it isn't floating
-    start_sx = tx + int(stair_radius * math.cos(angle))
-    start_sz = tz + int(stair_radius * math.sin(angle))
-    mc.setBlock(start_sx, base_y, start_sz, *SPRUCE_PLANKS)
-
-    prev_sx, prev_sz = -999, -999 
+    prev_sx, prev_sz = -999, -999 # Track previous stair pos
     
-    # Loop until we are level with the floor
     while curr_y <= house_floor_y:
         sx = tx + int(stair_radius * math.cos(angle))
         sz = tz + int(stair_radius * math.sin(angle))
         
-        # Only place and move up if we are at a NEW block coordinate
+        # Orient Stair
+        deg = math.degrees(angle) % 360
+        stair_id = 0
+        if 315 <= deg or deg < 45:   stair_id = 2 
+        elif 45 <= deg < 135:        stair_id = 1 
+        elif 135 <= deg < 225:       stair_id = 3 
+        elif 225 <= deg < 315:       stair_id = 0 
+        
+        # Place Stair
+        mc.setBlock(sx, curr_y, sz, STAIRS_WOOD, stair_id)
+        
+        # *** THE DRILL ***
+        # Clear 3 blocks of HEADROOM above the stair. 
+        # This overwrites the deck blocks when we get high enough.
+        mc.setBlocks(sx, curr_y+1, sz, sx, curr_y+3, sz, AIR)
+        
+        # If we are at the top, clear the fence blocking the landing
+        if curr_y == house_floor_y:
+            # Clear forward path
+            mc.setBlocks(sx-1, curr_y+1, sz-1, sx+1, curr_y+1, sz+1, AIR)
+
+        # Increment Logic:
+        # Only move Y up if we have moved X/Z (prevents vertical stacks)
         if sx != prev_sx or sz != prev_sz:
-            
-            # --- THE DRILL: Clear obstacles first ---
-            mc.setBlocks(sx, curr_y, sz, sx, curr_y + 3, sz, AIR)
-
-            # Orient Stair
-            deg = math.degrees(angle) % 360
-            stair_id = 0
-            if 315 <= deg or deg < 45:   stair_id = 2 
-            elif 45 <= deg < 135:        stair_id = 1 
-            elif 135 <= deg < 225:       stair_id = 3 
-            elif 225 <= deg < 315:       stair_id = 0 
-            
-            # Place Stair
-            mc.setBlock(sx, curr_y, sz, STAIRS_WOOD, stair_id)
-            
-            # --- LANDING FIX ---
-            # If near the top, clear the fence but DO NOT delete the stair below
-            if curr_y >= house_floor_y - 1:
-                # Clear head space
-                mc.setBlocks(sx, house_floor_y + 1, sz, sx, house_floor_y + 2, sz, AIR)
-                # Clear adjacent fence
-                mc.setBlocks(sx-1, house_floor_y+1, sz-1, sx+1, house_floor_y+1, sz+1, AIR)
-
+            curr_y += 1
             prev_sx = sx
             prev_sz = sz
-            curr_y += 1 
         
-        angle += 0.15 # Small increment for smooth curves
+        angle += 0.15 # Small increment to ensure no gaps
 
     # 6. Cabins
     h1_x1, h1_z1 = tx - 5, tz - 2
     h1_x2, h1_z2 = tx + 2, tz + 5
+    # Force Floor
     mc.setBlocks(h1_x1, house_floor_y, h1_z1, h1_x2, house_floor_y, h1_z2, *SPRUCE_PLANKS)
+    # Walls
     mc.setBlocks(h1_x1, house_floor_y+1, h1_z1, h1_x2, house_floor_y+4, h1_z2, *SPRUCE_PLANKS)
+    # Interior Air
     mc.setBlocks(h1_x1+1, house_floor_y+1, h1_z1+1, h1_x2-1, house_floor_y+4, h1_z2-1, AIR) 
+    # Windows
     mc.setBlocks(h1_x1, house_floor_y+2, h1_z1+2, h1_x1, house_floor_y+3, h1_z1+3, GLASS_PANE) 
+    # Doorway
     mc.setBlocks(h1_x1+1, house_floor_y+1, h1_z1, h1_x1+1, house_floor_y+2, h1_z1, AIR)
+    # Roof
     for i in range(5):
         mc.setBlocks(h1_x1-1+i, house_floor_y+5+i, h1_z1, h1_x2+1-i, house_floor_y+5+i, h1_z2, *DARK_OAK_PLANKS)
 
     h2_x1, h2_z1 = tx + 1, tz - 5
     h2_x2, h2_z2 = tx + 5, tz - 1
+    # Force Floor
     mc.setBlocks(h2_x1, house_floor_y, h2_z1, h2_x2, house_floor_y, h2_z2, *SPRUCE_PLANKS)
+    # Walls
     mc.setBlocks(h2_x1, house_floor_y+1, h2_z1, h2_x2, house_floor_y+4, h2_z2, *SPRUCE_PLANKS)
+    # Interior Air
     mc.setBlocks(h2_x1+1, house_floor_y+1, h2_z1+1, h2_x2-1, house_floor_y+4, h2_z2-1, AIR) 
     mc.setBlocks(h2_x1+1, house_floor_y+2, h2_z2, h2_x1+2, house_floor_y+3, h2_z2, GLASS_PANE) 
+    # Doorway
     mc.setBlocks(h2_x1, house_floor_y+1, h2_z1+1, h2_x1, house_floor_y+2, h2_z1+1, AIR)
+    # Roof
     for i in range(4):
         mc.setBlocks(h2_x1-1+i, house_floor_y+5+i, h2_z1, h2_x2+1-i, house_floor_y+5+i, h2_z2, *DARK_OAK_PLANKS)
         
+    # Clear trunk passage
     mc.setBlocks(tx-1, house_floor_y+1, tz-1, tx+1, house_floor_y+4, tz+1, AIR)
 
     # Lanterns
@@ -291,6 +298,7 @@ def build_mega_tree_and_house(tx, tz):
     build_hanging_lantern(tx+8, house_floor_y+3, tz-8)
     build_hanging_lantern(tx-4, house_floor_y+6, tz)
     build_hanging_lantern(tx+4, house_floor_y+6, tz)
+
 
 # ==========================================
 # EXECUTE BUILD
@@ -316,6 +324,8 @@ mc.setBlocks(center_x - 3, base_y, gate_z - 2, center_x - 1, base_y + wall_heigh
 mc.setBlocks(center_x + 1, base_y, gate_z - 2, center_x + 3, base_y + wall_height, gate_z, material)
 mc.setBlocks(center_x - 3, base_y + 5, gate_z - 2, center_x + 3, base_y + wall_height, gate_z, material)
 mc.setBlocks(center_x - 1, base_y, gate_z - 3, center_x + 1, base_y + 4, gate_z + 1, block.AIR.id)
+
+# Sign and Torch
 mc.setBlock(center_x + 2, base_y + 2, gate_z - 3, WALL_SIGN, 2) 
 mc.setSign(center_x + 2, base_y + 2, gate_z - 3, WALL_SIGN, 2, "Welcome", "to", "IT 359/360", "Syllabus") 
 mc.setBlock(center_x + 2, base_y + 3, gate_z - 2, TORCH, 4) 
