@@ -1,71 +1,136 @@
 from mcpi.minecraft import Minecraft
-from mcpi import block
+import mcpi.block as block
 import time
 
-# --- CONNECTION ---
-# Use localhost and port 4711
-SERVER_IP = "127.0.0.1"
-SERVER_PORT = 4711
+mc = Minecraft.create()
+pos = mc.player.getTilePos()
 
-print(f"Connecting to {SERVER_IP}:{SERVER_PORT}...")
-try:
-    mc = Minecraft.create(address=SERVER_IP, port=SERVER_PORT)
-    pos = mc.player.getTilePos()
-    print(f"Connected! Player at {pos.x}, {pos.y}, {pos.z}")
-    mc.postToChat("Starting Slow Build...")
-except Exception as e:
-    print(f"FAILED TO CONNECT: {e}")
-    exit()
+mc.postToChat("Hello Minecraft World")
+mc.postToChat("Welcome to IT 359 and IT 360")
+# --- Configuration ---
+base_x = pos.x + 5
+base_y = pos.y
+base_z = pos.z + 5
 
-# --- SETTINGS ---
-# We build 5 blocks away from you
-sx = pos.x + 5
-sy = pos.y
-sz = pos.z + 5
+size = 41            
+wall_height = 10    
+tower_height = 14   
+#material = block.SANDSTONE.id 
+material = block.COBBLESTONE.id 
 
-WIDTH = 20
-HEIGHT = 6
-DEPTH = 20
+# --- Helper: Build Wall with Machicolations & Battlements ---
+def build_wall_segment(x1, z1, x2, z2, orientation):
+    # 1. Solid Wall
+    mc.setBlocks(x1, base_y, z1, x2, base_y + wall_height, z2, material)
+    
+    # 2. Overhangs (Machicolations)
+    if orientation == 'NS': # North-South running wall
+        mc.setBlocks(x1 - 1, base_y + wall_height, z1, x1 - 1, base_y + wall_height, z2, material)
+        # Battlements
+        for z in range(z1, z2 + 1, 2):
+            mc.setBlock(x1 - 1, base_y + wall_height + 1, z, material) 
+            mc.setBlock(x2, base_y + wall_height + 1, z, material)      
+    else: # East-West running wall
+        mc.setBlocks(x1, base_y + wall_height, z1 - 1, x2, base_y + wall_height, z1 - 1, material)
+        # Battlements
+        for x in range(x1, x2 + 1, 2):
+            mc.setBlock(x, base_y + wall_height + 1, z1 - 1, material) 
+            mc.setBlock(x, base_y + wall_height + 1, z2, material)      
 
-# --- STEP 1: CLEAR THE ZONE ---
-print("1. Clearing the area (Bulldozing)...")
-mc.setBlocks(sx - 2, sy, sz - 2, sx + WIDTH + 2, sy + HEIGHT + 5, sz + DEPTH + 2, block.AIR.id)
-time.sleep(2) # WAIT for server to catch up
+# --- Helper: Build Corner Tower ---
+def build_tower(x, z):
+    mc.setBlocks(x, base_y, z, x + 4, base_y + tower_height, z + 4, material)
+    mc.setBlocks(x - 1, base_y + tower_height, z - 1, x + 5, base_y + tower_height, z + 5, material)
+    # Simple battlements
+    for i in range(0, 7, 2):
+        mc.setBlock(x - 1 + i, base_y + tower_height + 1, z - 1, material)
+        mc.setBlock(x - 1 + i, base_y + tower_height + 1, z + 5, material)
+        mc.setBlock(x - 1, base_y + tower_height + 1, z - 1 + i, material)
+        mc.setBlock(x + 5, base_y + tower_height + 1, z - 1 + i, material)
 
-# --- STEP 2: BUILD THE SOLID BOX ---
-print("2. Building the Solid Stone Box...")
-mc.setBlocks(sx, sy, sz, sx + WIDTH, sy + HEIGHT, sz + DEPTH, block.STONE_BRICK.id)
+mc.postToChat("Building Castle using Gap Method...")
 
-# --- CRITICAL PAUSE ---
-# This ensures the stone exists before we try to remove the inside
-print("   ... Waiting 2 seconds for server to process stone ...")
-time.sleep(2) 
+# --- Step 1: Build 4 Corner Towers ---
+build_tower(base_x, base_z)
+build_tower(base_x + size, base_z)
+build_tower(base_x, base_z + size)
+build_tower(base_x + size, base_z + size)
 
-# --- STEP 3: CARVE THE INSIDE (HOLLOW IT OUT) ---
-print("3. Carving the Inside (Making it hollow)...")
-# We start 1 block IN and end 1 block EARLY
-mc.setBlocks(sx + 1, sy + 1, sz + 1, 
-             sx + WIDTH - 1, sy + HEIGHT - 1, sz + DEPTH - 1, 
-             block.AIR.id)
+# --- Step 2: Build SOLID Walls (West, East, South) ---
+# West
+build_wall_segment(base_x + 4, base_z + 4, base_x + 4, base_z + size, 'NS')
+# East
+build_wall_segment(base_x + size, base_z + 4, base_x + size, base_z + size, 'NS')
+# South
+build_wall_segment(base_x + 4, base_z + size, base_x + size, base_z + size, 'EW')
 
-print("   ... Waiting 1 second ...")
-time.sleep(1)
+# --- Step 3: Build the SPLIT North Wall (To leave a gap) ---
+center_x = base_x + 4 + ((size - 4) // 2)
+gap_width = 4
 
-# --- STEP 4: CARVE THE ENTRANCE ---
-print("4. Cutting the Door...")
-mid_x = sx + (WIDTH // 2)
-mc.setBlocks(mid_x, sy + 1, sz, mid_x + 2, sy + 3, sz, block.AIR.id)
+# Wall Segment A (Left of gap)
+build_wall_segment(base_x + 4, base_z + 4, center_x - 2, base_z + 4, 'EW')
 
-# --- STEP 5: BUILD INTERNAL STRUCTURES ---
-print("5. Building Internal Room...")
-# Inner Room (Solid)
-ix, iz = sx + 2, sz + 2
-mc.setBlocks(ix, sy, iz, ix + 5, sy + 4, iz + 5, block.WOOD_PLANKS.id)
-time.sleep(1) 
-# Inner Room (Hollow)
-mc.setBlocks(ix + 1, sy + 1, iz + 1, ix + 4, sy + 3, iz + 4, block.AIR.id)
-# Inner Room Door
-mc.setBlocks(ix + 2, sy + 1, iz, ix + 2, sy + 2, iz, block.AIR.id)
+# Wall Segment B (Right of gap)
+build_wall_segment(center_x + 2, base_z + 4, base_x + size, base_z + 4, 'EW')
 
-mc.postToChat("Build Complete. Please check if it is hollow.")
-print("Done.")
+# --- Step 4: Build the Gatehouse ADDITIVELY ---
+gate_z = base_z + 4
+mc.setBlocks(center_x - 3, base_y, gate_z - 2, center_x - 1, base_y + wall_height, gate_z, material)
+mc.setBlocks(center_x + 1, base_y, gate_z - 2, center_x + 3, base_y + wall_height, gate_z, material)
+mc.setBlocks(center_x - 3, base_y + 5, gate_z - 2, center_x + 3, base_y + wall_height, gate_z, material)
+mc.setBlock(center_x - 3, base_y + wall_height + 1, gate_z - 2, material)
+mc.setBlock(center_x + 3, base_y + wall_height + 1, gate_z - 2, material)
+mc.setBlock(center_x - 1, base_y + wall_height + 1, gate_z - 2, material)
+mc.setBlock(center_x + 1, base_y + wall_height + 1, gate_z - 2, material)
+
+# --- Step 5: Force Clear the Air in the Gap ---
+mc.setBlocks(center_x - 1, base_y, gate_z - 3, center_x + 1, base_y + 4, gate_z + 1, block.AIR.id)
+
+# --- Step 6: Place "Welcome to IT 360" Sign ---
+sign_id = 63 
+sign_orientation = 8 
+mc.setSign(center_x + 2, base_y, gate_z - 3, sign_id, sign_orientation, 
+           "Welcome", "to", "IT 360", "")
+
+mc.postToChat("Digging the moat...")
+# ---------------------------------------------------------
+# --- FIXED WATER MOAT SECTION ---
+# ---------------------------------------------------------
+mc.postToChat("Placing Water (ID 9)...")
+
+# Configuration
+moat_width = 4
+moat_level = base_y - 1 
+
+# Dimensions
+min_x = base_x - 1
+max_x = base_x + size + 5
+min_z = base_z - 1
+max_z = base_z + size + 5
+
+# We use the number 9 explicitly for STATIONARY WATER
+WATER_ID = 9 
+
+# North
+mc.setBlocks(min_x - moat_width, moat_level, min_z - moat_width,
+             max_x + moat_width, moat_level, min_z - 1, WATER_ID)
+
+# South
+mc.setBlocks(min_x - moat_width, moat_level, max_z + 1,
+             max_x + moat_width, moat_level, max_z + moat_width, WATER_ID)
+
+# West
+mc.setBlocks(min_x - moat_width, moat_level, min_z,
+             min_x - 1, moat_level, max_z, WATER_ID)
+
+# East
+mc.setBlocks(max_x + 1, moat_level, min_z,
+             max_x + moat_width, moat_level, max_z, WATER_ID)
+
+# Bridge (Wood Planks ID = 5)
+mc.setBlocks(center_x - 1, base_y, min_z - moat_width, 
+             center_x + 1, base_y, min_z - 1, 5)
+
+mc.player.setPos(center_x, base_y, min_z - moat_width - 2)
+mc.postToChat("Done!")
