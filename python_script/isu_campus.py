@@ -1,11 +1,26 @@
 from mcpi.minecraft import Minecraft
 from mcpi import block
 import time
-import random 
+import random
+
+# --- CONFIGURATION FOR EXTERNAL SERVER (MODIFY THESE) ---
+# The MCPI protocol does not use your Minecraft username/password.
+# It uses the server's IP address and the RaspberryJuice port (default 4711).
+# You must have the RaspberryJuice plugin installed on the external server.
+SERVER_IP = "10.110.10.150"
+SERVER_PORT = 4711
 
 # --- Connect to Minecraft ---
-mc = Minecraft.create()
-pos = mc.player.getTilePos()
+try:
+    # Connects to the external server using the defined IP and Port
+    mc = Minecraft.create(SERVER_IP, SERVER_PORT)
+    mc.postToChat("Python Script Connected. Starting Campus Build...")
+    pos = mc.player.getTilePos()
+except Exception as e:
+    print(f"Failed to connect to Minecraft server at {SERVER_IP}:{SERVER_PORT}")
+    print(f"Error: {e}")
+    # Exit gracefully if connection fails
+    exit()
 
 # --- Configuration ---
 origin_x = pos.x
@@ -20,8 +35,8 @@ FLOOR_HEIGHT = 5
 FLOORS = 3
 
 # 2. QUAD CONFIGURATION
-QUAD_LENGTH = 140 
-QUAD_WIDTH = 100 
+QUAD_LENGTH = 140
+QUAD_WIDTH = 100
 
 # 3. Bone Student Center (South End)
 BONE_WIDTH = 40
@@ -32,8 +47,8 @@ BONE_START_X = origin_x + (BUILDING_WIDTH // 2) - (BONE_WIDTH // 2)
 # 4. Starbucks
 STARBUCKS_WIDTH = 15
 STARBUCKS_DEPTH = 15
-STARBUCKS_X = BONE_START_X + BONE_WIDTH 
-STARBUCKS_Z = BONE_START_Z 
+STARBUCKS_X = BONE_START_X + BONE_WIDTH
+STARBUCKS_Z = BONE_START_Z
 
 # 5. Side Classroom Buildings (East & West)
 SIDE_HALL_WIDTH = 15
@@ -50,21 +65,21 @@ EAST_BLDG_Z = WEST_BLDG_Z
 WALL_MAT = block.BRICK_BLOCK.id
 FLOOR_MAT = block.WOOD_PLANKS.id
 WINDOW_MAT = block.GLASS_PANE.id
-ROOF_MAT = block.STONE_SLAB_DOUBLE.id 
+ROOF_MAT = block.STONE_SLAB_DOUBLE.id
 COURTYARD_MAT = block.BRICK_BLOCK.id
 AIR = block.AIR.id
-PILLAR_MAT = block.IRON_BLOCK.id 
+PILLAR_MAT = block.IRON_BLOCK.id
 LIGHT_MAT = block.GLOWSTONE_BLOCK.id
 FENCE_MAT = block.FENCE.id
-BONE_GLASS_MAT = block.GLASS.id 
-WALL_SIGN_ID = 68 
-BONE_ACCENT_MAT = 155 
-LECTERN_BASE = 85 
+BONE_GLASS_MAT = block.GLASS.id
+WALL_SIGN_ID = 68
+BONE_ACCENT_MAT = 155
+LECTERN_BASE = 85
 LECTERN_TOP = 44
 GRASS_MAT = block.GRASS.id
-LOG_MAT = 17 
-LEAVES_MAT = 18 
-PATH_MAT = block.STONE_SLAB_DOUBLE.id 
+LOG_MAT = 17
+LEAVES_MAT = 18
+PATH_MAT = block.STONE_SLAB_DOUBLE.id
 
 # --- Main Execution ---
 
@@ -79,10 +94,10 @@ def build_campus():
 
     # 1. CLEAR LAND
     mc.postToChat("Terraforming...")
-    mc.setBlocks(WEST_BLDG_X - 10, origin_y, origin_z - 20, 
-                 EAST_BLDG_X + SIDE_HALL_WIDTH + 10, origin_y + 50, BONE_START_Z + BONE_DEPTH + 20, 
+    mc.setBlocks(WEST_BLDG_X - 10, origin_y, origin_z - 20,
+                 EAST_BLDG_X + SIDE_HALL_WIDTH + 10, origin_y + 50, BONE_START_Z + BONE_DEPTH + 20,
                  AIR)
-    
+
     # 2. LAY BASE BRICK LAYER (The Perimeter)
     # We fill the ENTIRE campus footprint with brick first.
     # This ensures every building sits on a connected brick surface.
@@ -108,7 +123,7 @@ def build_campus():
     for z in range(quad_z_min, quad_z_max, 15):
         build_light_post(quad_x_min - 2, origin_y, z) # Moved slightly onto the brick
         build_light_post(quad_x_max + 2, origin_y, z) # Moved slightly onto the brick
-    
+
     # Interior Quad Lighting
     cx = (quad_x_min + quad_x_max) // 2
     cz = (quad_z_min + quad_z_max) // 2
@@ -123,7 +138,7 @@ def build_campus():
     # A. North: Main Classroom Building
     mc.postToChat("Building Main Hall...")
     build_main_building()
-    
+
     # B. South: Bone Student Center + Starbucks
     mc.postToChat("Building Student Center...")
     build_bone_center(BONE_START_X, origin_y, BONE_START_Z)
@@ -149,7 +164,7 @@ def build_complex_paths(x1, x2, y, z1, z2):
     south_door = (BONE_START_X + BONE_WIDTH // 2, BONE_START_Z)
     west_door  = (WEST_BLDG_X + SIDE_HALL_WIDTH, WEST_BLDG_Z + SIDE_HALL_LENGTH // 2)
     east_door  = (EAST_BLDG_X, EAST_BLDG_Z + SIDE_HALL_LENGTH // 2)
-    
+
     nw = (x1, z1)
     ne = (x2, z1)
     sw = (x1, z2)
@@ -169,12 +184,12 @@ def build_complex_paths(x1, x2, y, z1, z2):
     draw_line(cx, cz, ne[0], ne[1], y, PATH_MAT, width=2)
     draw_line(cx, cz, sw[0], sw[1], y, PATH_MAT, width=2)
     draw_line(cx, cz, se[0], se[1], y, PATH_MAT, width=2)
-    
+
     # Perimeter Path (Between Grass and Brick)
-    mc.setBlocks(x1, y, z1, x2, y, z1 + 2, PATH_MAT) 
-    mc.setBlocks(x1, y, z2 - 2, x2, y, z2, PATH_MAT) 
-    mc.setBlocks(x1, y, z1, x1 + 2, y, z2, PATH_MAT) 
-    mc.setBlocks(x2 - 2, y, z1, x2, y, z2, PATH_MAT) 
+    mc.setBlocks(x1, y, z1, x2, y, z1 + 2, PATH_MAT)
+    mc.setBlocks(x1, y, z2 - 2, x2, y, z2, PATH_MAT)
+    mc.setBlocks(x1, y, z1, x1 + 2, y, z2, PATH_MAT)
+    mc.setBlocks(x2 - 2, y, z1, x2, y, z2, PATH_MAT)
 
 def draw_line(x1, z1, x2, z2, y, block_id, width=1):
     dx = x2 - x1
@@ -192,7 +207,7 @@ def draw_line(x1, z1, x2, z2, y, block_id, width=1):
         z += z_inc
 
 def plant_trees_in_quad(x1, x2, y, z1, z2):
-    for _ in range(100): 
+    for _ in range(100):
         tx = random.randint(x1 + 3, x2 - 3)
         tz = random.randint(z1 + 3, z2 - 3)
         ground_id = mc.getBlock(tx, y - 1, tz)
@@ -211,21 +226,21 @@ def place_custom_tree(x, y, z):
 
 def build_classroom_hall(x, y, z, width, length, name, door_side="east"):
     # Replaces 'build_generic_hall' with a detailed classroom version
-    # Note: We don't lay the foundation here anymore because the 
+    # Note: We don't lay the foundation here anymore because the
     # entire campus foundation is laid in Step 2 of build_campus()
-    
+
     num_rooms = 4
     room_length = length // num_rooms
 
     for f in range(FLOORS):
         cy = y + (f * FLOOR_HEIGHT)
-        mc.setBlocks(x, cy, z, x + width, cy, z + length, FLOOR_MAT) 
+        mc.setBlocks(x, cy, z, x + width, cy, z + length, FLOOR_MAT)
         mc.setBlocks(x, cy + FLOOR_HEIGHT, z, x + width, cy + FLOOR_HEIGHT, z + length, ROOF_MAT)
         mc.setBlocks(x, cy + 1, z, x + width, cy + FLOOR_HEIGHT - 1, z + length, WALL_MAT)
-        
+
         mc.setBlocks(x, cy + 2, z + 2, x, cy + 3, z + length - 2, WINDOW_MAT)
         mc.setBlocks(x + width, cy + 2, z + 2, x + width, cy + 3, z + length - 2, WINDOW_MAT)
-        
+
         mc.setBlocks(x + 1, cy + 1, z + 1, x + width - 1, cy + FLOOR_HEIGHT - 1, z + length - 1, AIR)
 
         for i in range(1, num_rooms):
@@ -233,7 +248,7 @@ def build_classroom_hall(x, y, z, width, length, name, door_side="east"):
             mc.setBlocks(x + 1, cy + 1, wall_z, x + width - 1, cy + FLOOR_HEIGHT - 1, wall_z, WALL_MAT)
             mid_x = x + (width // 2)
             mc.setBlocks(mid_x, cy + 1, wall_z, mid_x, cy + 2, wall_z, AIR)
-        
+
         for i in range(num_rooms):
             rz_center = z + (i * room_length) + (room_length // 2)
             rx_center = x + (width // 2)
@@ -266,9 +281,9 @@ def build_main_building():
             center_facing, left_facing, right_facing = 'front', 'right', 'left'
         else:
             center_facing, left_facing, right_facing = 'none', 'none', 'none'
-        
+
         build_structure(origin_x, current_y, origin_z, BUILDING_WIDTH, BUILDING_DEPTH, rooms=3, door_facing=center_facing)
-        build_structure(origin_x, current_y, origin_z + BUILDING_DEPTH, 10, WING_LENGTH, rooms=2, door_facing=left_facing) 
+        build_structure(origin_x, current_y, origin_z + BUILDING_DEPTH, 10, WING_LENGTH, rooms=2, door_facing=left_facing)
         build_structure(origin_x + BUILDING_WIDTH - 10, current_y, origin_z + BUILDING_DEPTH, 10, WING_LENGTH, rooms=2, door_facing=right_facing)
 
         if f > 0:
@@ -277,7 +292,7 @@ def build_main_building():
              mc.setBlocks(stair_x, current_y + 1, stair_z, stair_x + 1, current_y + 3, stair_z + FLOOR_HEIGHT, AIR)
         if f < FLOORS - 1:
              create_stairs(origin_x + 3, current_y, origin_z + 3, FLOOR_HEIGHT)
-    
+
     door_x = origin_x + (BUILDING_WIDTH // 2)
     mc.setBlocks(door_x - 1, origin_y, origin_z + BUILDING_DEPTH, door_x + 2, origin_y + 2, origin_z + BUILDING_DEPTH, AIR)
     mc.setBlocks(door_x - 2, origin_y, origin_z + BUILDING_DEPTH + 3, door_x - 2, origin_y + 3, origin_z + BUILDING_DEPTH + 3, PILLAR_MAT)
@@ -302,7 +317,7 @@ def build_structure(x, y, z, width, depth, rooms=1, door_facing='none'):
         if i < rooms:
              mc.setBlocks(wall_x, y + 1, z, wall_x, y + FLOOR_HEIGHT - 1, z + depth, WALL_MAT)
              mc.setBlocks(wall_x, y + 1, z + (depth // 2), wall_x, y + 2, z + (depth // 2), AIR)
-        mc.setBlock(curr_room_x_center, y + FLOOR_HEIGHT - 1, curr_room_z_center, LIGHT_MAT) 
+        mc.setBlock(curr_room_x_center, y + FLOOR_HEIGHT - 1, curr_room_z_center, LIGHT_MAT)
         if door_facing == 'front': mc.setBlocks(curr_room_x_center, y+1, z+depth, curr_room_x_center, y+2, z+depth, AIR)
         elif door_facing == 'right': mc.setBlocks(x+width, y+1, curr_room_z_center, x+width, y+2, curr_room_z_center, AIR)
         elif door_facing == 'left': mc.setBlocks(x, y+1, curr_room_z_center, x, y+2, curr_room_z_center, AIR)
@@ -326,8 +341,8 @@ def build_bone_center(x, y, z):
         mc.setBlocks(x + 4, curr_y + 1, z, x + width - 4, curr_y + FLOOR_HEIGHT - 1, z, BONE_GLASS_MAT)
         mc.setBlocks(x + 1, curr_y + 1, z + 1, x + width - 1, curr_y + FLOOR_HEIGHT - 1, z + depth - 1, AIR)
         for ix in range(x + 5, x + width - 5, 6):
-            for iz in range(z + 5, z + depth - 5, 6):
-                 mc.setBlock(ix, curr_y + FLOOR_HEIGHT - 1, iz, LIGHT_MAT)
+             for iz in range(z + 5, z + depth - 5, 6):
+                  mc.setBlock(ix, curr_y + FLOOR_HEIGHT - 1, iz, LIGHT_MAT)
         stair_x = x + width - 5
         stair_z = z + depth - 7
         if f > 0:
@@ -343,7 +358,7 @@ def build_bone_center(x, y, z):
 def build_starbucks(x, y, z):
     width = STARBUCKS_WIDTH
     depth = STARBUCKS_DEPTH
-    mc.setBlocks(x, y, z, x + width, y, z + depth, block.WOOD.id) 
+    mc.setBlocks(x, y, z, x + width, y, z + depth, block.WOOD.id)
     mc.setBlocks(x, y + FLOOR_HEIGHT, z, x + width, y + FLOOR_HEIGHT, z + depth, ROOF_MAT)
     mc.setBlocks(x, y + 1, z, x + width, y + FLOOR_HEIGHT - 1, z + depth, WALL_MAT)
     mc.setBlocks(x + width, y + 2, z + 2, x + width, y + 3, z + depth - 2, BONE_GLASS_MAT)
