@@ -1,0 +1,130 @@
+[16:29:21] [ServerMain/INFO]: [bootstrap] Running Java 21 (OpenJDK 64-Bit Server VM 21.0.9+10-Ubuntu-122.04; Ubuntu null) on Linux 6.17.4-76061704-generic (amd64)
+[16:29:21] [ServerMain/INFO]: [bootstrap] Loading Paper 1.21.11-38-main@4446f17 (2025-12-09T22:51:57Z) for Minecraft 1.21.11
+[16:29:21] [ServerMain/INFO]: [PluginInitializerManager] Initializing plugins...
+[16:29:21] [ServerMain/INFO]: [PluginInitializerManager] Initialized 4 plugins
+[16:29:21] [ServerMain/INFO]: [PluginInitializerManager] Bukkit plugins (4):
+ - AutoMessage (2.0.0), RaspberryJuice (1.12.1), WorldEdit (7.3.17+7262-c7fbe08), WorldGuard (7.0.14+2339-43997ec)
+[16:29:25] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, profilesHost=https://api.mojang.com, name=PROD]
+[16:29:26] [ServerMain/INFO]: Loaded 1470 recipes
+[16:29:26] [ServerMain/INFO]: Loaded 1584 advancements
+[16:29:26] [ServerMain/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Initialising converters for DataConverter...
+[16:29:26] [ServerMain/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Finished initialising converters for DataConverter in 245.6ms
+[16:29:26] [Server thread/INFO]: Starting minecraft server version 1.21.11
+[16:29:26] [Server thread/INFO]: Loading properties
+[16:29:26] [Server thread/INFO]: This server is running Paper version 1.21.11-38-main@4446f17 (2025-12-09T22:51:57Z) (Implementing API version 1.21.11-R0.1-SNAPSHOT)
+[16:29:26] [Server thread/INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
+[16:29:26] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[16:29:26] [Server thread/INFO]: Using 4 threads for Netty based IO
+[16:29:26] [Server thread/INFO]: [MoonriseCommon] Paper is using 4 worker threads, 1 I/O threads
+[16:29:27] [Server thread/INFO]: Default game type: CREATIVE
+[16:29:27] [Server thread/INFO]: Generating keypair
+[16:29:27] [Server thread/INFO]: Starting Minecraft server on *:25565
+[16:29:27] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
+[16:29:27] [Server thread/INFO]: Paper: Using OpenSSL 3.x.x (Linux x86_64) cipher from Velocity.
+[16:29:27] [Server thread/WARN]: [org.bukkit.craftbukkit.legacy.CraftLegacy] Initializing Legacy Material Support. Unless you have legacy plugins and/or data this is a bug!
+[16:29:33] [Server thread/WARN]: Legacy plugin RaspberryJuice v1.12.1 does not specify an api-version.
+[16:29:33] [Server thread/INFO]: [WorldEdit] Loading server plugin WorldEdit v7.3.17+7262-c7fbe08
+[16:29:33] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@7b6a3ba]
+[16:29:33] [Server thread/INFO]: [RaspberryJuice] Loading server plugin RaspberryJuice v1.12.1
+[16:29:33] [Server thread/INFO]: [WorldGuard] Loading server plugin WorldGuard v7.0.14+2339-43997ec
+[16:29:33] [Server thread/INFO]: [AutoMessage] Loading server plugin AutoMessage v2.0.0
+[16:29:33] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[16:29:33] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v7.3.17+7262-c7fbe08
+[16:29:33] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
+[16:29:33] [Server thread/INFO]: WEPIF: Using the Bukkit Permissions API.
+[16:29:34] [Server thread/WARN]: 
+**********************************************
+** This WorldEdit version does not fully support your version of Bukkit.
+**
+** When working with blocks or undoing, chests will be empty, signs
+** will be blank, and so on. There will be no support for entity
+** and block property-related functions.
+**
+** Please see https://worldedit.enginehub.org/en/latest/faq/#bukkit-adapters
+**********************************************
+
+[16:29:34] [Server thread/INFO]: Preparing level "isu_world"
+[16:29:34] [Server thread/INFO]: Loading 0 persistent chunks for world 'minecraft:overworld'...
+[16:29:34] [Server thread/INFO]: Prepared spawn area in 1 ms
+[16:29:34] [Server thread/INFO]: Loading 0 persistent chunks for world 'minecraft:the_nether'...
+[16:29:34] [Server thread/INFO]: Prepared spawn area in 0 ms
+[16:29:34] [Server thread/INFO]: Loading 0 persistent chunks for world 'minecraft:the_end'...
+[16:29:34] [Server thread/INFO]: Prepared spawn area in 0 ms
+[16:29:34] [Server thread/INFO]: Done preparing level "isu_world" (0.374s)
+[16:29:34] [Server thread/INFO]: [RaspberryJuice] Enabling RaspberryJuice v1.12.1*
+[16:29:34] [Server thread/INFO]: [RaspberryJuice] Using host:port - 0.0.0.0:4711
+[16:29:34] [Server thread/INFO]: [RaspberryJuice] Using RELATIVE locations
+[16:29:34] [Server thread/INFO]: [RaspberryJuice] Using RIGHT clicks for hits
+[16:29:34] [Server thread/INFO]: [RaspberryJuice] ThreadListener Started
+[16:29:34] [Server thread/INFO]: [WorldGuard] Enabling WorldGuard v7.0.14+2339-43997ec
+[16:29:35] [Server thread/INFO]: [WorldGuard] (isu_world) TNT ignition is PERMITTED.
+[16:29:35] [Server thread/INFO]: [WorldGuard] (isu_world) Lighters are PERMITTED.
+[16:29:35] [Server thread/INFO]: [WorldGuard] (isu_world) Lava fire is PERMITTED.
+[16:29:35] [Server thread/INFO]: [WorldGuard] (isu_world) Fire spread is UNRESTRICTED.
+[16:29:35] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'isu_world'
+[16:29:35] [Server thread/INFO]: [WorldGuard] (isu_world_nether) TNT ignition is PERMITTED.
+[16:29:35] [Server thread/INFO]: [WorldGuard] (isu_world_nether) Lighters are PERMITTED.
+[16:29:35] [Server thread/INFO]: [WorldGuard] (isu_world_nether) Lava fire is PERMITTED.
+[16:29:35] [Server thread/INFO]: [WorldGuard] (isu_world_nether) Fire spread is UNRESTRICTED.
+[16:29:35] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'isu_world_nether'
+[16:29:35] [Server thread/INFO]: [WorldGuard] (isu_world_the_end) TNT ignition is PERMITTED.
+[16:29:35] [Server thread/INFO]: [WorldGuard] (isu_world_the_end) Lighters are PERMITTED.
+[16:29:35] [Server thread/INFO]: [WorldGuard] (isu_world_the_end) Lava fire is PERMITTED.
+[16:29:35] [Server thread/INFO]: [WorldGuard] (isu_world_the_end) Fire spread is UNRESTRICTED.
+[16:29:35] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'isu_world_the_end'
+[16:29:35] [Server thread/INFO]: [WorldGuard] Loading region data...
+[16:29:35] [Server thread/INFO]: [AutoMessage] Enabling AutoMessage v2.0.0
+[16:29:35] [Server thread/INFO]: [AutoMessage] AutoMessage plugin enabled.
+[16:29:35] [Server thread/INFO]: [spark] Starting background profiler...
+[16:29:35] [Server thread/INFO]: Running delayed init tasks
+[16:29:35] [Server thread/INFO]: Done (14.811s)! For help, type "help"
+[16:29:36] [User Authenticator #0/INFO]: UUID of player coolshooter123 is 19995fd4-c323-4599-be07-1072e1df73eb
+[16:29:36] [Server thread/INFO]: [HorriblePlayerLoginEventHack] You have plugins listening to the PlayerLoginEvent, this will cause re-configuration APIs to be unavailable: [WorldGuard]
+[16:29:36] [Server thread/INFO]: Welcome coolshooter123
+[16:29:37] [Server thread/INFO]: coolshooter123 joined the game
+[16:29:37] [Server thread/INFO]: coolshooter123[/127.0.0.1:46002] logged in with entity id 1 at ([isu_world]72.51559338254184, 66.56896767713683, -51.328798077196446)
+[16:32:01] [Server thread/INFO]: coolshooter123 issued server command: /automessage reload
+[17:14:47] [Server thread/INFO]: coolshooter123 issued server command: /automessage reload
+[17:16:00] [Server thread/INFO]: coolshooter123 issued server command: /automessage reload
+[17:16:52] [Server thread/INFO]: coolshooter123 lost connection: Disconnected
+[17:16:52] [Server thread/INFO]: coolshooter123 left the game
+[17:16:54] [Server thread/INFO]: Stopping server
+[17:16:54] [Server thread/INFO]: [AutoMessage] Disabling AutoMessage v2.0.0
+[17:16:54] [Server thread/INFO]: [AutoMessage] AutoMessage plugin disabled successfully.
+[17:16:54] [Server thread/INFO]: [WorldGuard] Disabling WorldGuard v7.0.14+2339-43997ec
+[17:16:54] [Server thread/INFO]: [WorldGuard] Shutting down executor and cancelling any pending tasks...
+[17:16:54] [Server thread/INFO]: [RaspberryJuice] Disabling RaspberryJuice v1.12.1
+[17:16:54] [Server thread/INFO]: [RaspberryJuice] Raspberry Juice Stopped
+[17:16:54] [Server thread/INFO]: [WorldEdit] Disabling WorldEdit v7.3.17+7262-c7fbe08
+[17:16:54] [Server thread/INFO]: Unregistering com.sk89q.worldedit.bukkit.BukkitServerInterface from WorldEdit
+[17:16:54] [Server thread/INFO]: Saving players
+[17:16:54] [Server thread/INFO]: Saving worlds
+[17:16:54] [Server thread/INFO]: Saving chunks for level 'ServerLevel[isu_world]'/minecraft:overworld
+[17:16:54] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'isu_world'
+[17:16:54] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'isu_world'
+[17:16:54] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'isu_world'
+[17:16:54] [Server thread/INFO]: [ChunkHolderManager] Saved 19 block chunks, 140 entity chunks, 0 poi chunks in world 'isu_world' in 0.03s
+[17:16:54] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'isu_world'
+[17:16:54] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'isu_world'
+[17:16:54] [Server thread/INFO]: Saving chunks for level 'ServerLevel[isu_world_nether]'/minecraft:the_nether
+[17:16:54] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'isu_world_nether'
+[17:16:54] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'isu_world_nether'
+[17:16:54] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'isu_world_nether'
+[17:16:54] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'isu_world_nether' in 0.00s
+[17:16:54] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'isu_world_nether'
+[17:16:54] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'isu_world_nether'
+[17:16:54] [Server thread/INFO]: Saving chunks for level 'ServerLevel[isu_world_the_end]'/minecraft:the_end
+[17:16:54] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'isu_world_the_end'
+[17:16:54] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'isu_world_the_end'
+[17:16:54] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'isu_world_the_end'
+[17:16:54] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'isu_world_the_end' in 0.00s
+[17:16:54] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'isu_world_the_end'
+[17:16:54] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'isu_world_the_end'
+[17:16:54] [Server thread/INFO]: ThreadedAnvilChunkStorage (isu_world): All chunks are saved
+[17:16:54] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[17:16:54] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[17:16:54] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[17:16:54] [Server thread/INFO]: Waiting for all RegionFile I/O tasks to complete...
+[17:16:54] [Server thread/INFO]: All RegionFile I/O tasks to complete
+[17:16:54] [Server thread/INFO]: [MoonriseCommon] Awaiting termination of worker pool for up to 60s...
+[17:16:54] [Server thread/INFO]: [MoonriseCommon] Awaiting termination of I/O pool for up to 60s...
