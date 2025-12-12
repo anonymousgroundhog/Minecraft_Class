@@ -1,0 +1,90 @@
+# ============================================================================
+#                              AutoMessage — messages.yml
+# ============================================================================
+# This configuration file defines all user-facing messages used by AutoMessage.
+# It centralizes command responses, dispatcher status messages, and reload
+# notifications, allowing full customization without modifying code.
+#
+# Sections:
+#  • liteCommandsMessages   — errors, usage prompts, and permission responses
+#  • dispatcherMessages     — messages for enabling/disabling automatic dispatching
+#  • reloadMessages         — messages shown during configuration reload operations
+#
+# Editing Tips:
+#  • Colors follow MiniMessage syntax (<red>, <yellow>, <gray>, <rainbow>, etc.).
+#  • Reload the plugin after editing: /automessage reload
+#
+# Source Code:
+#   https://github.com/imDMK/AutoMessage
+#
+# Support development:
+#   GitHub Sponsors: https://github.com/sponsors/imDMK
+#   PayPal:          https://paypal.me/dominiksuliga
+#
+# Thank you for using AutoMessage!
+# ============================================================================
+#
+# Messages used by the LiteCommands subsystem.
+# Contains permission errors, usage hints, and syntax messages.
+#
+liteCommandsMessages:
+  #
+  # Sent when a player attempts to execute a command without having all required permissions.
+  #
+  # Placeholders:
+  #  {PERMISSIONS} - comma-separated list of missing permission nodes required to execute the command.
+  #
+  commandPermissionMissing: "<dark_gray>• <red>You are missing required permissions <gray>{PERMISSIONS} <red>to execute this command."
+  #
+  # Sent when a player uses a command with an invalid or incomplete syntax.
+  # 
+  # Placeholders:
+  #   {USAGE} - correct usage format of the command (e.g. /playtime <player>).
+  #
+  commandUsageInvalid: "<dark_gray>• <red>Invalid command usage! <gray>Correct syntax: <red>{USAGE}<dark_gray>."
+  #
+  # Header shown before listing available correct usages for a command.
+  # Typically used together with 'commandUsageEntry' when there are multiple valid variants.
+  #
+  commandUsageHeader: "<dark_gray>• <red>Correct usage variants:"
+  #
+  # Single entry in the list of valid command usages.
+  # Displayed under 'commandUsageHeader' for each available usage.
+  # 
+  # Placeholders:
+  #  {USAGE} - a single valid usage variant of the command.
+  #
+  commandUsageEntry: "<dark_gray>• <red>{USAGE}"
+#
+# Messages used by dispatcher-related commands.
+#
+dispatcherMessages:
+  #
+  # Sent when automatic message dispatching is successfully enabled.
+  #
+  dispatcherEnabled: "<dark_gray>• <green>Automatic messages have been <bold>enabled</bold>.<dark_gray>"
+  #
+  # Sent when a user attempts to enable dispatching, but it is already active.
+  #
+  dispatcherAlreadyEnabled: "<dark_gray>• <yellow>Automatic messages are already enabled.<dark_gray>"
+  #
+  # Sent when automatic message dispatching is successfully disabled.
+  #
+  dispatcherDisabled: "<dark_gray>• <red>Automatic messages have been <bold>disabled</bold>.<dark_gray>"
+  #
+  # Sent when a user attempts to disable dispatching, but it is already inactive.
+  #
+  dispatcherAlreadyDisabled: "<dark_gray>• <yellow>Automatic messages are already disabled.<dark_gray>"
+#
+# Messages used during configuration reload commands.
+# Includes success and failure notifications.
+#
+reloadMessages:
+  #
+  # Message shown when all configuration files are successfully reloaded.
+  #
+  configReloadedSuccess: "<dark_gray>• <green>AutoMessage configuration has been reloaded successfully.<dark_gray>"
+  #
+  # Message shown when reloading the configuration fails due to invalid or corrupted files.
+  #
+  configReloadFailed: "<dark_gray>• <red>Failed to reload AutoMessage configuration files. <red>Please disable the plugin and verify your configuration."
