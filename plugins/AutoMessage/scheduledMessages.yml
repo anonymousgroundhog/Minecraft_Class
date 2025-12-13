@@ -106,8 +106,14 @@
 # The dispatcher reads messages sequentially.
 #
 messages:
-- name: example-message
+- name: example-messag
   notices:
   - "<green>Hello and welcome to IT359/360 Minecraft Server"
-  - "<yellow>Please do not destroy your or others buildings"
+  - "<yellow>\n\nPlease do not destroy others buildings"
+  - sound: entity.player.levelup
+  - "<red>\n\nPlease remember to check your syllabus weekly for updates and important information related to the class"
+  rules: []
+- name: class-info-it_359
+  notices:
+  - "<white>Today we are going to discuss about x"
   rules: []

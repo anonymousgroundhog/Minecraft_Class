@@ -45,7 +45,7 @@ enabled: true
 #
 # Delay between automatic dispatch executions.
 #
-period: 1h
+period: 1m
 #
 # Initial delay before the very first automatic message dispatch.
 #

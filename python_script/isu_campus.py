@@ -7,7 +7,8 @@ import random
 # The MCPI protocol does not use your Minecraft username/password.
 # It uses the server's IP address and the RaspberryJuice port (default 4711).
 # You must have the RaspberryJuice plugin installed on the external server.
-SERVER_IP = "10.110.10.150"
+#SERVER_IP = "10.110.10.150"
+SERVER_IP = "127.0.0.1"
 SERVER_PORT = 4711
 
 # --- Connect to Minecraft ---
