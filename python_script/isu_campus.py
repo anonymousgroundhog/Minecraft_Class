@@ -11,6 +11,10 @@ import random
 SERVER_IP = "127.0.0.1"
 SERVER_PORT = 4711
 
+# --- New Campus Height Configuration ---
+# 1. The entire campus will be built 30 blocks above the player's starting Y-coordinate.
+PLATFORM_HEIGHT = 30 
+
 # --- Connect to Minecraft ---
 try:
     # Connects to the external server using the defined IP and Port
@@ -25,7 +29,9 @@ except Exception as e:
 
 # --- Configuration ---
 origin_x = pos.x
-origin_y = pos.y
+# --- MODIFIED: Adjust origin_y to place the platform 30 blocks up ---
+origin_y = pos.y + PLATFORM_HEIGHT 
+# -------------------------------------------------------------------
 origin_z = pos.z
 
 # 1. Main Classroom Building Config
@@ -69,11 +75,16 @@ WINDOW_MAT = block.GLASS_PANE.id
 ROOF_MAT = block.STONE_SLAB_DOUBLE.id
 COURTYARD_MAT = block.BRICK_BLOCK.id
 AIR = block.AIR.id
-PILLAR_MAT = block.IRON_BLOCK.id
+PILLAR_MAT = block.IRON_BLOCK.id # For main supports
 LIGHT_MAT = block.GLOWSTONE_BLOCK.id
-FENCE_MAT = block.FENCE.id
+FENCE_MAT = block.FENCE.id # Standard wood fence (used for light posts and main perimeter)
+WOOD_FENCE_MAT = block.FENCE.id # For perimeter fence
+# --- CORRECTED: Use standard fence block for hanging light posts ---
+IRON_FENCE_MAT = block.FENCE.id 
+# ------------------------------------------------------------------
 BONE_GLASS_MAT = block.GLASS.id
 WALL_SIGN_ID = 68
+STANDING_SIGN_ID = 63 # For the welcome sign
 BONE_ACCENT_MAT = 155
 LECTERN_BASE = 85
 LECTERN_TOP = 44
@@ -81,6 +92,7 @@ GRASS_MAT = block.GRASS.id
 LOG_MAT = 17
 LEAVES_MAT = 18
 PATH_MAT = block.STONE_SLAB_DOUBLE.id
+RAMP_MAT = block.COBBLESTONE.id
 
 # --- Main Execution ---
 
@@ -92,22 +104,36 @@ def build_campus():
     quad_x_max = origin_x + (BUILDING_WIDTH // 2) + (QUAD_WIDTH // 2)
     quad_z_min = origin_z + BUILDING_DEPTH
     quad_z_max = BONE_START_Z - 1
+    
+    # Calculate Campus Footprint for Perimeter and Fence
+    campus_x1 = WEST_BLDG_X - 5
+    campus_x2 = EAST_BLDG_X + SIDE_HALL_WIDTH + 5
+    campus_z1 = origin_z - 5  # North boundary (Entrance edge)
+    campus_z2 = BONE_START_Z + BONE_DEPTH + 5 # South boundary
 
-    # 1. CLEAR LAND
+    # Y-coordinate of the original ground
+    stair_y_ground = pos.y 
+
+    # 1. CLEAR LAND 
     mc.postToChat("Terraforming...")
-    mc.setBlocks(WEST_BLDG_X - 10, origin_y, origin_z - 20,
-                 EAST_BLDG_X + SIDE_HALL_WIDTH + 10, origin_y + 50, BONE_START_Z + BONE_DEPTH + 20,
+    mc.setBlocks(campus_x1 - 10, stair_y_ground, campus_z1 - PLATFORM_HEIGHT - 10,
+                 campus_x2 + 10, origin_y + 50, campus_z2 + 10,
                  AIR)
 
-    # 2. LAY BASE BRICK LAYER (The Perimeter)
-    # We fill the ENTIRE campus footprint with brick first.
-    # This ensures every building sits on a connected brick surface.
-    mc.setBlocks(WEST_BLDG_X - 5, origin_y - 1, origin_z - 5,
-                 EAST_BLDG_X + SIDE_HALL_WIDTH + 5, origin_y - 1, BONE_START_Z + BONE_DEPTH + 5,
+    # 2. LAY BASE BRICK LAYER (The Platform)
+    mc.setBlocks(campus_x1, origin_y - 1, campus_z1,
+                 campus_x2, origin_y - 1, campus_z2,
                  COURTYARD_MAT)
+    
+    # --- Build Support Structure and Underneath Lighting ---
+    build_support_structure(campus_x1, stair_y_ground, campus_z1, campus_x2, campus_z2)
+    # -----------------------------------------------------------
+
+    # --- Build the Perimeter Fence and Entrance Stairs ---
+    build_perimeter_fence_and_stairs(campus_x1, origin_y, campus_z1, campus_x2, campus_z2, stair_y_ground)
+    # ---------------------------------------------------------
 
     # 3. LAY GRASS QUAD (The Center)
-    # Now we overwrite the center with grass, leaving the brick "border" around the edges
     mc.setBlocks(quad_x_min, origin_y - 1, quad_z_min,
                  quad_x_max, origin_y - 1, quad_z_max,
                  GRASS_MAT)
@@ -120,12 +146,10 @@ def build_campus():
 
     # 6. LIGHTING
     mc.postToChat("Lighting the Campus...")
-    # Perimeter Lighting (On the brick walk)
     for z in range(quad_z_min, quad_z_max, 15):
-        build_light_post(quad_x_min - 2, origin_y, z) # Moved slightly onto the brick
-        build_light_post(quad_x_max + 2, origin_y, z) # Moved slightly onto the brick
+        build_light_post(quad_x_min - 2, origin_y, z) 
+        build_light_post(quad_x_max + 2, origin_y, z) 
 
-    # Interior Quad Lighting
     cx = (quad_x_min + quad_x_max) // 2
     cz = (quad_z_min + quad_z_max) // 2
     build_light_post(cx + 5, origin_y, cz + 5)
@@ -134,28 +158,131 @@ def build_campus():
     build_light_post(cx - 5, origin_y, cz + 5)
 
 
-    # --- BUILDINGS ---
-
-    # A. North: Main Classroom Building
-    mc.postToChat("Building Main Hall...")
+    # --- BUILDINGS (origin_y is the starting Y for all buildings) ---
+    mc.postToChat("Building Campus Structures...")
     build_main_building()
-
-    # B. South: Bone Student Center + Starbucks
-    mc.postToChat("Building Student Center...")
     build_bone_center(BONE_START_X, origin_y, BONE_START_Z)
     build_starbucks(STARBUCKS_X, origin_y, STARBUCKS_Z)
-
-    # C. West: Side Classroom Hall
-    mc.postToChat("Building West Hall...")
     build_classroom_hall(WEST_BLDG_X, origin_y, WEST_BLDG_Z, SIDE_HALL_WIDTH, SIDE_HALL_LENGTH, "West Hall", door_side="east")
-
-    # D. East: Side Classroom Hall
-    mc.postToChat("Building East Hall...")
     build_classroom_hall(EAST_BLDG_X, origin_y, EAST_BLDG_Z, SIDE_HALL_WIDTH, SIDE_HALL_LENGTH, "East Hall", door_side="west")
 
     mc.postToChat("Campus Upgrade Complete!")
 
-# --- LANDSCAPING FUNCTIONS ---
+# --- SUPPORT STRUCTURE FUNCTION ---
+
+def build_support_structure(x1, y_ground, z1, x2, z2):
+    mc.postToChat("Building Structural Supports...")
+    
+    platform_base_y = y_ground + PLATFORM_HEIGHT - 1 # Y coord of the bottom layer of the platform
+
+    # 1. Main Support Beams (Iron Pillars)
+    # Place pillars every 20 blocks across the entire footprint
+    for x in range(x1, x2, 20):
+        for z in range(z1, z2, 20):
+            # Pillars go from the ground level up to the platform base
+            mc.setBlocks(x, y_ground, z, x, platform_base_y, z, PILLAR_MAT)
+            
+            # Place fence post for hanging light at the beam top
+            mc.setBlock(x, platform_base_y, z, IRON_FENCE_MAT)
+
+    # 2. Hanging Lanterns
+    # Place hanging lanterns roughly every 10 blocks, offset from the main beams
+    for x in range(x1 + 10, x2, 20):
+        for z in range(z1 + 10, z2, 20):
+            # Fence post hanging down 2 blocks
+            mc.setBlocks(x, platform_base_y, z, x, platform_base_y - 2, z, IRON_FENCE_MAT)
+            # Glowstone block hangs at the bottom of the fence post
+            mc.setBlock(x, platform_base_y - 3, z, LIGHT_MAT)
+
+# --- PERIMETER/STAIRS FUNCTION ---
+def build_perimeter_fence_and_stairs(x1, y, z1, x2, z2, stair_y_ground):
+    
+    # Perimeter Fence (Wood Fence)
+    mc.postToChat("Adding Wood Fence Perimeter...")
+    
+    # North/South walls
+    mc.setBlocks(x1, y, z1, x2, y, z1, WOOD_FENCE_MAT)
+    mc.setBlocks(x1, y, z2, x2, y, z2, WOOD_FENCE_MAT)
+    # West/East walls (Don't overlap corners)
+    mc.setBlocks(x1, y, z1 + 1, x1, y, z2 - 1, WOOD_FENCE_MAT)
+    mc.setBlocks(x2, y, z1 + 1, x2, y, z2 - 1, WOOD_FENCE_MAT)
+
+    # Staircase Entrance (Place on the North wall, in the middle)
+    stair_start_x = (x1 + x2) // 2
+    stair_platform_z = z1  # Z-coordinate of the North campus boundary/fence line
+    
+    # 1. Clear a small opening in the North fence for the entrance
+    mc.setBlocks(stair_start_x - 1, y, stair_platform_z, stair_start_x + 1, y, stair_platform_z, AIR)
+    
+    # 2. Build the staircase leading *down* and *OUT* from the platform entrance (-Z direction)
+    mc.postToChat("Building Entrance Stairs...")
+    
+    # Clear a generously sized space for the stairs/ramp (Clearing in the -Z direction)
+    stair_length = PLATFORM_HEIGHT 
+    
+    # Clear air below and in front of the platform entrance
+    mc.setBlocks(stair_start_x - 2, stair_y_ground, stair_platform_z - stair_length - 2, 
+                 stair_start_x + 3, y + 1, stair_platform_z + 1, AIR) 
+
+    # Build the actual ramp using solid cobblestone blocks (RAMP_MAT)
+    for i in range(PLATFORM_HEIGHT + 1): 
+        
+        # Current Z position: Starts one block INTO the platform (z1+1) and moves negatively (outward)
+        step_z = stair_platform_z - i + 1 
+        # Current Y position: Starts at y (platform top) and moves negatively (downward)
+        step_y = y - i
+        
+        # Build the horizontal ramp step (3 blocks wide) at the current lowered position (step_y)
+        mc.setBlocks(stair_start_x - 1, step_y, step_z, 
+                     stair_start_x + 1, step_y, step_z, 
+                     RAMP_MAT)
+        
+        # Fill the space below the current step down to the ground level (to create a solid ramp)
+        mc.setBlocks(stair_start_x - 1, stair_y_ground, step_z,
+                     stair_start_x + 1, step_y - 1, step_z,
+                     RAMP_MAT)
+        
+        # --- Add side walls/railings (1 block high) for the ramp ---
+        
+        # Left Wall (West side, -X) - Runs from ground to step_y + 1
+        mc.setBlocks(stair_start_x - 2, stair_y_ground, step_z, 
+                     stair_start_x - 2, step_y + 1, step_z, 
+                     RAMP_MAT)
+        
+        # Right Wall (East side, +X)
+        mc.setBlocks(stair_start_x + 2, stair_y_ground, step_z, 
+                     stair_start_x + 2, step_y + 1, step_z, 
+                     RAMP_MAT)
+
+        # Add light posts at the entrance on the platform level
+        if i == 0: # This is the block right at the fence opening
+             mc.setBlock(stair_start_x - 2, y + 1, stair_platform_z + 1, LIGHT_MAT) 
+             mc.setBlock(stair_start_x + 2, y + 1, stair_platform_z + 1, LIGHT_MAT)
+             mc.setBlock(stair_start_x, y, stair_platform_z + 1, PATH_MAT) 
+        
+        # --- Place Sign and Lantern to the right of the bottom step ---
+        if i == PLATFORM_HEIGHT:
+            # Coordinates for the sign placement: 3 blocks right of center (X+3), at ground level
+            sign_x = stair_start_x + 3 
+            # The sign aligns with the final step (step_z)
+            sign_z = step_z 
+            
+            # Place Standing Sign (Data 8 faces North/down the ramp, towards the player)
+            mc.setBlock(sign_x, stair_y_ground - 1, sign_z, block.GRASS.id) 
+            mc.setSign(sign_x, stair_y_ground, sign_z, STANDING_SIGN_ID, 8, "Welcome to ISU", "Sky Campus")
+            
+            # Place a post above the sign for the lamp
+            mc.setBlocks(sign_x, stair_y_ground + 1, sign_z, sign_x, stair_y_ground + 3, sign_z, FENCE_MAT)
+            
+            # Place the Glowstone (acting as a lantern) on the post
+            mc.setBlock(sign_x, stair_y_ground + 4, sign_z, LIGHT_MAT)
+
+
+    # Final step: Ensure the fence opening is completely clear
+    mc.setBlocks(stair_start_x - 1, y, stair_platform_z, stair_start_x + 1, y, stair_platform_z, AIR)
+
+
+# --- LANDSCAPING FUNCTIONS (UNMODIFIED) ---
 
 def build_complex_paths(x1, x2, y, z1, z2):
     cx = (x1 + x2) // 2
@@ -223,7 +350,7 @@ def place_custom_tree(x, y, z):
     mc.setBlock(x, y+height+1, z, LEAVES_MAT, leaf_type)
     mc.setBlocks(x, y, z, x, y+height-1, z, LOG_MAT, 0)
 
-# --- BUILDING FUNCTIONS ---
+# --- BUILDING FUNCTIONS (UNMODIFIED) ---
 
 def build_classroom_hall(x, y, z, width, length, name, door_side="east"):
     # Replaces 'build_generic_hall' with a detailed classroom version
@@ -288,11 +415,11 @@ def build_main_building():
         build_structure(origin_x + BUILDING_WIDTH - 10, current_y, origin_z + BUILDING_DEPTH, 10, WING_LENGTH, rooms=2, door_facing=right_facing)
 
         if f > 0:
-             stair_x, stair_z = origin_x + 3, origin_z + 3
-             mc.setBlocks(stair_x, current_y, stair_z, stair_x + 1, current_y, stair_z + FLOOR_HEIGHT, AIR)
-             mc.setBlocks(stair_x, current_y + 1, stair_z, stair_x + 1, current_y + 3, stair_z + FLOOR_HEIGHT, AIR)
+              stair_x, stair_z = origin_x + 3, origin_z + 3
+              mc.setBlocks(stair_x, current_y, stair_z, stair_x + 1, current_y, stair_z + FLOOR_HEIGHT, AIR)
+              mc.setBlocks(stair_x, current_y + 1, stair_z, stair_x + 1, current_y + 3, stair_z + FLOOR_HEIGHT, AIR)
         if f < FLOORS - 1:
-             create_stairs(origin_x + 3, current_y, origin_z + 3, FLOOR_HEIGHT)
+              create_stairs(origin_x + 3, current_y, origin_z + 3, FLOOR_HEIGHT)
 
     door_x = origin_x + (BUILDING_WIDTH // 2)
     mc.setBlocks(door_x - 1, origin_y, origin_z + BUILDING_DEPTH, door_x + 2, origin_y + 2, origin_z + BUILDING_DEPTH, AIR)
@@ -316,8 +443,8 @@ def build_structure(x, y, z, width, depth, rooms=1, door_facing='none'):
         curr_room_z_center = z + (depth // 2)
         wall_x = x + (i * room_width)
         if i < rooms:
-             mc.setBlocks(wall_x, y + 1, z, wall_x, y + FLOOR_HEIGHT - 1, z + depth, WALL_MAT)
-             mc.setBlocks(wall_x, y + 1, z + (depth // 2), wall_x, y + 2, z + (depth // 2), AIR)
+              mc.setBlocks(wall_x, y + 1, z, wall_x, y + FLOOR_HEIGHT - 1, z + depth, WALL_MAT)
+              mc.setBlocks(wall_x, y + 1, z + (depth // 2), wall_x, y + 2, z + (depth // 2), AIR)
         mc.setBlock(curr_room_x_center, y + FLOOR_HEIGHT - 1, curr_room_z_center, LIGHT_MAT)
         if door_facing == 'front': mc.setBlocks(curr_room_x_center, y+1, z+depth, curr_room_x_center, y+2, z+depth, AIR)
         elif door_facing == 'right': mc.setBlocks(x+width, y+1, curr_room_z_center, x+width, y+2, curr_room_z_center, AIR)
@@ -342,15 +469,15 @@ def build_bone_center(x, y, z):
         mc.setBlocks(x + 4, curr_y + 1, z, x + width - 4, curr_y + FLOOR_HEIGHT - 1, z, BONE_GLASS_MAT)
         mc.setBlocks(x + 1, curr_y + 1, z + 1, x + width - 1, curr_y + FLOOR_HEIGHT - 1, z + depth - 1, AIR)
         for ix in range(x + 5, x + width - 5, 6):
-             for iz in range(z + 5, z + depth - 5, 6):
+              for iz in range(z + 5, z + depth - 5, 6):
                   mc.setBlock(ix, curr_y + FLOOR_HEIGHT - 1, iz, LIGHT_MAT)
         stair_x = x + width - 5
         stair_z = z + depth - 7
         if f > 0:
-             mc.setBlocks(stair_x, curr_y, stair_z, stair_x + 1, curr_y, stair_z + FLOOR_HEIGHT, AIR)
-             mc.setBlocks(stair_x, curr_y + 1, stair_z, stair_x + 1, curr_y + 3, stair_z + FLOOR_HEIGHT + 2, AIR)
+              mc.setBlocks(stair_x, curr_y, stair_z, stair_x + 1, curr_y, stair_z + FLOOR_HEIGHT, AIR)
+              mc.setBlocks(stair_x, curr_y + 1, stair_z, stair_x + 1, curr_y + 3, stair_z + FLOOR_HEIGHT + 2, AIR)
         if f < FLOORS - 1:
-             create_stairs(stair_x, curr_y, stair_z, FLOOR_HEIGHT)
+              create_stairs(stair_x, curr_y, stair_z, FLOOR_HEIGHT)
     center_x = x + (width // 2)
     mc.setBlocks(center_x - 3, y + 1, z, center_x + 3, y + 2, z, AIR)
     mc.setBlocks(center_x - 6, y + 4, z - 3, center_x + 6, y + 4, z - 1, BONE_ACCENT_MAT)
