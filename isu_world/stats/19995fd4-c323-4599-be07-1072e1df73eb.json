@@ -1,0 +1,26 @@
+{
+  "stats": {
+    "minecraft:used": {
+      "minecraft:oak_fence": 2,
+      "minecraft:oak_boat": 2,
+      "minecraft:cobblestone": 6
+    },
+    "minecraft:custom": {
+      "minecraft:sprint_one_cm": 82,
+      "minecraft:time_since_rest": 11997,
+      "minecraft:walk_one_cm": 43027,
+      "minecraft:total_world_time": 11997,
+      "minecraft:leave_game": 1,
+      "minecraft:fly_one_cm": 190873,
+      "minecraft:walk_on_water_one_cm": 105,
+      "minecraft:play_time": 11997,
+      "minecraft:jump": 35,
+      "minecraft:time_since_death": 11997
+    },
+    "minecraft:picked_up": {
+      "minecraft:oxeye_daisy": 1,
+      "minecraft:wheat_seeds": 8
+    }
+  },
+  "DataVersion": 4671
+}
