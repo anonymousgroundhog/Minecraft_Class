@@ -4,18 +4,31 @@ import math
 import time
 
 # --- Configuration ---
-RADIUS = 10         # Radius of the stone circle (distance from center to stone)
+# ... (Configuration constants remain the same) ...
+RADIUS = 10 	   # Radius of the stone circle (distance from center to stone)
 NUM_STONES = 12     # Number of upright stones (sarsens)
 STONE_HEIGHT = 5    # How tall the sarsens are
 STONE_WIDTH = 1     # Width/Depth of the sarsen
 STONE_BLOCK = block.STONE.id      # ID 1 for Stone
 LINTEL_BLOCK = block.STONE_BRICK.id # ID 98 for Stone Brick (A common choice)
+DEFAULT_PORT = 4711   # The default port for the Minecraft PI API
 
-def build_stonehenge_relative():
-    """Connects to Minecraft and builds the structure relative to the player's position."""
+# CHANGE 2: The function now accepts server_ip and server_port as arguments
+def build_stonehenge_relative(server_ip="localhost", server_port=DEFAULT_PORT):
+    """
+    Connects to Minecraft using the specified IP/port and builds the structure relative to the player's position.
+    """
     
-    mc = Minecraft.create()
-    
+    # CHANGE 3: Update the connection line to use the provided IP and Port
+    # mc = Minecraft.create() # Original line
+    print(f"Attempting to connect to Minecraft server at {server_ip}:{server_port}...")
+    try:
+        mc = Minecraft.create(server_ip, server_port)
+    except Exception as e:
+        print(f"ERROR: Could not connect to the Minecraft server. Details: {e}")
+        print("Please ensure the server IP/Port is correct and the server is running.")
+        return # Exit the function if connection fails
+
     # 1. Get Player Position for Relative Building
     player_pos = mc.player.getPos()
     
@@ -32,12 +45,12 @@ def build_stonehenge_relative():
     # 2. Preparation (Optional: Flatten the area)
     # Clear a 1-block high circle of air around the base for a foundation
     mc.setBlocks(X0 - RADIUS - 2, Y0, Z0 - RADIUS - 2, 
-                 X0 + RADIUS + 2, Y0 + STONE_HEIGHT + 2, Z0 + RADIUS + 2, 
-                 block.AIR.id)
+                  X0 + RADIUS + 2, Y0 + STONE_HEIGHT + 2, Z0 + RADIUS + 2, 
+                  block.AIR.id)
     # Place a flat stone foundation
     mc.setBlocks(X0 - RADIUS - 2, Y0 - 1, Z0 - RADIUS - 2, 
-                 X0 + RADIUS + 2, Y0 - 1, Z0 + RADIUS + 2, 
-                 block.STONE_BRICK.id)
+                  X0 + RADIUS + 2, Y0 - 1, Z0 + RADIUS + 2, 
+                  block.STONE_BRICK.id)
     
     stone_positions = []
 
@@ -91,5 +104,27 @@ def build_stonehenge_relative():
     mc.postToChat("Stonehenge construction complete! Check it out.")
 
 # --- Run the function ---
-# Uncomment the line below to execute the build!
-build_stonehenge_relative()
+
+# CHANGE 1: Prompt the user for the server IP address
+def main():
+    # Prompt the user for the IP address. Use "localhost" as a default/suggestion.
+    ip_address = input(f"Enter the Minecraft server IP address (default is localhost): ")
+    if not ip_address:
+        ip_address = "localhost" # Use default if the user presses Enter without typing
+
+    # You could also ask for the port, but often the default (4711) is correct.
+    # If you need to prompt for the port:
+    # port_input = input(f"Enter the server port (default is {DEFAULT_PORT}): ")
+    # try:
+    #     port = int(port_input) if port_input else DEFAULT_PORT
+    # except ValueError:
+    #     print("Invalid port entered, using default port.")
+    #     port = DEFAULT_PORT
+        
+    # For simplicity, we'll keep the port as the default for now
+    port = DEFAULT_PORT
+
+    build_stonehenge_relative(server_ip=ip_address, server_port=port)
+
+if __name__ == "__main__":
+    main()

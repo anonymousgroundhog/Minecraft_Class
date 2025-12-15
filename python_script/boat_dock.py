@@ -7,7 +7,7 @@ import time
 # ==============================================================================
 
 # **IP ADDRESS SETTING**
-SERVER_IP = "127.0.0.1" 
+SERVER_IP = "10.110.10.150" 
 SERVER_PORT = 4711
 
 # --- BLOCK IDs AND DATA VALUES ---

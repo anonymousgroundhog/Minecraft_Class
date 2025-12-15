@@ -82,8 +82,8 @@ def build_syllabus_monument(mc, start_x, start_y, start_z, width, height, depth,
     mc.postToChat("Entrance added to the South wall.")
 
     # 5. Place the Signs and Lights (Interior North Wall)
-    sign_y = start_y + 2       # Signs 2 blocks high on the wall
-    light_y = ceiling_y        # Lights placed on the ceiling
+    sign_y = start_y + 2        # Signs 2 blocks high on the wall
+    light_y = ceiling_y          # Lights placed on the ceiling
     current_x = start_x + 1    # Start 1 block in from the corner
 
     for sign_text in sign_list:
@@ -107,29 +107,33 @@ def build_syllabus_monument(mc, start_x, start_y, start_z, width, height, depth,
     return start_x + width
 
 
-# --- IP Address Input ---
+# --- IP Address Input Function ---
 def get_server_ip():
+    # 'localhost' is the default for a local server
     default_ip = "localhost" 
+    
+    # Ask the user for input
     ip_address = input(f"Enter the Minecraft server IP address (default: {default_ip}): ")
     
     if not ip_address:
         ip_address = default_ip
         
     try:
-        # Checks if it's a valid address format
+        # Simple validation using socket library
         socket.inet_aton(ip_address)
     except socket.error:
         if ip_address.lower() != "localhost":
              print(f"Warning: '{ip_address}' may not be a valid IP address format.")
-             
+            
     return ip_address
 
 # --- Main Execution ---
 if __name__ == "__main__":
     
-    # --- Connect to Server ---
+    # --- 1. Get IP and Connect to Server ---
     server_ip = get_server_ip()
     try:
+        # Connect using the user-provided or default IP address
         mc = minecraft.Minecraft.create(server_ip)
         mc.postToChat("Connected to Minecraft server at " + server_ip)
     except ConnectionRefusedError:
@@ -141,11 +145,11 @@ if __name__ == "__main__":
     player_pos = mc.player.getTilePos()
     start_y = player_pos.y
     
-    # --- 1. Build IT 359 Monument ---
+    # --- 2. Build IT 359 Monument ---
     start_x_359 = player_pos.x + 2
     start_z = player_pos.z + 2 # Z coordinate is shared for both buildings (next to player)
     
-    # IT 359 Signs (Re-using cleaned list from previous steps)
+    # IT 359 Signs
     syllabus_signs_359 = [
         ["IT 359", "Penetration", "Testing", "Ethical Hacking"],
         ["Instructor:", "Dr. S Sanders", "spsand1@ilstu.edu", "Room: JH 028"],
@@ -171,7 +175,7 @@ if __name__ == "__main__":
     
     end_x_359 = build_syllabus_monument(mc, start_x_359, start_y, start_z, WIDTH, HEIGHT, DEPTH, syllabus_signs_359, "IT 359 Syllabus Monument")
     
-    # --- 2. Build IT 360 Monument ---
+    # --- 3. Build IT 360 Monument ---
     # Start 2 blocks after the end of the first building
     start_x_360 = end_x_359 + 2
     
