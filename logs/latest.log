@@ -1,38 +1,38 @@
-[19:16:13] [ServerMain/INFO]: [bootstrap] Running Java 21 (OpenJDK 64-Bit Server VM 21.0.9+10-Ubuntu-122.04; Ubuntu null) on Linux 6.17.4-76061704-generic (amd64)
-[19:16:13] [ServerMain/INFO]: [bootstrap] Loading Paper 1.21.11-38-main@4446f17 (2025-12-09T22:51:57Z) for Minecraft 1.21.11
-[19:16:13] [ServerMain/INFO]: [PluginInitializerManager] Initializing plugins...
-[19:16:13] [ServerMain/INFO]: [PluginInitializerManager] Initialized 4 plugins
-[19:16:13] [ServerMain/INFO]: [PluginInitializerManager] Bukkit plugins (4):
+[14:43:14] [ServerMain/INFO]: [bootstrap] Running Java 21 (OpenJDK 64-Bit Server VM 21.0.9+10-Ubuntu-122.04; Ubuntu null) on Linux 6.17.4-76061704-generic (amd64)
+[14:43:14] [ServerMain/INFO]: [bootstrap] Loading Paper 1.21.11-38-main@4446f17 (2025-12-09T22:51:57Z) for Minecraft 1.21.11
+[14:43:14] [ServerMain/INFO]: [PluginInitializerManager] Initializing plugins...
+[14:43:14] [ServerMain/INFO]: [PluginInitializerManager] Initialized 4 plugins
+[14:43:14] [ServerMain/INFO]: [PluginInitializerManager] Bukkit plugins (4):
  - AutoMessage (2.0.0), RaspberryJuice (1.12.1), WorldEdit (7.3.17+7262-c7fbe08), WorldGuard (7.0.14+2339-43997ec)
-[19:16:16] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, profilesHost=https://api.mojang.com, name=PROD]
-[19:16:17] [ServerMain/INFO]: Loaded 1470 recipes
-[19:16:17] [ServerMain/INFO]: Loaded 1584 advancements
-[19:16:17] [ServerMain/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Initialising converters for DataConverter...
-[19:16:17] [ServerMain/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Finished initialising converters for DataConverter in 193.7ms
-[19:16:17] [Server thread/INFO]: Starting minecraft server version 1.21.11
-[19:16:17] [Server thread/INFO]: Loading properties
-[19:16:17] [Server thread/INFO]: This server is running Paper version 1.21.11-38-main@4446f17 (2025-12-09T22:51:57Z) (Implementing API version 1.21.11-R0.1-SNAPSHOT)
-[19:16:17] [Server thread/INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
-[19:16:17] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[19:16:17] [Server thread/INFO]: Using 4 threads for Netty based IO
-[19:16:17] [Server thread/INFO]: [MoonriseCommon] Paper is using 5 worker threads, 1 I/O threads
-[19:16:17] [Server thread/INFO]: Default game type: CREATIVE
-[19:16:17] [Server thread/INFO]: Generating keypair
-[19:16:17] [Server thread/INFO]: Starting Minecraft server on *:25565
-[19:16:17] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
-[19:16:17] [Server thread/INFO]: Paper: Using OpenSSL 3.x.x (Linux x86_64) cipher from Velocity.
-[19:16:17] [Server thread/WARN]: [org.bukkit.craftbukkit.legacy.CraftLegacy] Initializing Legacy Material Support. Unless you have legacy plugins and/or data this is a bug!
-[19:16:23] [Server thread/WARN]: Legacy plugin RaspberryJuice v1.12.1 does not specify an api-version.
-[19:16:23] [Server thread/INFO]: [WorldEdit] Loading server plugin WorldEdit v7.3.17+7262-c7fbe08
-[19:16:23] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@298f44d5]
-[19:16:23] [Server thread/INFO]: [AutoMessage] Loading server plugin AutoMessage v2.0.0
-[19:16:23] [Server thread/INFO]: [WorldGuard] Loading server plugin WorldGuard v7.0.14+2339-43997ec
-[19:16:23] [Server thread/INFO]: [RaspberryJuice] Loading server plugin RaspberryJuice v1.12.1
-[19:16:23] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[19:16:23] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v7.3.17+7262-c7fbe08
-[19:16:23] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
-[19:16:23] [Server thread/INFO]: WEPIF: Using the Bukkit Permissions API.
-[19:16:23] [Server thread/WARN]: 
+[14:43:17] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, profilesHost=https://api.mojang.com, name=PROD]
+[14:43:18] [ServerMain/INFO]: Loaded 1470 recipes
+[14:43:18] [ServerMain/INFO]: Loaded 1584 advancements
+[14:43:18] [ServerMain/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Initialising converters for DataConverter...
+[14:43:18] [ServerMain/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Finished initialising converters for DataConverter in 201.1ms
+[14:43:18] [Server thread/INFO]: Starting minecraft server version 1.21.11
+[14:43:18] [Server thread/INFO]: Loading properties
+[14:43:18] [Server thread/INFO]: This server is running Paper version 1.21.11-38-main@4446f17 (2025-12-09T22:51:57Z) (Implementing API version 1.21.11-R0.1-SNAPSHOT)
+[14:43:18] [Server thread/INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
+[14:43:18] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[14:43:18] [Server thread/INFO]: Using 4 threads for Netty based IO
+[14:43:18] [Server thread/INFO]: [MoonriseCommon] Paper is using 5 worker threads, 1 I/O threads
+[14:43:18] [Server thread/INFO]: Default game type: CREATIVE
+[14:43:18] [Server thread/INFO]: Generating keypair
+[14:43:18] [Server thread/INFO]: Starting Minecraft server on *:25565
+[14:43:19] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
+[14:43:19] [Server thread/INFO]: Paper: Using OpenSSL 3.x.x (Linux x86_64) cipher from Velocity.
+[14:43:19] [Server thread/WARN]: [org.bukkit.craftbukkit.legacy.CraftLegacy] Initializing Legacy Material Support. Unless you have legacy plugins and/or data this is a bug!
+[14:43:24] [Server thread/WARN]: Legacy plugin RaspberryJuice v1.12.1 does not specify an api-version.
+[14:43:24] [Server thread/INFO]: [WorldEdit] Loading server plugin WorldEdit v7.3.17+7262-c7fbe08
+[14:43:24] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@5989dfb5]
+[14:43:24] [Server thread/INFO]: [AutoMessage] Loading server plugin AutoMessage v2.0.0
+[14:43:24] [Server thread/INFO]: [WorldGuard] Loading server plugin WorldGuard v7.0.14+2339-43997ec
+[14:43:24] [Server thread/INFO]: [RaspberryJuice] Loading server plugin RaspberryJuice v1.12.1
+[14:43:24] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[14:43:24] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v7.3.17+7262-c7fbe08
+[14:43:24] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
+[14:43:24] [Server thread/INFO]: WEPIF: Using the Bukkit Permissions API.
+[14:43:24] [Server thread/WARN]: 
 **********************************************
 ** This WorldEdit version does not fully support your version of Bukkit.
 **
@@ -43,128 +43,508 @@
 ** Please see https://worldedit.enginehub.org/en/latest/faq/#bukkit-adapters
 **********************************************
 
-[19:16:24] [Server thread/INFO]: Preparing level "isu_world"
-[19:16:24] [Server thread/INFO]: Loading 0 persistent chunks for world 'minecraft:overworld'...
-[19:16:24] [Server thread/INFO]: Preparing spawn area: 100%
-[19:16:24] [Server thread/INFO]: Prepared spawn area in 1 ms
-[19:16:24] [Server thread/INFO]: Loading 0 persistent chunks for world 'minecraft:the_nether'...
-[19:16:24] [Server thread/INFO]: Preparing spawn area: 100%
-[19:16:24] [Server thread/INFO]: Prepared spawn area in 1 ms
-[19:16:24] [Server thread/INFO]: Loading 0 persistent chunks for world 'minecraft:the_end'...
-[19:16:24] [Server thread/INFO]: Prepared spawn area in 0 ms
-[19:16:24] [Server thread/INFO]: Done preparing level "isu_world" (0.321s)
-[19:16:24] [Server thread/INFO]: [AutoMessage] Enabling AutoMessage v2.0.0
-[19:16:24] [Server thread/INFO]: [AutoMessage] AutoMessage plugin enabled.
-[19:16:24] [Server thread/INFO]: [WorldGuard] Enabling WorldGuard v7.0.14+2339-43997ec
-[19:16:25] [Server thread/INFO]: [WorldGuard] (isu_world) TNT ignition is PERMITTED.
-[19:16:25] [Server thread/INFO]: [WorldGuard] (isu_world) Lighters are PERMITTED.
-[19:16:25] [Server thread/INFO]: [WorldGuard] (isu_world) Lava fire is PERMITTED.
-[19:16:25] [Server thread/INFO]: [WorldGuard] (isu_world) Fire spread is UNRESTRICTED.
-[19:16:25] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'isu_world'
-[19:16:25] [Server thread/INFO]: [WorldGuard] (isu_world_nether) TNT ignition is PERMITTED.
-[19:16:25] [Server thread/INFO]: [WorldGuard] (isu_world_nether) Lighters are PERMITTED.
-[19:16:25] [Server thread/INFO]: [WorldGuard] (isu_world_nether) Lava fire is PERMITTED.
-[19:16:25] [Server thread/INFO]: [WorldGuard] (isu_world_nether) Fire spread is UNRESTRICTED.
-[19:16:25] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'isu_world_nether'
-[19:16:25] [Server thread/INFO]: [WorldGuard] (isu_world_the_end) TNT ignition is PERMITTED.
-[19:16:25] [Server thread/INFO]: [WorldGuard] (isu_world_the_end) Lighters are PERMITTED.
-[19:16:25] [Server thread/INFO]: [WorldGuard] (isu_world_the_end) Lava fire is PERMITTED.
-[19:16:25] [Server thread/INFO]: [WorldGuard] (isu_world_the_end) Fire spread is UNRESTRICTED.
-[19:16:25] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'isu_world_the_end'
-[19:16:25] [Server thread/INFO]: [WorldGuard] Loading region data...
-[19:16:25] [Server thread/INFO]: [RaspberryJuice] Enabling RaspberryJuice v1.12.1*
-[19:16:25] [Server thread/INFO]: [RaspberryJuice] Using host:port - 0.0.0.0:4711
-[19:16:25] [Server thread/INFO]: [RaspberryJuice] Using RELATIVE locations
-[19:16:25] [Server thread/INFO]: [RaspberryJuice] Using RIGHT clicks for hits
-[19:16:25] [Server thread/INFO]: [RaspberryJuice] ThreadListener Started
-[19:16:25] [Server thread/INFO]: [spark] Starting background profiler...
-[19:16:25] [Server thread/INFO]: Running delayed init tasks
-[19:16:25] [Server thread/INFO]: Done (12.756s)! For help, type "help"
-[19:16:25] [User Authenticator #0/INFO]: UUID of player coolshooter123 is 19995fd4-c323-4599-be07-1072e1df73eb
-[19:16:25] [Server thread/INFO]: [HorriblePlayerLoginEventHack] You have plugins listening to the PlayerLoginEvent, this will cause re-configuration APIs to be unavailable: [WorldGuard]
-[19:16:26] [Server thread/INFO]: Welcome coolshooter123
-[19:16:26] [Server thread/INFO]: coolshooter123 joined the game
-[19:16:26] [Server thread/INFO]: coolshooter123[/127.0.0.1:32972] logged in with entity id 1 at ([isu_world]145.9184009032222, 79.36813569728037, -393.4139301990012)
-[19:29:24] [Thread-16/INFO]: [RaspberryJuice] Starting input thread
-[19:29:24] [Thread-11/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:50816.
-[19:29:24] [Thread-17/INFO]: [RaspberryJuice] Starting output thread!
-[19:29:24] [Server thread/INFO]: Hello Minecraft World
-[19:29:24] [Server thread/INFO]: Constructing Castle, Syllabus & Fixed Treehouse...
-[19:29:24] [Server thread/INFO]: Building Walls...
-[19:29:24] [Server thread/INFO]: Filling Moat...
-[19:29:24] [Server thread/INFO]: Growing One Treehouse & Small Forest...
-[19:32:08] [Server thread/INFO]: Building Large Treehouse Deck...
-[19:35:17] [Server thread/INFO]: Placing Syllabus Signs...
-[19:35:17] [Server thread/INFO]: Construction Complete!
-[19:35:17] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:50816.
-[19:41:03] [Server thread/INFO]: coolshooter123 issued server command: /fill ~ ~-1 ~1 ~ ~-1 ~20 stone keep
-[19:41:03] [Server thread/INFO]: [coolshooter123: Successfully filled 14 block(s)]
-[19:41:24] [Server thread/INFO]: coolshooter123 issued server command: /fill ~ ~-1 ~1 ~ ~-1 ~20 water keep
-[19:41:24] [Server thread/INFO]: [coolshooter123: Successfully filled 12 block(s)]
-[19:41:35] [Server thread/INFO]: coolshooter123 issued server command: /fill ~ ~-1 ~1 ~ ~-1 ~20 water keep
-[19:41:35] [Server thread/INFO]: [coolshooter123: Successfully filled 14 block(s)]
-[19:42:24] [Server thread/INFO]: coolshooter123 issued server command: /fill ~ ~ ~1 ~ ~-1 ~20 cobblestone keep
-[19:42:24] [Server thread/INFO]: [coolshooter123: Successfully filled 14 block(s)]
-[19:42:36] [Server thread/INFO]: coolshooter123 issued server command: /fill ~ ~ ~1 ~ ~-1 ~24 cobblestone keep
-[19:42:36] [Server thread/INFO]: [coolshooter123: Successfully filled 6 block(s)]
-[19:42:46] [Server thread/INFO]: coolshooter123 issued server command: /fill ~ ~ ~1 ~ ~-1 ~30 cobblestone keep
-[19:42:46] [Server thread/INFO]: [coolshooter123: Successfully filled 6 block(s)]
-[19:42:55] [Server thread/INFO]: coolshooter123 issued server command: /fill ~ ~ ~1 ~ ~-1 ~30 cobblestone destroy
-[19:42:55] [Server thread/INFO]: [coolshooter123: Successfully filled 60 block(s)]
-[19:43:08] [Server thread/INFO]: coolshooter123 issued server command: /fill ~ ~ ~1 ~ ~-1 ~30 cobblestone destroy
-[19:43:08] [Server thread/INFO]: [coolshooter123: Successfully filled 60 block(s)]
-[19:43:10] [Server thread/INFO]: coolshooter123 issued server command: /fill ~ ~ ~1 ~ ~-1 ~30 cobblestone destroy
-[19:43:10] [Server thread/INFO]: [coolshooter123: Successfully filled 60 block(s)]
-[19:43:22] [Server thread/INFO]: coolshooter123 issued server command: /fill ~ ~ ~1 ~ ~ ~30 cobblestone destroy
-[19:43:22] [Server thread/INFO]: [coolshooter123: Successfully filled 30 block(s)]
-[19:43:28] [Server thread/INFO]: coolshooter123 issued server command: /fill ~ ~ ~1 ~ ~1 ~30 cobblestone destroy
-[19:43:28] [Server thread/INFO]: [coolshooter123: Successfully filled 60 block(s)]
-[19:43:38] [Server thread/INFO]: coolshooter123 issued server command: /fill ~ ~ ~1 ~ ~1 ~30 cobblestone destroy
-[19:43:38] [Server thread/INFO]: [coolshooter123: Successfully filled 60 block(s)]
-[20:21:56] [Server thread/INFO]: coolshooter123 issued server command: /starting map
-[20:22:15] [Async Chat Thread - #2/INFO]: <coolshooter123> "Starting Map"
-[20:33:24] [Server thread/INFO]: coolshooter123 has made the advancement [A Seedy Place]
-[20:33:57] [Server thread/INFO]: coolshooter123 has made the advancement [Planting the Past]
-[20:53:50] [Server thread/INFO]: coolshooter123 lost connection: Disconnected
-[20:53:50] [Server thread/INFO]: coolshooter123 left the game
-[20:54:02] [Server thread/INFO]: Stopping the server
-[20:54:02] [Server thread/INFO]: Stopping server
-[20:54:02] [Server thread/INFO]: [RaspberryJuice] Disabling RaspberryJuice v1.12.1
-[20:54:02] [Server thread/INFO]: [RaspberryJuice] Raspberry Juice Stopped
-[20:54:02] [Server thread/INFO]: [WorldGuard] Disabling WorldGuard v7.0.14+2339-43997ec
-[20:54:02] [Server thread/INFO]: [WorldGuard] Shutting down executor and cancelling any pending tasks...
-[20:54:02] [Server thread/INFO]: [AutoMessage] Disabling AutoMessage v2.0.0
-[20:54:02] [Server thread/INFO]: [AutoMessage] AutoMessage plugin disabled successfully.
-[20:54:02] [Server thread/INFO]: [WorldEdit] Disabling WorldEdit v7.3.17+7262-c7fbe08
-[20:54:02] [Server thread/INFO]: Unregistering com.sk89q.worldedit.bukkit.BukkitServerInterface from WorldEdit
-[20:54:02] [Server thread/INFO]: Saving players
-[20:54:02] [Server thread/INFO]: Saving worlds
-[20:54:02] [Server thread/INFO]: Saving chunks for level 'ServerLevel[isu_world]'/minecraft:overworld
-[20:54:02] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'isu_world'
-[20:54:02] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'isu_world'
-[20:54:02] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'isu_world'
-[20:54:02] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'isu_world' in 0.01s
-[20:54:02] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'isu_world'
-[20:54:02] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'isu_world'
-[20:54:02] [Server thread/INFO]: Saving chunks for level 'ServerLevel[isu_world_nether]'/minecraft:the_nether
-[20:54:02] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'isu_world_nether'
-[20:54:02] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'isu_world_nether'
-[20:54:02] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'isu_world_nether'
-[20:54:02] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'isu_world_nether' in 0.00s
-[20:54:02] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'isu_world_nether'
-[20:54:02] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'isu_world_nether'
-[20:54:02] [Server thread/INFO]: Saving chunks for level 'ServerLevel[isu_world_the_end]'/minecraft:the_end
-[20:54:02] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'isu_world_the_end'
-[20:54:02] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'isu_world_the_end'
-[20:54:02] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'isu_world_the_end'
-[20:54:02] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'isu_world_the_end' in 0.00s
-[20:54:02] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'isu_world_the_end'
-[20:54:02] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'isu_world_the_end'
-[20:54:02] [Server thread/INFO]: ThreadedAnvilChunkStorage (isu_world): All chunks are saved
-[20:54:02] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[20:54:02] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[20:54:02] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
-[20:54:02] [Server thread/INFO]: Waiting for all RegionFile I/O tasks to complete...
-[20:54:02] [Server thread/INFO]: All RegionFile I/O tasks to complete
-[20:54:02] [Server thread/INFO]: [MoonriseCommon] Awaiting termination of worker pool for up to 60s...
-[20:54:02] [Server thread/INFO]: [MoonriseCommon] Awaiting termination of I/O pool for up to 60s...
+[14:43:25] [Server thread/INFO]: Preparing level "isu_world"
+[14:43:25] [Server thread/INFO]: Loading 0 persistent chunks for world 'minecraft:overworld'...
+[14:43:25] [Server thread/INFO]: Preparing spawn area: 100%
+[14:43:25] [Server thread/INFO]: Prepared spawn area in 1 ms
+[14:43:25] [Server thread/INFO]: Loading 0 persistent chunks for world 'minecraft:the_nether'...
+[14:43:25] [Server thread/INFO]: Prepared spawn area in 0 ms
+[14:43:25] [Server thread/INFO]: Loading 0 persistent chunks for world 'minecraft:the_end'...
+[14:43:25] [Server thread/INFO]: Prepared spawn area in 0 ms
+[14:43:25] [Server thread/INFO]: Done preparing level "isu_world" (0.298s)
+[14:43:25] [Server thread/INFO]: [AutoMessage] Enabling AutoMessage v2.0.0
+[14:43:26] [Server thread/INFO]: [AutoMessage] AutoMessage plugin enabled.
+[14:43:26] [Server thread/INFO]: [WorldGuard] Enabling WorldGuard v7.0.14+2339-43997ec
+[14:43:26] [Server thread/INFO]: [WorldGuard] (isu_world) TNT ignition is PERMITTED.
+[14:43:26] [Server thread/INFO]: [WorldGuard] (isu_world) Lighters are PERMITTED.
+[14:43:26] [Server thread/INFO]: [WorldGuard] (isu_world) Lava fire is PERMITTED.
+[14:43:26] [Server thread/INFO]: [WorldGuard] (isu_world) Fire spread is UNRESTRICTED.
+[14:43:26] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'isu_world'
+[14:43:26] [Server thread/INFO]: [WorldGuard] (isu_world_nether) TNT ignition is PERMITTED.
+[14:43:26] [Server thread/INFO]: [WorldGuard] (isu_world_nether) Lighters are PERMITTED.
+[14:43:26] [Server thread/INFO]: [WorldGuard] (isu_world_nether) Lava fire is PERMITTED.
+[14:43:26] [Server thread/INFO]: [WorldGuard] (isu_world_nether) Fire spread is UNRESTRICTED.
+[14:43:26] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'isu_world_nether'
+[14:43:26] [Server thread/INFO]: [WorldGuard] (isu_world_the_end) TNT ignition is PERMITTED.
+[14:43:26] [Server thread/INFO]: [WorldGuard] (isu_world_the_end) Lighters are PERMITTED.
+[14:43:26] [Server thread/INFO]: [WorldGuard] (isu_world_the_end) Lava fire is PERMITTED.
+[14:43:26] [Server thread/INFO]: [WorldGuard] (isu_world_the_end) Fire spread is UNRESTRICTED.
+[14:43:26] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'isu_world_the_end'
+[14:43:26] [Server thread/INFO]: [WorldGuard] Loading region data...
+[14:43:26] [Server thread/INFO]: [RaspberryJuice] Enabling RaspberryJuice v1.12.1*
+[14:43:26] [Server thread/INFO]: [RaspberryJuice] Using host:port - 0.0.0.0:4711
+[14:43:26] [Server thread/INFO]: [RaspberryJuice] Using RELATIVE locations
+[14:43:26] [Server thread/INFO]: [RaspberryJuice] Using RIGHT clicks for hits
+[14:43:26] [Server thread/INFO]: [RaspberryJuice] ThreadListener Started
+[14:43:26] [Server thread/INFO]: [spark] Starting background profiler...
+[14:43:26] [Server thread/INFO]: Running delayed init tasks
+[14:43:26] [Server thread/INFO]: Done (12.815s)! For help, type "help"
+[14:43:39] [User Authenticator #0/INFO]: UUID of player coolshooter123 is 19995fd4-c323-4599-be07-1072e1df73eb
+[14:43:39] [Server thread/INFO]: [HorriblePlayerLoginEventHack] You have plugins listening to the PlayerLoginEvent, this will cause re-configuration APIs to be unavailable: [WorldGuard]
+[14:43:40] [Server thread/INFO]: Welcome coolshooter123
+[14:43:40] [Server thread/INFO]: coolshooter123 joined the game
+[14:43:40] [Server thread/INFO]: coolshooter123[/127.0.0.1:38728] logged in with entity id 1 at ([isu_world]174.3577269314637, 94.0, -67.52494609700484)
+[14:50:03] [Server thread/INFO]: coolshooter123 issued server command: /fill ~ ~ ~1 ~ ~1 ~20 minecraft:quartz_block keep
+[14:50:03] [Server thread/INFO]: [coolshooter123: Successfully filled 35 block(s)]
+[14:50:14] [Server thread/INFO]: coolshooter123 issued server command: /fill ~ ~ ~ ~ ~1 ~20 minecraft:quartz_block keep
+[14:50:14] [Server thread/INFO]: [coolshooter123: Successfully filled 2 block(s)]
+[14:50:35] [Server thread/INFO]: coolshooter123 issued server command: /fill ~ ~ ~ ~ ~1 ~20 air destroy
+[14:50:35] [Server thread/INFO]: [coolshooter123: Successfully filled 36 block(s)]
+[14:51:03] [Server thread/INFO]: coolshooter123 issued server command: /fill ~ ~ ~ ~20 ~1 ~ minecraft:quartz_block keep
+[14:51:03] [Server thread/INFO]: [coolshooter123: Successfully filled 36 block(s)]
+[14:51:18] [Server thread/INFO]: coolshooter123 issued server command: /fill ~ ~ ~ ~20 ~1 ~ air destroy
+[14:51:18] [Server thread/INFO]: [coolshooter123: Successfully filled 39 block(s)]
+[15:14:38] [Server thread/INFO]: coolshooter123 issued server command: /fill ~ ~ ~ ~ ~ ~ air destroy
+[15:14:44] [Server thread/INFO]: coolshooter123 issued server command: /fill ~ ~ ~ ~ ~ ~2 air destroy
+[15:14:44] [Server thread/INFO]: [coolshooter123: Successfully filled 2 block(s)]
+[15:14:55] [Server thread/INFO]: coolshooter123 issued server command: /fill ~ ~ ~ ~ ~1 ~2 air destroy
+[15:15:01] [Server thread/INFO]: coolshooter123 issued server command: /fill ~ ~ ~ ~ ~-1 ~2 air destroy
+[15:15:01] [Server thread/INFO]: [coolshooter123: Successfully filled 3 block(s)]
+[15:15:22] [Server thread/INFO]: coolshooter123 issued server command: /fill ~ ~ ~ ~ ~-1 ~41 air destroy
+[15:15:22] [Server thread/INFO]: [coolshooter123: Successfully filled 80 block(s)]
+[15:15:37] [Server thread/INFO]: coolshooter123 issued server command: /fill ~ ~ ~ ~ ~-1 ~41 minecraft:quartz_block destroy
+[15:15:37] [Server thread/INFO]: [coolshooter123: Successfully filled 84 block(s)]
+[15:15:55] [Server thread/INFO]: coolshooter123 issued server command: /fill ~ ~ ~ ~ ~ ~41 minecraft:quartz_block destroy
+[15:15:55] [Server thread/INFO]: [coolshooter123: Successfully filled 42 block(s)]
+[15:16:11] [Server thread/INFO]: coolshooter123 issued server command: /fill ~ ~ ~ ~ ~ ~41 minecraft:air destroy
+[15:16:11] [Server thread/INFO]: [coolshooter123: Successfully filled 41 block(s)]
+[15:22:50] [Server thread/INFO]: coolshooter123 issued server command: /fill ~ ~ ~ ~ ~ ~41 minecraft:quartz_block destroy
+[15:22:50] [Server thread/INFO]: [coolshooter123: Successfully filled 42 block(s)]
+[15:23:05] [Server thread/INFO]: coolshooter123 issued server command: /fill ~ ~ ~ ~ ~ ~41 minecraft:air destroy
+[15:23:05] [Server thread/INFO]: [coolshooter123: Successfully filled 41 block(s)]
+[15:23:18] [Server thread/INFO]: coolshooter123 issued server command: /fill ~ ~ ~ ~ ~-1 ~41 minecraft:quartz_block destroy
+[15:23:18] [Server thread/INFO]: [coolshooter123: Successfully filled 84 block(s)]
+[15:23:32] [Server thread/INFO]: coolshooter123 issued server command: /fill ~ ~ ~ ~ ~-1 ~41 minecraft:air destroy
+[15:23:32] [Server thread/INFO]: [coolshooter123: Successfully filled 83 block(s)]
+[15:24:12] [Server thread/INFO]: coolshooter123 issued server command: /fill ~ ~ ~ ~ ~ ~41 minecraft:air destroy
+[15:24:22] [Server thread/INFO]: coolshooter123 issued server command: /fill ~ ~ ~ ~ ~ ~41 minecraft:quartz_block destroy
+[15:24:22] [Server thread/INFO]: [coolshooter123: Successfully filled 42 block(s)]
+[15:24:32] [Server thread/INFO]: coolshooter123 issued server command: /fill ~ ~ ~ ~ ~ ~41 minecraft:quartz_block destroy
+[15:24:32] [Server thread/INFO]: [coolshooter123: Successfully filled 42 block(s)]
+[15:24:56] [Server thread/INFO]: coolshooter123 issued server command: //
+[15:25:01] [Server thread/INFO]: coolshooter123 issued server command: /fill ~ ~ ~ ~ ~ ~41 minecraft:quartz_block destroy
+[15:25:01] [Server thread/INFO]: [coolshooter123: Successfully filled 42 block(s)]
+[15:25:14] [Server thread/INFO]: coolshooter123 issued server command: /fill ~ ~ ~ ~ ~ ~41 minecraft:air destroy
+[15:25:14] [Server thread/INFO]: [coolshooter123: Successfully filled 40 block(s)]
+[15:25:39] [Server thread/INFO]: coolshooter123 issued server command: /fill ~ ~ ~ ~ ~ ~41 minecraft:quartz_block destroy
+[15:25:39] [Server thread/INFO]: [coolshooter123: Successfully filled 42 block(s)]
+[15:25:45] [Server thread/INFO]: coolshooter123 issued server command: /fill ~ ~ ~ ~ ~ ~41 minecraft:quartz_block destroy
+[15:25:45] [Server thread/INFO]: [coolshooter123: Successfully filled 42 block(s)]
+[15:25:53] [Server thread/INFO]: coolshooter123 issued server command: /fill ~ ~ ~ ~ ~ ~41 minecraft:quartz_block destroy
+[15:25:53] [Server thread/INFO]: [coolshooter123: Successfully filled 42 block(s)]
+[15:25:59] [Server thread/INFO]: coolshooter123 issued server command: //
+[15:26:02] [Server thread/INFO]: coolshooter123 issued server command: /fill ~ ~ ~ ~ ~ ~41 minecraft:quartz_block destroy
+[15:26:02] [Server thread/INFO]: [coolshooter123: Successfully filled 42 block(s)]
+[15:26:05] [Server thread/INFO]: coolshooter123 issued server command: /fill ~ ~ ~ ~ ~ ~41 minecraft:quartz_block destroy
+[15:26:05] [Server thread/INFO]: [coolshooter123: Successfully filled 42 block(s)]
+[15:26:07] [Server thread/INFO]: coolshooter123 issued server command: /fill ~ ~ ~ ~ ~ ~41 minecraft:quartz_block destroy
+[15:26:07] [Server thread/INFO]: [coolshooter123: Successfully filled 42 block(s)]
+[15:26:09] [Server thread/INFO]: coolshooter123 issued server command: /fill ~ ~ ~ ~ ~ ~41 minecraft:quartz_block destroy
+[15:26:09] [Server thread/INFO]: [coolshooter123: Successfully filled 42 block(s)]
+[15:26:11] [Server thread/INFO]: coolshooter123 issued server command: /fill ~ ~ ~ ~ ~ ~41 minecraft:quartz_block destroy
+[15:26:11] [Server thread/INFO]: [coolshooter123: Successfully filled 42 block(s)]
+[15:26:32] [Server thread/INFO]: coolshooter123 issued server command: /fill ~ ~ ~ ~ ~ ~41 minecraft:air destroy
+[15:26:32] [Server thread/INFO]: [coolshooter123: Successfully filled 36 block(s)]
+[15:26:58] [Server thread/INFO]: coolshooter123 issued server command: /fill ~ ~ ~ ~ ~ ~41 minecraft:air destroy
+[15:26:58] [Server thread/INFO]: [coolshooter123: Successfully filled 41 block(s)]
+[15:27:44] [Server thread/INFO]: coolshooter123 issued server command: /fill ~ ~ ~ ~ ~ ~41 minecraft:air destroy
+[15:27:44] [Server thread/INFO]: [coolshooter123: Successfully filled 39 block(s)]
+[15:27:51] [Server thread/INFO]: coolshooter123 issued server command: /fill ~ ~ ~ ~ ~ ~41 minecraft:air destroy
+[15:27:51] [Server thread/INFO]: [coolshooter123: Successfully filled 39 block(s)]
+[15:27:59] [Server thread/INFO]: coolshooter123 issued server command: /fill ~ ~ ~ ~ ~ ~41 minecraft:air destroy
+[15:27:59] [Server thread/INFO]: [coolshooter123: Successfully filled 39 block(s)]
+[15:28:02] [Server thread/INFO]: coolshooter123 issued server command: /fill ~ ~ ~ ~ ~ ~41 minecraft:air destroy
+[15:28:02] [Server thread/INFO]: [coolshooter123: Successfully filled 40 block(s)]
+[15:28:04] [Server thread/INFO]: coolshooter123 issued server command: /fill ~ ~ ~ ~ ~ ~41 minecraft:air destroy
+[15:28:04] [Server thread/INFO]: [coolshooter123: Successfully filled 40 block(s)]
+[15:28:06] [Server thread/INFO]: coolshooter123 issued server command: /fill ~ ~ ~ ~ ~ ~41 minecraft:air destroy
+[15:28:06] [Server thread/INFO]: [coolshooter123: Successfully filled 39 block(s)]
+[15:28:08] [Server thread/INFO]: coolshooter123 issued server command: /fill ~ ~ ~ ~ ~ ~41 minecraft:air destroy
+[15:28:08] [Server thread/INFO]: [coolshooter123: Successfully filled 39 block(s)]
+[15:28:13] [Server thread/INFO]: coolshooter123 issued server command: /fill ~ ~ ~ ~ ~ ~41 minecraft:air destroy
+[15:28:13] [Server thread/INFO]: [coolshooter123: Successfully filled 40 block(s)]
+[15:28:43] [Server thread/INFO]: coolshooter123 issued server command: /fill ~ ~ ~ ~ ~ ~41 minecraft:quartz_block destroy
+[15:28:43] [Server thread/INFO]: [coolshooter123: Successfully filled 42 block(s)]
+[15:29:55] [Server thread/INFO]: coolshooter123 issued server command: /kill @a[type=item]
+[15:30:33] [Server thread/INFO]: coolshooter123 issued server command: /kill @e[type=item]
+[15:30:33] [Server thread/INFO]: [coolshooter123: Killed 301 entities]
+[15:35:05] [Server thread/INFO]: coolshooter123 issued server command: /fill ~ ~1 ~ ~ ~ ~2 minecraft:quartz_block destroy
+[15:35:05] [Server thread/INFO]: [coolshooter123: Successfully filled 6 block(s)]
+[15:35:40] [Server thread/INFO]: coolshooter123 issued server command: /fill ~1 ~1 ~ ~ ~ ~ minecraft:quartz_block destroy
+[15:35:40] [Server thread/INFO]: [coolshooter123: Successfully filled 4 block(s)]
+[15:36:02] [Server thread/INFO]: coolshooter123 issued server command: /fill ~ ~ ~ ~2 ~ ~ minecraft:quartz_block destroy
+[15:36:02] [Server thread/INFO]: [coolshooter123: Successfully filled 3 block(s)]
+[15:36:22] [Server thread/INFO]: coolshooter123 issued server command: /fill ~ ~ ~ ~ ~2 ~ minecraft:quartz_block destroy
+[15:36:22] [Server thread/INFO]: [coolshooter123: Successfully filled 3 block(s)]
+[15:36:39] [Server thread/INFO]: coolshooter123 issued server command: /fill ~ ~4 ~ ~ ~ ~ minecraft:quartz_block destroy
+[15:36:39] [Server thread/INFO]: [coolshooter123: Successfully filled 5 block(s)]
+[15:36:52] [Server thread/INFO]: coolshooter123 issued server command: /fill ~4 ~ ~ ~ ~ ~ minecraft:quartz_block destroy
+[15:36:52] [Server thread/INFO]: [coolshooter123: Successfully filled 5 block(s)]
+[15:37:16] [Server thread/INFO]: coolshooter123 issued server command: /fill ~ ~ ~ ~ ~ ~4 minecraft:quartz_block destroy
+[15:37:16] [Server thread/INFO]: [coolshooter123: Successfully filled 5 block(s)]
+[15:37:28] [Server thread/INFO]: coolshooter123 issued server command: /fill ~ ~ ~ ~ ~4 ~4 minecraft:quartz_block destroy
+[15:37:28] [Server thread/INFO]: [coolshooter123: Successfully filled 25 block(s)]
+[15:37:44] [Server thread/INFO]: coolshooter123 issued server command: /fill ~ ~ ~ ~ ~4 ~4 minecraft:air destroy
+[15:37:44] [Server thread/INFO]: [coolshooter123: Successfully filled 23 block(s)]
+[15:38:12] [Server thread/INFO]: coolshooter123 issued server command: /fill ~ ~ ~4 ~ ~ ~4 minecraft:air destroy
+[15:38:21] [Server thread/INFO]: coolshooter123 issued server command: /fill ~ ~ ~4 ~ ~ ~4 minecraft:quartz_block destroy
+[15:38:21] [Server thread/INFO]: [coolshooter123: Successfully filled 1 block(s)]
+[15:38:43] [Server thread/INFO]: coolshooter123 issued server command: /fill ~ ~ ~4 ~ ~ ~14 minecraft:quartz_block destroy
+[15:38:43] [Server thread/INFO]: [coolshooter123: Successfully filled 11 block(s)]
+[15:39:09] [Server thread/INFO]: coolshooter123 issued server command: /fill ~1 ~8 ~ ~ ~ ~14 minecraft:quartz_block destroy
+[15:39:09] [Server thread/INFO]: [coolshooter123: Successfully filled 270 block(s)]
+[15:39:30] [Server thread/INFO]: coolshooter123 issued server command: /fill ~1 ~8 ~ ~ ~ ~14 minecraft:air destroy
+[15:39:30] [Server thread/INFO]: [coolshooter123: Successfully filled 238 block(s)]
+[15:40:34] [Server thread/INFO]: coolshooter123 issued server command: /kill @e[type=item]
+[15:40:34] [Server thread/INFO]: [coolshooter123: Killed 42 entities]
+[15:45:44] [Server thread/INFO]: coolshooter123 issued server command: /fill ~-4 ~6 ~-12 ~5 ~6 ~12
+[15:46:42] [Server thread/INFO]: coolshooter123 issued server command: /fill ~-5 ~7 ~-12 ~4 ~7 ~12 quartz_block
+[15:46:42] [Server thread/INFO]: [coolshooter123: Successfully filled 249 block(s)]
+[15:47:04] [Server thread/INFO]: coolshooter123 issued server command: /fill ~-5 ~7 ~-12 ~4 ~7 ~12 air
+[15:47:04] [Server thread/INFO]: [coolshooter123: Successfully filled 250 block(s)]
+[15:47:34] [Server thread/INFO]: coolshooter123 issued server command: /fill ~-5 ~7 ~-12 ~4 ~7 ~12 quartz_block
+[15:47:34] [Server thread/INFO]: [coolshooter123: Successfully filled 249 block(s)]
+[15:47:47] [Server thread/INFO]: coolshooter123 issued server command: /fill ~-5 ~7 ~-12 ~4 ~7 ~12 air
+[15:47:47] [Server thread/INFO]: [coolshooter123: Successfully filled 250 block(s)]
+[15:48:32] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~7 ~0 ~9 ~7 ~24 quartz_block
+[15:48:32] [Server thread/INFO]: [coolshooter123: Successfully filled 250 block(s)]
+[15:48:45] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~7 ~0 ~9 ~7 ~24 air
+[15:48:45] [Server thread/INFO]: [coolshooter123: Successfully filled 250 block(s)]
+[15:48:53] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~7 ~0 ~9 ~7 ~24 quartz_block
+[15:48:53] [Server thread/INFO]: [coolshooter123: Successfully filled 250 block(s)]
+[15:49:51] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~7 ~0 ~9 ~7 ~24 quartz_block
+[15:49:51] [Server thread/INFO]: [coolshooter123: Successfully filled 250 block(s)]
+[15:51:09] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~7 ~0 ~9 ~7 ~38 quartz_block
+[15:51:09] [Server thread/INFO]: [coolshooter123: Successfully filled 140 block(s)]
+[15:51:21] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~7 ~0 ~9 ~7 ~38 quartz_block
+[15:51:21] [Server thread/INFO]: [coolshooter123: Successfully filled 140 block(s)]
+[15:51:35] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~7 ~0 ~9 ~7 ~38 quartz_block
+[15:51:35] [Server thread/INFO]: [coolshooter123: Successfully filled 390 block(s)]
+[15:54:39] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~7 ~0 ~9 ~33 ~38 quartz_block
+[15:54:39] [Server thread/INFO]: [coolshooter123: Successfully filled 9829 block(s)]
+[15:55:07] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~7 ~0 ~9 ~33 ~38 air
+[15:55:07] [Server thread/INFO]: [coolshooter123: Successfully filled 10530 block(s)]
+[15:55:25] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~7 ~0 ~9 ~33 ~38 quartz_block
+[15:55:25] [Server thread/INFO]: [coolshooter123: Successfully filled 10434 block(s)]
+[15:55:48] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~7 ~0 ~9 ~33 ~38 air
+[15:55:48] [Server thread/INFO]: [coolshooter123: Successfully filled 7410 block(s)]
+[15:56:27] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~7 ~0 ~9 ~33 ~38 air
+[15:56:27] [Server thread/INFO]: [coolshooter123: Successfully filled 380 block(s)]
+[15:56:42] [Server thread/INFO]: coolshooter123 issued server command: /fill ~ ~ ~ ~9 ~33 ~38 air
+[15:56:42] [Server thread/INFO]: [coolshooter123: Successfully filled 2391 block(s)]
+[15:56:53] [Server thread/INFO]: coolshooter123 issued server command: /fill ~ ~ ~ ~9 ~33 ~38 air
+[15:56:53] [Server thread/INFO]: [coolshooter123: Successfully filled 306 block(s)]
+[15:57:04] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~7 ~0 ~9 ~33 ~38 quartz_block
+[15:57:04] [Server thread/INFO]: [coolshooter123: Successfully filled 10490 block(s)]
+[15:57:17] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~7 ~0 ~9 ~33 ~38 air
+[15:57:17] [Server thread/INFO]: [coolshooter123: Successfully filled 10530 block(s)]
+[15:57:23] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~7 ~0 ~9 ~33 ~38 quartz_block
+[15:57:23] [Server thread/INFO]: [coolshooter123: Successfully filled 10530 block(s)]
+[15:57:32] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~7 ~0 ~9 ~33 ~38 air
+[15:57:32] [Server thread/INFO]: [coolshooter123: Successfully filled 10530 block(s)]
+[15:57:56] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~7 ~0 ~9 ~7 ~38 quartz_block
+[15:57:56] [Server thread/INFO]: [coolshooter123: Successfully filled 390 block(s)]
+[15:58:11] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~7 ~0 ~9 ~7 ~38 quartz_block
+[15:58:11] [Server thread/INFO]: [coolshooter123: Successfully filled 390 block(s)]
+[15:59:29] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~26 ~0 quartz_block
+[15:59:29] [Server thread/INFO]: [coolshooter123: Successfully filled 27 block(s)]
+[15:59:46] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~26 ~0 quartz_block
+[15:59:46] [Server thread/INFO]: [coolshooter123: Successfully filled 27 block(s)]
+[16:00:10] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~26 ~0 air
+[16:00:10] [Server thread/INFO]: [coolshooter123: Successfully filled 22 block(s)]
+[16:00:34] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~23 ~0 minecraft:quartz_block
+[16:00:34] [Server thread/INFO]: [coolshooter123: Successfully filled 20 block(s)]
+[16:01:08] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~23 ~0 minecraft:blackstone
+[16:01:08] [Server thread/INFO]: [coolshooter123: Successfully filled 24 block(s)]
+[16:01:20] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~23 ~0 minecraft:blackstone
+[16:01:20] [Server thread/INFO]: [coolshooter123: Successfully filled 24 block(s)]
+[16:01:28] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~23 ~0 minecraft:blackstone
+[16:01:28] [Server thread/INFO]: [coolshooter123: Successfully filled 24 block(s)]
+[16:01:35] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~23 ~0 minecraft:blackstone
+[16:01:35] [Server thread/INFO]: [coolshooter123: Successfully filled 24 block(s)]
+[16:01:57] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~23 ~0 minecraft:air
+[16:01:57] [Server thread/INFO]: [coolshooter123: Successfully filled 21 block(s)]
+[16:02:10] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~23 ~0 minecraft:blackstone
+[16:02:10] [Server thread/INFO]: [coolshooter123: Successfully filled 24 block(s)]
+[16:02:37] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~23 ~0 minecraft:blackstone
+[16:02:37] [Server thread/INFO]: [coolshooter123: Successfully filled 24 block(s)]
+[16:02:45] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~23 ~0 minecraft:blackstone
+[16:02:45] [Server thread/INFO]: [coolshooter123: Successfully filled 24 block(s)]
+[16:02:54] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~23 ~0 minecraft:air
+[16:02:54] [Server thread/INFO]: [coolshooter123: Successfully filled 20 block(s)]
+[16:03:13] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~23 ~0 minecraft:blackstone
+[16:03:13] [Server thread/INFO]: [coolshooter123: Successfully filled 24 block(s)]
+[16:03:22] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~23 ~0 minecraft:blackstone
+[16:03:22] [Server thread/INFO]: [coolshooter123: Successfully filled 24 block(s)]
+[16:03:32] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~23 ~0 minecraft:blackstone
+[16:03:32] [Server thread/INFO]: [coolshooter123: Successfully filled 24 block(s)]
+[16:03:52] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~23 ~0 minecraft:blackstone
+[16:03:52] [Server thread/INFO]: [coolshooter123: Successfully filled 24 block(s)]
+[16:03:58] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~23 ~0 minecraft:blackstone
+[16:03:58] [Server thread/INFO]: [coolshooter123: Successfully filled 24 block(s)]
+[16:04:05] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~23 ~0 minecraft:blackstone
+[16:04:05] [Server thread/INFO]: [coolshooter123: Successfully filled 24 block(s)]
+[16:04:10] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~23 ~0 minecraft:blackstone
+[16:04:10] [Server thread/INFO]: [coolshooter123: Successfully filled 24 block(s)]
+[16:04:17] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~23 ~0 minecraft:blackstone
+[16:04:17] [Server thread/INFO]: [coolshooter123: Successfully filled 24 block(s)]
+[16:04:22] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~23 ~0 minecraft:blackstone
+[16:04:22] [Server thread/INFO]: [coolshooter123: Successfully filled 24 block(s)]
+[16:04:30] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~23 ~0 minecraft:blackstone
+[16:04:30] [Server thread/INFO]: [coolshooter123: Successfully filled 24 block(s)]
+[16:04:55] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~2 ~0 ~0 minecraft:blackstone
+[16:04:55] [Server thread/INFO]: [coolshooter123: Successfully filled 3 block(s)]
+[16:05:11] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~0 ~2 minecraft:blackstone
+[16:05:11] [Server thread/INFO]: [coolshooter123: Successfully filled 3 block(s)]
+[16:05:27] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~0 ~2 minecraft:stone
+[16:05:27] [Server thread/INFO]: [coolshooter123: Successfully filled 3 block(s)]
+[16:05:37] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~0 ~30 minecraft:stone
+[16:05:37] [Server thread/INFO]: [coolshooter123: Successfully filled 31 block(s)]
+[16:06:07] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~0 ~42 minecraft:stone
+[16:06:07] [Server thread/INFO]: [coolshooter123: Successfully filled 13 block(s)]
+[16:06:15] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~0 ~42 minecraft:stone
+[16:06:15] [Server thread/INFO]: [coolshooter123: Successfully filled 43 block(s)]
+[16:07:04] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~0 ~2 minecraft:stone
+[16:07:04] [Server thread/INFO]: [coolshooter123: Successfully filled 3 block(s)]
+[16:07:13] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~0 ~12 minecraft:stone
+[16:07:13] [Server thread/INFO]: [coolshooter123: Successfully filled 1 block(s)]
+[16:07:30] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~2 ~0 minecraft:stone
+[16:07:30] [Server thread/INFO]: [coolshooter123: Successfully filled 3 block(s)]
+[16:07:43] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~2 ~0 ~0 minecraft:stone
+[16:07:43] [Server thread/INFO]: [coolshooter123: Successfully filled 3 block(s)]
+[16:08:09] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~12 ~0 ~0 minecraft:stone
+[16:08:09] [Server thread/INFO]: [coolshooter123: Successfully filled 13 block(s)]
+[16:08:46] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~0 ~42 minecraft:tinted_glass
+[16:08:46] [Server thread/INFO]: [coolshooter123: Successfully filled 43 block(s)]
+[16:08:56] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~0 ~42 minecraft:air
+[16:08:56] [Server thread/INFO]: [coolshooter123: Successfully filled 42 block(s)]
+[16:09:34] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~42 ~0 minecraft:glass_pane
+[16:09:34] [Server thread/INFO]: [coolshooter123: Successfully filled 43 block(s)]
+[16:09:42] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~42 ~0 minecraft:glass_pane
+[16:09:42] [Server thread/INFO]: [coolshooter123: Successfully filled 43 block(s)]
+[16:09:52] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~42 ~0 minecraft:glass_pane
+[16:09:52] [Server thread/INFO]: [coolshooter123: Successfully filled 43 block(s)]
+[16:10:00] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~42 ~0 minecraft:glass_pane
+[16:10:00] [Server thread/INFO]: [coolshooter123: Successfully filled 43 block(s)]
+[16:10:02] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~42 ~0 minecraft:glass_pane
+[16:10:02] [Server thread/INFO]: [coolshooter123: Successfully filled 43 block(s)]
+[16:10:05] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~42 ~0 minecraft:glass_pane
+[16:10:05] [Server thread/INFO]: [coolshooter123: Successfully filled 43 block(s)]
+[16:10:52] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~42 ~0 minecraft:air
+[16:10:52] [Server thread/INFO]: [coolshooter123: Successfully filled 38 block(s)]
+[16:10:55] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~42 ~0 minecraft:air
+[16:10:55] [Server thread/INFO]: [coolshooter123: Successfully filled 39 block(s)]
+[16:11:00] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~42 ~0 minecraft:air
+[16:11:00] [Server thread/INFO]: [coolshooter123: Successfully filled 41 block(s)]
+[16:11:13] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~42 ~0 minecraft:air
+[16:11:13] [Server thread/INFO]: [coolshooter123: Successfully filled 36 block(s)]
+[16:11:15] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~42 ~0 minecraft:air
+[16:11:15] [Server thread/INFO]: [coolshooter123: Successfully filled 35 block(s)]
+[16:11:17] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~42 ~0 minecraft:air
+[16:11:17] [Server thread/INFO]: [coolshooter123: Successfully filled 38 block(s)]
+[16:11:35] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~27 ~0 minecraft:tinted_glass
+[16:11:35] [Server thread/INFO]: [coolshooter123: Successfully filled 28 block(s)]
+[16:11:54] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~27 ~0 minecraft:air
+[16:11:54] [Server thread/INFO]: [coolshooter123: Successfully filled 26 block(s)]
+[16:12:07] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~22 ~0 minecraft:tinted_glass
+[16:12:07] [Server thread/INFO]: [coolshooter123: Successfully filled 23 block(s)]
+[16:12:19] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~22 ~0 minecraft:tinted_glass
+[16:12:19] [Server thread/INFO]: [coolshooter123: Successfully filled 23 block(s)]
+[16:12:22] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~22 ~0 minecraft:tinted_glass
+[16:12:22] [Server thread/INFO]: [coolshooter123: Successfully filled 23 block(s)]
+[16:12:28] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~22 ~0 minecraft:tinted_glass
+[16:12:28] [Server thread/INFO]: [coolshooter123: Successfully filled 23 block(s)]
+[16:12:31] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~22 ~0 minecraft:tinted_glass
+[16:12:31] [Server thread/INFO]: [coolshooter123: Successfully filled 23 block(s)]
+[16:12:33] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~22 ~0 minecraft:tinted_glass
+[16:12:33] [Server thread/INFO]: [coolshooter123: Successfully filled 23 block(s)]
+[16:12:37] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~22 ~0 minecraft:tinted_glass
+[16:12:37] [Server thread/INFO]: [coolshooter123: Successfully filled 23 block(s)]
+[16:12:39] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~22 ~0 minecraft:tinted_glass
+[16:12:39] [Server thread/INFO]: [coolshooter123: Successfully filled 23 block(s)]
+[16:12:41] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~22 ~0 minecraft:tinted_glass
+[16:12:41] [Server thread/INFO]: [coolshooter123: Successfully filled 23 block(s)]
+[16:12:48] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~22 ~0 minecraft:tinted_glass
+[16:12:48] [Server thread/INFO]: [coolshooter123: Successfully filled 23 block(s)]
+[16:12:50] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~22 ~0 minecraft:tinted_glass
+[16:12:50] [Server thread/INFO]: [coolshooter123: Successfully filled 23 block(s)]
+[16:12:52] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~22 ~0 minecraft:tinted_glass
+[16:12:52] [Server thread/INFO]: [coolshooter123: Successfully filled 23 block(s)]
+[16:13:32] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~22 ~20 minecraft:tinted_glass keep
+[16:13:32] [Server thread/INFO]: [coolshooter123: Successfully filled 391 block(s)]
+[16:13:58] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~22 ~30 minecraft:tinted_glass keep
+[16:13:58] [Server thread/INFO]: [coolshooter123: Successfully filled 171 block(s)]
+[16:14:31] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~22 ~37 minecraft:tinted_glass keep
+[16:14:31] [Server thread/INFO]: [coolshooter123: Successfully filled 140 block(s)]
+[16:14:47] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~22 ~37 minecraft:tinted_glass keep
+[16:14:47] [Server thread/INFO]: [coolshooter123: Successfully filled 538 block(s)]
+[16:15:14] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~22 ~37 minecraft:tinted_glass keep
+[16:15:14] [Server thread/INFO]: [coolshooter123: Successfully filled 10 block(s)]
+[16:15:44] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~22 ~13 minecraft:tinted_glass keep
+[16:15:44] [Server thread/INFO]: [coolshooter123: Successfully filled 321 block(s)]
+[16:16:00] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~22 ~13 minecraft:air
+[16:16:00] [Server thread/INFO]: [coolshooter123: Successfully filled 320 block(s)]
+[16:16:09] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~22 ~-13 minecraft:tinted_glass keep
+[16:16:09] [Server thread/INFO]: [coolshooter123: Successfully filled 283 block(s)]
+[16:16:27] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~22 ~-13 minecraft:air
+[16:16:27] [Server thread/INFO]: [coolshooter123: Successfully filled 320 block(s)]
+[16:16:43] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~10 ~22 ~0 minecraft:air
+[16:16:43] [Server thread/INFO]: [coolshooter123: Successfully filled 23 block(s)]
+[16:17:06] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~10 ~22 ~0 minecraft:tinted_glass
+[16:17:06] [Server thread/INFO]: [coolshooter123: Successfully filled 253 block(s)]
+[16:17:21] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~10 ~22 ~0 minecraft:air
+[16:17:21] [Server thread/INFO]: [coolshooter123: Successfully filled 251 block(s)]
+[16:17:29] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~10 ~22 ~0 minecraft:air
+[16:17:40] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~10 ~22 ~0 minecraft:tinted_glass
+[16:17:40] [Server thread/INFO]: [coolshooter123: Successfully filled 253 block(s)]
+[16:18:04] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~0 ~42 minecraft:tinted_glass
+[16:18:04] [Server thread/INFO]: [coolshooter123: Successfully filled 43 block(s)]
+[16:18:15] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~0 ~42 minecraft:air
+[16:18:15] [Server thread/INFO]: [coolshooter123: Successfully filled 42 block(s)]
+[16:18:36] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~22 ~0 minecraft:stone
+[16:18:36] [Server thread/INFO]: [coolshooter123: Successfully filled 23 block(s)]
+[16:18:55] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~22 ~0 minecraft:quartz_block
+[16:18:55] [Server thread/INFO]: [coolshooter123: Successfully filled 23 block(s)]
+[16:19:07] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~22 ~0 minecraft:tinted_glass
+[16:19:07] [Server thread/INFO]: [coolshooter123: Successfully filled 23 block(s)]
+[16:19:13] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~22 ~0 minecraft:tinted_glass
+[16:19:13] [Server thread/INFO]: [coolshooter123: Successfully filled 23 block(s)]
+[16:19:42] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~20 ~0 minecraft:tinted_glass
+[16:19:42] [Server thread/INFO]: [coolshooter123: Successfully filled 21 block(s)]
+[16:20:00] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~20 ~0 minecraft:tinted_glass
+[16:20:00] [Server thread/INFO]: [coolshooter123: Successfully filled 21 block(s)]
+[16:20:03] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~20 ~0 minecraft:tinted_glass
+[16:20:03] [Server thread/INFO]: [coolshooter123: Successfully filled 21 block(s)]
+[16:20:05] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~20 ~0 minecraft:tinted_glass
+[16:20:05] [Server thread/INFO]: [coolshooter123: Successfully filled 21 block(s)]
+[16:31:39] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~6 ~0 minecraft:tinted_glass
+[16:31:39] [Server thread/INFO]: [coolshooter123: Successfully filled 7 block(s)]
+[16:32:01] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~5 ~0 minecraft:quartz_block
+[16:32:01] [Server thread/INFO]: [coolshooter123: Successfully filled 6 block(s)]
+[16:32:12] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~5 ~2 minecraft:quartz_block
+[16:32:12] [Server thread/INFO]: [coolshooter123: Successfully filled 18 block(s)]
+[16:32:25] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~5 ~2 minecraft:air
+[16:32:25] [Server thread/INFO]: [coolshooter123: Successfully filled 16 block(s)]
+[16:32:35] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~5 ~2 minecraft:quartz_block
+[16:32:35] [Server thread/INFO]: [coolshooter123: Successfully filled 18 block(s)]
+[16:32:41] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~5 ~2 minecraft:quartz_block
+[16:32:41] [Server thread/INFO]: [coolshooter123: Successfully filled 18 block(s)]
+[16:33:20] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~5 ~0 minecraft:quartz_block
+[16:33:20] [Server thread/INFO]: [coolshooter123: Successfully filled 5 block(s)]
+[16:33:27] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~5 ~0 minecraft:quartz_block
+[16:33:27] [Server thread/INFO]: [coolshooter123: Successfully filled 5 block(s)]
+[16:33:35] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~5 ~0 minecraft:quartz_block
+[16:33:35] [Server thread/INFO]: [coolshooter123: Successfully filled 5 block(s)]
+[16:33:42] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~5 ~0 minecraft:quartz_block
+[16:33:42] [Server thread/INFO]: [coolshooter123: Successfully filled 5 block(s)]
+[16:33:49] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~5 ~0 minecraft:quartz_block
+[16:33:49] [Server thread/INFO]: [coolshooter123: Successfully filled 5 block(s)]
+[16:35:20] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~5 ~0 minecraft:tinted_glass
+[16:35:20] [Server thread/INFO]: [coolshooter123: Successfully filled 6 block(s)]
+[17:17:14] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~5 ~0 minecraft:quartz_block
+[17:17:14] [Server thread/INFO]: [coolshooter123: Successfully filled 6 block(s)]
+[17:17:26] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~6 ~0 minecraft:quartz_block
+[17:17:26] [Server thread/INFO]: [coolshooter123: Successfully filled 3 block(s)]
+[17:17:41] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~6 ~1a0 minecraft:quartz_block
+[17:17:54] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~6 ~10 minecraft:quartz_block
+[17:17:54] [Server thread/INFO]: [coolshooter123: Successfully filled 72 block(s)]
+[17:18:15] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~6 ~10 minecraft:air
+[17:18:15] [Server thread/INFO]: [coolshooter123: Successfully filled 56 block(s)]
+[17:18:46] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~6 ~-10 minecraft:air
+[17:18:46] [Server thread/INFO]: [coolshooter123: Successfully filled 10 block(s)]
+[17:19:02] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~6 ~-15 minecraft:air
+[17:19:02] [Server thread/INFO]: [coolshooter123: Successfully filled 5 block(s)]
+[17:19:10] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~6 ~-20 minecraft:air
+[17:19:10] [Server thread/INFO]: [coolshooter123: Successfully filled 5 block(s)]
+[17:19:14] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~6 ~-25 minecraft:air
+[17:19:14] [Server thread/INFO]: [coolshooter123: Successfully filled 5 block(s)]
+[17:19:24] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~6 ~-25 minecraft:quartz_block
+[17:19:24] [Server thread/INFO]: [coolshooter123: Successfully filled 182 block(s)]
+[17:19:34] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~6 ~-25 minecraft:quartz_block
+[17:19:34] [Server thread/INFO]: [coolshooter123: Successfully filled 157 block(s)]
+[17:20:09] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~6 ~-32 minecraft:quartz_block
+[17:20:09] [Server thread/INFO]: [coolshooter123: Successfully filled 45 block(s)]
+[17:20:14] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~6 ~-32 minecraft:quartz_block
+[17:20:14] [Server thread/INFO]: [coolshooter123: Successfully filled 44 block(s)]
+[17:20:50] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~6 ~-32 minecraft:air
+[17:20:50] [Server thread/INFO]: [coolshooter123: Successfully filled 224 block(s)]
+[17:21:27] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~6 ~-32 minecraft:quartz_block
+[17:21:27] [Server thread/INFO]: [coolshooter123: Successfully filled 231 block(s)]
+[17:23:29] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~6 ~-24 minecraft:quartz_block
+[17:23:29] [Server thread/INFO]: [coolshooter123: Successfully filled 175 block(s)]
+[17:24:12] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~6 ~0 minecraft:quartz_block
+[17:24:12] [Server thread/INFO]: [coolshooter123: Successfully filled 7 block(s)]
+[17:24:52] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~6 ~0 minecraft:quartz_block
+[17:24:52] [Server thread/INFO]: [coolshooter123: Successfully filled 7 block(s)]
+[17:24:55] [Server thread/INFO]: coolshooter123 issued server command: //
+[17:24:59] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~6 ~0 minecraft:quartz_block
+[17:24:59] [Server thread/INFO]: [coolshooter123: Successfully filled 7 block(s)]
+[17:25:04] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~6 ~0 minecraft:quartz_block
+[17:25:04] [Server thread/INFO]: [coolshooter123: Successfully filled 7 block(s)]
+[17:25:07] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~6 ~0 minecraft:quartz_block
+[17:25:07] [Server thread/INFO]: [coolshooter123: Successfully filled 7 block(s)]
+[17:25:35] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~6 ~2 minecraft:quartz_block
+[17:25:35] [Server thread/INFO]: [coolshooter123: Successfully filled 21 block(s)]
+[17:25:47] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~0 ~6 ~2 minecraft:air
+[17:25:47] [Server thread/INFO]: [coolshooter123: Successfully filled 17 block(s)]
+[17:25:54] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~2 ~6 ~0 minecraft:air
+[17:25:54] [Server thread/INFO]: [coolshooter123: Successfully filled 7 block(s)]
+[17:26:16] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~2 ~6 ~0 minecraft:quartz_block
+[17:26:16] [Server thread/INFO]: [coolshooter123: Successfully filled 21 block(s)]
+[17:26:49] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~2 ~6 ~0 minecraft:quartz_block
+[17:26:49] [Server thread/INFO]: [coolshooter123: Successfully filled 21 block(s)]
+[17:27:18] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~2 ~6 ~0 minecraft:quartz_block
+[17:27:18] [Server thread/INFO]: [coolshooter123: Successfully filled 21 block(s)]
+[17:52:35] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~2 ~ ~20 minecraft:air
+[17:52:35] [Server thread/INFO]: [coolshooter123: Successfully filled 61 block(s)]
+[17:52:50] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~4 ~ ~20 minecraft:air
+[17:52:50] [Server thread/INFO]: [coolshooter123: Successfully filled 42 block(s)]
+[17:53:00] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~4 ~1 ~20 minecraft:air
+[17:53:00] [Server thread/INFO]: [coolshooter123: Successfully filled 96 block(s)]
+[17:53:11] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~4 ~1 ~25 minecraft:air
+[17:53:11] [Server thread/INFO]: [coolshooter123: Successfully filled 50 block(s)]
+[17:56:26] [Server thread/INFO]: coolshooter123 issued server command: /fill ~0 ~0 ~0 ~4 ~1 ~-25 minecraft:air
+[17:56:26] [Server thread/INFO]: [coolshooter123: Successfully filled 258 block(s)]
+[18:08:59] [Server thread/INFO]: coolshooter123 lost connection: Disconnected
+[18:08:59] [Server thread/INFO]: coolshooter123 left the game
+[18:09:15] [Server thread/INFO]: Stopping the server
+[18:09:16] [Server thread/INFO]: Stopping server
+[18:09:16] [Server thread/INFO]: [RaspberryJuice] Disabling RaspberryJuice v1.12.1
+[18:09:16] [Server thread/INFO]: [RaspberryJuice] Raspberry Juice Stopped
+[18:09:16] [Server thread/INFO]: [WorldGuard] Disabling WorldGuard v7.0.14+2339-43997ec
+[18:09:16] [Server thread/INFO]: [WorldGuard] Shutting down executor and cancelling any pending tasks...
+[18:09:16] [Server thread/INFO]: [AutoMessage] Disabling AutoMessage v2.0.0
+[18:09:16] [Server thread/INFO]: [AutoMessage] AutoMessage plugin disabled successfully.
+[18:09:16] [Server thread/INFO]: [WorldEdit] Disabling WorldEdit v7.3.17+7262-c7fbe08
+[18:09:16] [Server thread/INFO]: Unregistering com.sk89q.worldedit.bukkit.BukkitServerInterface from WorldEdit
+[18:09:16] [Server thread/INFO]: Saving players
+[18:09:16] [Server thread/INFO]: Saving worlds
+[18:09:16] [Server thread/INFO]: Saving chunks for level 'ServerLevel[isu_world]'/minecraft:overworld
+[18:09:16] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'isu_world'
+[18:09:16] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'isu_world'
+[18:09:16] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'isu_world'
+[18:09:16] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'isu_world' in 0.00s
+[18:09:16] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'isu_world'
+[18:09:16] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'isu_world'
+[18:09:16] [Server thread/INFO]: Saving chunks for level 'ServerLevel[isu_world_nether]'/minecraft:the_nether
+[18:09:16] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'isu_world_nether'
+[18:09:16] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'isu_world_nether'
+[18:09:16] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'isu_world_nether'
+[18:09:16] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'isu_world_nether' in 0.00s
+[18:09:16] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'isu_world_nether'
+[18:09:16] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'isu_world_nether'
+[18:09:16] [Server thread/INFO]: Saving chunks for level 'ServerLevel[isu_world_the_end]'/minecraft:the_end
+[18:09:16] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'isu_world_the_end'
+[18:09:16] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'isu_world_the_end'
+[18:09:16] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'isu_world_the_end'
+[18:09:16] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'isu_world_the_end' in 0.00s
+[18:09:16] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'isu_world_the_end'
+[18:09:16] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'isu_world_the_end'
+[18:09:16] [Server thread/INFO]: ThreadedAnvilChunkStorage (isu_world): All chunks are saved
+[18:09:16] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[18:09:16] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[18:09:16] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[18:09:16] [Server thread/INFO]: Waiting for all RegionFile I/O tasks to complete...
+[18:09:16] [Server thread/INFO]: All RegionFile I/O tasks to complete
+[18:09:16] [Server thread/INFO]: [MoonriseCommon] Awaiting termination of worker pool for up to 60s...
+[18:09:16] [Server thread/INFO]: [MoonriseCommon] Awaiting termination of I/O pool for up to 60s...
