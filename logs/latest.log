@@ -1,38 +1,38 @@
-[07:58:42] [ServerMain/INFO]: [bootstrap] Running Java 21 (OpenJDK 64-Bit Server VM 21.0.9+10-Ubuntu-122.04; Ubuntu null) on Linux 6.17.4-76061704-generic (amd64)
-[07:58:42] [ServerMain/INFO]: [bootstrap] Loading Paper 1.21.11-38-main@4446f17 (2025-12-09T22:51:57Z) for Minecraft 1.21.11
-[07:58:42] [ServerMain/INFO]: [PluginInitializerManager] Initializing plugins...
-[07:58:42] [ServerMain/INFO]: [PluginInitializerManager] Initialized 4 plugins
-[07:58:42] [ServerMain/INFO]: [PluginInitializerManager] Bukkit plugins (4):
+[13:30:50] [ServerMain/INFO]: [bootstrap] Running Java 21 (OpenJDK 64-Bit Server VM 21.0.9+10-Ubuntu-122.04; Ubuntu null) on Linux 6.17.4-76061704-generic (amd64)
+[13:30:50] [ServerMain/INFO]: [bootstrap] Loading Paper 1.21.11-38-main@4446f17 (2025-12-09T22:51:57Z) for Minecraft 1.21.11
+[13:30:50] [ServerMain/INFO]: [PluginInitializerManager] Initializing plugins...
+[13:30:50] [ServerMain/INFO]: [PluginInitializerManager] Initialized 4 plugins
+[13:30:50] [ServerMain/INFO]: [PluginInitializerManager] Bukkit plugins (4):
  - AutoMessage (2.0.0), RaspberryJuice (1.12.1), WorldEdit (7.3.17+7262-c7fbe08), WorldGuard (7.0.14+2339-43997ec)
-[07:58:45] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, profilesHost=https://api.mojang.com, name=PROD]
-[07:58:46] [ServerMain/INFO]: Loaded 1470 recipes
-[07:58:46] [ServerMain/INFO]: Loaded 1584 advancements
-[07:58:46] [ServerMain/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Initialising converters for DataConverter...
-[07:58:46] [ServerMain/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Finished initialising converters for DataConverter in 207.9ms
-[07:58:46] [Server thread/INFO]: Starting minecraft server version 1.21.11
-[07:58:46] [Server thread/INFO]: Loading properties
-[07:58:46] [Server thread/INFO]: This server is running Paper version 1.21.11-38-main@4446f17 (2025-12-09T22:51:57Z) (Implementing API version 1.21.11-R0.1-SNAPSHOT)
-[07:58:46] [Server thread/INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
-[07:58:46] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[07:58:46] [Server thread/INFO]: Using 4 threads for Netty based IO
-[07:58:46] [Server thread/INFO]: [MoonriseCommon] Paper is using 5 worker threads, 1 I/O threads
-[07:58:47] [Server thread/INFO]: Default game type: CREATIVE
-[07:58:47] [Server thread/INFO]: Generating keypair
-[07:58:47] [Server thread/INFO]: Starting Minecraft server on *:25565
-[07:58:47] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
-[07:58:47] [Server thread/INFO]: Paper: Using OpenSSL 3.x.x (Linux x86_64) cipher from Velocity.
-[07:58:47] [Server thread/WARN]: [org.bukkit.craftbukkit.legacy.CraftLegacy] Initializing Legacy Material Support. Unless you have legacy plugins and/or data this is a bug!
-[07:58:52] [Server thread/WARN]: Legacy plugin RaspberryJuice v1.12.1 does not specify an api-version.
-[07:58:52] [Server thread/INFO]: [WorldEdit] Loading server plugin WorldEdit v7.3.17+7262-c7fbe08
-[07:58:52] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@458c834e]
-[07:58:52] [Server thread/INFO]: [AutoMessage] Loading server plugin AutoMessage v2.0.0
-[07:58:52] [Server thread/INFO]: [WorldGuard] Loading server plugin WorldGuard v7.0.14+2339-43997ec
-[07:58:52] [Server thread/INFO]: [RaspberryJuice] Loading server plugin RaspberryJuice v1.12.1
-[07:58:52] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[07:58:52] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v7.3.17+7262-c7fbe08
-[07:58:52] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
-[07:58:52] [Server thread/INFO]: WEPIF: Using the Bukkit Permissions API.
-[07:58:52] [Server thread/WARN]: 
+[13:30:53] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, profilesHost=https://api.mojang.com, name=PROD]
+[13:30:53] [ServerMain/INFO]: Loaded 1470 recipes
+[13:30:53] [ServerMain/INFO]: Loaded 1584 advancements
+[13:30:53] [ServerMain/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Initialising converters for DataConverter...
+[13:30:54] [ServerMain/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Finished initialising converters for DataConverter in 201.8ms
+[13:30:54] [Server thread/INFO]: Starting minecraft server version 1.21.11
+[13:30:54] [Server thread/INFO]: Loading properties
+[13:30:54] [Server thread/INFO]: This server is running Paper version 1.21.11-38-main@4446f17 (2025-12-09T22:51:57Z) (Implementing API version 1.21.11-R0.1-SNAPSHOT)
+[13:30:54] [Server thread/INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
+[13:30:54] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[13:30:54] [Server thread/INFO]: Using 4 threads for Netty based IO
+[13:30:54] [Server thread/INFO]: [MoonriseCommon] Paper is using 5 worker threads, 1 I/O threads
+[13:30:54] [Server thread/INFO]: Default game type: CREATIVE
+[13:30:54] [Server thread/INFO]: Generating keypair
+[13:30:54] [Server thread/INFO]: Starting Minecraft server on *:25565
+[13:30:54] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
+[13:30:54] [Server thread/INFO]: Paper: Using OpenSSL 3.x.x (Linux x86_64) cipher from Velocity.
+[13:30:54] [Server thread/WARN]: [org.bukkit.craftbukkit.legacy.CraftLegacy] Initializing Legacy Material Support. Unless you have legacy plugins and/or data this is a bug!
+[13:30:59] [Server thread/WARN]: Legacy plugin RaspberryJuice v1.12.1 does not specify an api-version.
+[13:30:59] [Server thread/INFO]: [WorldEdit] Loading server plugin WorldEdit v7.3.17+7262-c7fbe08
+[13:31:00] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@5eeff353]
+[13:31:00] [Server thread/INFO]: [AutoMessage] Loading server plugin AutoMessage v2.0.0
+[13:31:00] [Server thread/INFO]: [WorldGuard] Loading server plugin WorldGuard v7.0.14+2339-43997ec
+[13:31:00] [Server thread/INFO]: [RaspberryJuice] Loading server plugin RaspberryJuice v1.12.1
+[13:31:00] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[13:31:00] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v7.3.17+7262-c7fbe08
+[13:31:00] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
+[13:31:00] [Server thread/INFO]: WEPIF: Using the Bukkit Permissions API.
+[13:31:00] [Server thread/WARN]: 
 **********************************************
 ** This WorldEdit version does not fully support your version of Bukkit.
 **
@@ -43,387 +43,166 @@
 ** Please see https://worldedit.enginehub.org/en/latest/faq/#bukkit-adapters
 **********************************************
 
-[07:58:53] [Server thread/INFO]: Preparing level "isu_world"
-[07:58:53] [Server thread/INFO]: Loading 0 persistent chunks for world 'minecraft:overworld'...
-[07:58:53] [Server thread/INFO]: Prepared spawn area in 0 ms
-[07:58:53] [Server thread/INFO]: Loading 0 persistent chunks for world 'minecraft:the_nether'...
-[07:58:53] [Server thread/INFO]: Prepared spawn area in 1 ms
-[07:58:53] [Server thread/INFO]: Loading 0 persistent chunks for world 'minecraft:the_end'...
-[07:58:53] [Server thread/INFO]: Prepared spawn area in 1 ms
-[07:58:53] [Server thread/INFO]: Done preparing level "isu_world" (0.360s)
-[07:58:53] [Server thread/INFO]: [AutoMessage] Enabling AutoMessage v2.0.0
-[07:58:54] [Server thread/INFO]: [AutoMessage] AutoMessage plugin enabled.
-[07:58:54] [Server thread/INFO]: [WorldGuard] Enabling WorldGuard v7.0.14+2339-43997ec
-[07:58:54] [Server thread/INFO]: [WorldGuard] (isu_world) TNT ignition is PERMITTED.
-[07:58:54] [Server thread/INFO]: [WorldGuard] (isu_world) Lighters are PERMITTED.
-[07:58:54] [Server thread/INFO]: [WorldGuard] (isu_world) Lava fire is PERMITTED.
-[07:58:54] [Server thread/INFO]: [WorldGuard] (isu_world) Fire spread is UNRESTRICTED.
-[07:58:54] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'isu_world'
-[07:58:54] [Server thread/INFO]: [WorldGuard] (isu_world_nether) TNT ignition is PERMITTED.
-[07:58:54] [Server thread/INFO]: [WorldGuard] (isu_world_nether) Lighters are PERMITTED.
-[07:58:54] [Server thread/INFO]: [WorldGuard] (isu_world_nether) Lava fire is PERMITTED.
-[07:58:54] [Server thread/INFO]: [WorldGuard] (isu_world_nether) Fire spread is UNRESTRICTED.
-[07:58:54] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'isu_world_nether'
-[07:58:54] [Server thread/INFO]: [WorldGuard] (isu_world_the_end) TNT ignition is PERMITTED.
-[07:58:54] [Server thread/INFO]: [WorldGuard] (isu_world_the_end) Lighters are PERMITTED.
-[07:58:54] [Server thread/INFO]: [WorldGuard] (isu_world_the_end) Lava fire is PERMITTED.
-[07:58:54] [Server thread/INFO]: [WorldGuard] (isu_world_the_end) Fire spread is UNRESTRICTED.
-[07:58:54] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'isu_world_the_end'
-[07:58:54] [Server thread/INFO]: [WorldGuard] Loading region data...
-[07:58:54] [Server thread/INFO]: [RaspberryJuice] Enabling RaspberryJuice v1.12.1*
-[07:58:54] [Server thread/INFO]: [RaspberryJuice] Using host:port - 0.0.0.0:4711
-[07:58:54] [Server thread/INFO]: [RaspberryJuice] Using RELATIVE locations
-[07:58:54] [Server thread/INFO]: [RaspberryJuice] Using RIGHT clicks for hits
-[07:58:54] [Server thread/INFO]: [RaspberryJuice] ThreadListener Started
-[07:58:54] [Server thread/INFO]: [spark] Starting background profiler...
-[07:58:54] [Server thread/INFO]: Running delayed init tasks
-[07:58:54] [Server thread/INFO]: Done (12.731s)! For help, type "help"
-[07:59:11] [User Authenticator #0/INFO]: UUID of player DrMinecraft35 is 19995fd4-c323-4599-be07-1072e1df73eb
-[07:59:11] [Server thread/INFO]: [HorriblePlayerLoginEventHack] You have plugins listening to the PlayerLoginEvent, this will cause re-configuration APIs to be unavailable: [WorldGuard]
-[07:59:12] [Server thread/INFO]: Welcome DrMinecraft35
-[07:59:12] [Server thread/INFO]: DrMinecraft35 joined the game
-[07:59:12] [Server thread/INFO]: DrMinecraft35[/127.0.0.1:48366] logged in with entity id 1 at ([isu_world]5.141883272301646, 80.36276094899458, -119.89725270303818)
-[08:09:03] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~-2 ~ ~ air
-[08:09:03] [Server thread/INFO]: [DrMinecraft35: Successfully filled 2 block(s)]
-[08:09:17] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~-2 ~-1 ~ air
-[08:09:17] [Server thread/INFO]: [DrMinecraft35: Successfully filled 3 block(s)]
-[08:09:54] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~-2 ~ ~ air
-[08:10:10] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~-2 ~ ~1 dirt_path
-[08:10:10] [Server thread/INFO]: [DrMinecraft35: Successfully filled 6 block(s)]
-[08:10:24] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~-20 ~ ~2 dirt_path
-[08:10:24] [Server thread/INFO]: [DrMinecraft35: Successfully filled 58 block(s)]
-[08:10:40] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~-12 ~ ~2 dirt_path
-[08:10:40] [Server thread/INFO]: [DrMinecraft35: Successfully filled 39 block(s)]
-[08:11:07] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~-12 ~ ~2 air
-[08:11:07] [Server thread/INFO]: [DrMinecraft35: Successfully filled 35 block(s)]
-[08:11:19] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~-12 ~ ~2 dirt_path
-[08:11:19] [Server thread/INFO]: [DrMinecraft35: Successfully filled 39 block(s)]
-[08:12:07] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~ ~ ~2 dirt_path
-[08:12:07] [Server thread/INFO]: [DrMinecraft35: Successfully filled 3 block(s)]
-[08:12:52] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~1 ~ ~2 dirt_path
-[08:12:52] [Server thread/INFO]: [DrMinecraft35: Successfully filled 3 block(s)]
-[08:13:03] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~2 ~ ~12 dirt_path
-[08:13:03] [Server thread/INFO]: [DrMinecraft35: Successfully filled 33 block(s)]
-[08:13:23] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~2 ~ ~12 dirt_path
-[08:13:23] [Server thread/INFO]: [DrMinecraft35: Successfully filled 39 block(s)]
-[08:14:04] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~-2 ~ ~2 dirt_path
-[08:14:04] [Server thread/INFO]: [DrMinecraft35: Successfully filled 9 block(s)]
-[08:14:15] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~-2 ~ ~2 air
-[08:14:15] [Server thread/INFO]: [DrMinecraft35: Successfully filled 9 block(s)]
-[08:14:28] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~-2 ~ ~-2 dirt_path
-[08:14:28] [Server thread/INFO]: [DrMinecraft35: Successfully filled 9 block(s)]
-[08:15:01] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~-2 ~ ~-2 air
-[08:15:01] [Server thread/INFO]: [DrMinecraft35: Successfully filled 5 block(s)]
-[08:15:13] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~-2 ~ ~2 air
-[08:15:24] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~2 ~ ~2 air
-[08:15:24] [Server thread/INFO]: [DrMinecraft35: Successfully filled 4 block(s)]
-[08:15:50] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~12 ~ ~-2 dirt_path
-[08:15:50] [Server thread/INFO]: [DrMinecraft35: Successfully filled 37 block(s)]
-[08:16:14] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~12 ~ ~-2 dirt_path
-[08:16:14] [Server thread/INFO]: [DrMinecraft35: Successfully filled 39 block(s)]
-[08:16:26] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~12 ~ ~-2 dirt_path
-[08:16:26] [Server thread/INFO]: [DrMinecraft35: Successfully filled 39 block(s)]
-[08:17:43] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~12 ~ ~ dirt
-[08:17:43] [Server thread/INFO]: [DrMinecraft35: Successfully filled 8 block(s)]
-[08:19:36] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~12 ~ ~ oak_fence
-[08:19:36] [Server thread/INFO]: [DrMinecraft35: Successfully filled 13 block(s)]
-[08:19:49] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~12 ~ ~ oak_fence
-[08:19:49] [Server thread/INFO]: [DrMinecraft35: Successfully filled 13 block(s)]
-[08:19:58] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~12 ~ ~ oak_fence
-[08:19:58] [Server thread/INFO]: [DrMinecraft35: Successfully filled 12 block(s)]
-[08:20:32] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~12 ~ ~ oak_fence
-[08:20:32] [Server thread/INFO]: [DrMinecraft35: Successfully filled 13 block(s)]
-[08:21:00] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~12 ~ ~ oak_fence
-[08:21:00] [Server thread/INFO]: [DrMinecraft35: Successfully filled 8 block(s)]
-[08:21:03] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~12 ~ ~ oak_fence
-[08:21:03] [Server thread/INFO]: [DrMinecraft35: Successfully filled 10 block(s)]
-[08:21:27] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~12 ~ ~ oak_fence
-[08:21:27] [Server thread/INFO]: [DrMinecraft35: Successfully filled 13 block(s)]
-[08:22:43] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~40 ~ ~ oak_fence
-[08:22:43] [Server thread/INFO]: [DrMinecraft35: Successfully filled 40 block(s)]
-[08:23:03] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~40 ~ ~ oak_fence
-[08:23:03] [Server thread/INFO]: [DrMinecraft35: Successfully filled 41 block(s)]
-[08:24:51] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~40 ~ ~ oak_fence
-[08:24:51] [Server thread/INFO]: [DrMinecraft35: Successfully filled 40 block(s)]
-[08:25:40] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~10 ~ ~ oak_fence
-[08:25:40] [Server thread/INFO]: [DrMinecraft35: Successfully filled 10 block(s)]
-[08:27:12] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~10 ~ ~ oak_fence
-[08:27:12] [Server thread/INFO]: [DrMinecraft35: Successfully filled 11 block(s)]
-[08:27:26] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~10 ~ ~ oak_fence
-[08:27:26] [Server thread/INFO]: [DrMinecraft35: Successfully filled 11 block(s)]
-[08:28:00] [Server thread/INFO]: DrMinecraft35 issued server command: //
-[08:28:03] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~10 ~ ~ oak_fence
-[08:28:03] [Server thread/INFO]: [DrMinecraft35: Successfully filled 11 block(s)]
-[08:28:21] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~20 ~ ~ oak_fence
-[08:28:21] [Server thread/INFO]: [DrMinecraft35: Successfully filled 21 block(s)]
-[08:28:28] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~20 ~ ~ oak_fence
-[08:28:28] [Server thread/INFO]: [DrMinecraft35: Successfully filled 20 block(s)]
-[08:31:16] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~20 ~ ~ cobblestone
-[08:31:16] [Server thread/INFO]: [DrMinecraft35: Successfully filled 21 block(s)]
-[08:31:32] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~40 ~ ~ cobblestone
-[08:31:32] [Server thread/INFO]: [DrMinecraft35: Successfully filled 21 block(s)]
-[08:31:44] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~80 ~ ~ cobblestone
-[08:31:44] [Server thread/INFO]: [DrMinecraft35: Successfully filled 41 block(s)]
-[08:31:54] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~80 ~ ~ cobblestone
-[08:31:54] [Server thread/INFO]: [DrMinecraft35: Successfully filled 81 block(s)]
-[08:32:24] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~80 ~ ~ oak_fence
-[08:32:24] [Server thread/INFO]: [DrMinecraft35: Successfully filled 81 block(s)]
-[08:32:30] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~80 ~ ~ oak_fence
-[08:32:30] [Server thread/INFO]: [DrMinecraft35: Successfully filled 79 block(s)]
-[08:36:36] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~10 ~ ~ oak_fence
-[08:36:36] [Server thread/INFO]: [DrMinecraft35: Successfully filled 11 block(s)]
-[08:41:11] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~10 ~ ~ cobblestone
-[08:41:11] [Server thread/INFO]: [DrMinecraft35: Successfully filled 11 block(s)]
-[08:41:22] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~40 ~ ~ cobblestone
-[08:41:22] [Server thread/INFO]: [DrMinecraft35: Successfully filled 31 block(s)]
-[08:41:33] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~40 ~ ~ cobblestone
-[08:41:33] [Server thread/INFO]: [DrMinecraft35: Successfully filled 41 block(s)]
-[08:41:48] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~40 ~ ~ oak_fence
-[08:41:48] [Server thread/INFO]: [DrMinecraft35: Successfully filled 39 block(s)]
-[08:41:57] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~40 ~ ~ oak_fence
-[08:41:57] [Server thread/INFO]: [DrMinecraft35: Successfully filled 40 block(s)]
-[08:43:40] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~10 ~ ~ oak_fence
-[08:43:40] [Server thread/INFO]: [DrMinecraft35: Successfully filled 10 block(s)]
-[08:43:51] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~10 ~ ~ oak_fence
-[08:43:51] [Server thread/INFO]: [DrMinecraft35: Successfully filled 8 block(s)]
-[08:43:56] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~10 ~ ~ oak_fence
-[08:43:56] [Server thread/INFO]: [DrMinecraft35: Successfully filled 11 block(s)]
-[08:44:03] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~10 ~ ~ oak_fence
-[08:44:03] [Server thread/INFO]: [DrMinecraft35: Successfully filled 11 block(s)]
-[08:44:12] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~10 ~ ~ oak_fence
-[08:44:12] [Server thread/INFO]: [DrMinecraft35: Successfully filled 10 block(s)]
-[08:44:18] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~10 ~ ~ oak_fence
-[08:44:18] [Server thread/INFO]: [DrMinecraft35: Successfully filled 11 block(s)]
-[08:44:38] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~10 ~ ~ oak_fence
-[08:44:38] [Server thread/INFO]: [DrMinecraft35: Successfully filled 10 block(s)]
-[08:44:44] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~10 ~ ~ oak_fence
-[08:44:44] [Server thread/INFO]: [DrMinecraft35: Successfully filled 10 block(s)]
-[08:46:25] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~20 ~ ~ oak_fence
-[08:46:25] [Server thread/INFO]: [DrMinecraft35: Successfully filled 20 block(s)]
-[08:46:35] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~20 ~ ~ oak_fence
-[08:46:35] [Server thread/INFO]: [DrMinecraft35: Successfully filled 20 block(s)]
-[08:46:45] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~20 ~ ~ oak_fence
-[08:46:45] [Server thread/INFO]: [DrMinecraft35: Successfully filled 21 block(s)]
-[08:46:59] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~10 ~ ~ oak_fence
-[08:46:59] [Server thread/INFO]: [DrMinecraft35: Successfully filled 10 block(s)]
-[08:48:14] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~ ~ ~2 oak_fence
-[08:48:14] [Server thread/INFO]: [DrMinecraft35: Successfully filled 3 block(s)]
-[08:48:25] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~ ~ ~12 oak_fence
-[08:48:25] [Server thread/INFO]: [DrMinecraft35: Successfully filled 9 block(s)]
-[08:48:39] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~ ~ ~20 oak_fence
-[08:48:39] [Server thread/INFO]: [DrMinecraft35: Successfully filled 20 block(s)]
-[08:48:45] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~ ~ ~20 oak_fence
-[08:48:45] [Server thread/INFO]: [DrMinecraft35: Successfully filled 8 block(s)]
-[08:53:47] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~2 ~ ~ oak_fence
-[08:53:47] [Server thread/INFO]: [DrMinecraft35: Successfully filled 3 block(s)]
-[08:54:00] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~20 ~ ~ oak_fence
-[08:54:00] [Server thread/INFO]: [DrMinecraft35: Successfully filled 20 block(s)]
-[08:54:10] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~20 ~ ~ oak_fence
-[08:54:10] [Server thread/INFO]: [DrMinecraft35: Successfully filled 21 block(s)]
-[08:54:30] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~10 ~ ~ oak_fence
-[08:54:30] [Server thread/INFO]: [DrMinecraft35: Successfully filled 10 block(s)]
-[08:54:35] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~10 ~ ~ oak_fence
-[08:54:35] [Server thread/INFO]: [DrMinecraft35: Successfully filled 11 block(s)]
-[08:56:03] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~ ~ ~2 oak_fence
-[08:56:03] [Server thread/INFO]: [DrMinecraft35: Successfully filled 3 block(s)]
-[08:56:31] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~ ~ ~-20 oak_fence
-[08:56:31] [Server thread/INFO]: [DrMinecraft35: Successfully filled 21 block(s)]
-[08:56:37] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~ ~ ~-20 oak_fence
-[08:56:37] [Server thread/INFO]: [DrMinecraft35: Successfully filled 20 block(s)]
-[08:57:17] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~ ~ ~-10 oak_fence
-[08:57:17] [Server thread/INFO]: [DrMinecraft35: Successfully filled 10 block(s)]
-[08:57:25] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~ ~ ~-10 oak_fence
-[08:57:25] [Server thread/INFO]: [DrMinecraft35: Successfully filled 10 block(s)]
-[09:20:12] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~ ~ ~-10 air
-[09:20:12] [Server thread/INFO]: [DrMinecraft35: Successfully filled 10 block(s)]
-[09:20:25] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~ ~ ~-10 dirt
-[09:20:25] [Server thread/INFO]: [DrMinecraft35: Successfully filled 11 block(s)]
-[09:20:49] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~2 ~ ~ dirt
-[09:20:49] [Server thread/INFO]: [DrMinecraft35: Successfully filled 1 block(s)]
-[09:21:08] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~-2 ~ ~ dirt
-[09:21:08] [Server thread/INFO]: [DrMinecraft35: Successfully filled 3 block(s)]
-[09:21:22] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~-20 ~ ~ dirt_path
-[09:21:22] [Server thread/INFO]: [DrMinecraft35: Successfully filled 21 block(s)]
-[09:21:27] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~-20 ~ ~ dirt_path
-[09:21:27] [Server thread/INFO]: [DrMinecraft35: Successfully filled 21 block(s)]
-[09:22:27] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~ ~ ~-2 dirt_path
-[09:22:27] [Server thread/INFO]: [DrMinecraft35: Successfully filled 1 block(s)]
-[09:22:35] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~ ~ ~2 dirt_path
-[09:22:35] [Server thread/INFO]: [DrMinecraft35: Successfully filled 3 block(s)]
-[09:22:47] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~-2 ~ ~2 dirt_path
-[09:22:47] [Server thread/INFO]: [DrMinecraft35: Successfully filled 7 block(s)]
-[09:22:54] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~-2 ~ ~2 dirt
-[09:22:54] [Server thread/INFO]: [DrMinecraft35: Successfully filled 9 block(s)]
-[09:23:14] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~2 ~ ~12 dirt_path
-[09:23:14] [Server thread/INFO]: [DrMinecraft35: Successfully filled 39 block(s)]
-[09:23:26] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~2 ~ ~12 dirt_path
-[09:23:26] [Server thread/INFO]: [DrMinecraft35: Successfully filled 39 block(s)]
-[09:25:20] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~2 ~ ~1 dirt_path
-[09:25:20] [Server thread/INFO]: [DrMinecraft35: Successfully filled 6 block(s)]
-[09:52:19] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~2 ~ ~1 minecraft:oak_pressure_plate
-[09:52:19] [Server thread/INFO]: [DrMinecraft35: Successfully filled 6 block(s)]
-[09:52:52] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~2 ~ ~1 minecraft:oak_planks
-[09:52:52] [Server thread/INFO]: [DrMinecraft35: Successfully filled 6 block(s)]
-[09:53:08] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~2 ~ ~1 minecraft:oak_slab
-[09:53:08] [Server thread/INFO]: [DrMinecraft35: Successfully filled 6 block(s)]
-[09:53:19] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~12 ~ ~1 minecraft:oak_slab
-[09:53:19] [Server thread/INFO]: [DrMinecraft35: Successfully filled 9 block(s)]
-[09:53:41] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~20 ~ ~2 minecraft:oak_slab
-[09:53:41] [Server thread/INFO]: [DrMinecraft35: Successfully filled 30 block(s)]
-[09:53:53] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~20 ~ ~2 minecraft:oak_slab
-[09:53:53] [Server thread/INFO]: [DrMinecraft35: Successfully filled 63 block(s)]
-[09:55:31] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~ ~ ~2 minecraft:oak_slab
-[09:55:31] [Server thread/INFO]: [DrMinecraft35: Successfully filled 2 block(s)]
-[09:55:46] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~2 ~ ~-2 minecraft:oak_slab
-[09:55:46] [Server thread/INFO]: [DrMinecraft35: Successfully filled 8 block(s)]
-[09:56:03] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~2 ~ ~-12 minecraft:oak_slab
-[09:56:03] [Server thread/INFO]: [DrMinecraft35: Successfully filled 26 block(s)]
-[09:56:15] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~2 ~ ~-12 minecraft:oak_slab
-[09:56:15] [Server thread/INFO]: [DrMinecraft35: Successfully filled 8 block(s)]
-[09:57:01] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~ ~ ~-12 cobblestone
-[09:57:01] [Server thread/INFO]: [DrMinecraft35: Successfully filled 13 block(s)]
-[09:57:13] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~ ~ ~-12 water
-[09:57:13] [Server thread/INFO]: [DrMinecraft35: Successfully filled 12 block(s)]
-[09:57:33] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~ ~ ~-12 minecraft:cobblestone
-[09:57:33] [Server thread/INFO]: [DrMinecraft35: Successfully filled 13 block(s)]
-[09:57:42] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~ ~ ~-12 minecraft:cobblestone
-[09:57:42] [Server thread/INFO]: [DrMinecraft35: Successfully filled 13 block(s)]
-[09:57:52] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~ ~ ~-12 minecraft:air
-[09:57:52] [Server thread/INFO]: [DrMinecraft35: Successfully filled 12 block(s)]
-[09:58:07] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~ ~ ~-12 minecraft:cobblestone
-[09:58:08] [Server thread/INFO]: [DrMinecraft35: Successfully filled 13 block(s)]
-[09:58:16] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~ ~ ~-12 minecraft:water
-[09:58:16] [Server thread/INFO]: [DrMinecraft35: Successfully filled 13 block(s)]
-[09:58:24] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~ ~ ~-12 minecraft:cobblestone
-[09:58:24] [Server thread/INFO]: [DrMinecraft35: Successfully filled 13 block(s)]
-[09:59:23] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~2 ~ ~-12 dirt_path
-[09:59:23] [Server thread/INFO]: [DrMinecraft35: Successfully filled 39 block(s)]
-[09:59:29] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~2 ~ ~-12 dirt
-[09:59:29] [Server thread/INFO]: [DrMinecraft35: Successfully filled 32 block(s)]
-[09:59:39] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~2 ~ ~-12 dirt_path
-[09:59:39] [Server thread/INFO]: [DrMinecraft35: Successfully filled 39 block(s)]
-[10:00:17] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~2 ~ ~-30 dirt_path
-[10:00:17] [Server thread/INFO]: [DrMinecraft35: Successfully filled 93 block(s)]
-[10:00:31] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~2 ~ ~-30 dirt_path
-[10:00:31] [Server thread/INFO]: [DrMinecraft35: Successfully filled 93 block(s)]
-[10:01:03] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~2 ~ ~-30 oak_slab
-[10:01:03] [Server thread/INFO]: [DrMinecraft35: Successfully filled 93 block(s)]
-[10:01:15] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~2 ~ ~-40 oak_slab
-[10:01:15] [Server thread/INFO]: [DrMinecraft35: Successfully filled 31 block(s)]
-[10:01:28] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~2 ~ ~-50 oak_slab
-[10:01:28] [Server thread/INFO]: [DrMinecraft35: Successfully filled 31 block(s)]
-[10:01:50] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~ ~ ~-50 cobblestone
-[10:01:50] [Server thread/INFO]: [DrMinecraft35: Successfully filled 51 block(s)]
-[10:01:59] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~ ~ ~-50 cobblestone
-[10:01:59] [Server thread/INFO]: [DrMinecraft35: Successfully filled 51 block(s)]
-[10:03:08] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~2 ~ ~-12 dirt_path
-[10:03:08] [Server thread/INFO]: [DrMinecraft35: Successfully filled 39 block(s)]
-[10:03:39] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~2 ~ ~-50 dirt_path
-[10:03:39] [Server thread/INFO]: [DrMinecraft35: Successfully filled 153 block(s)]
-[10:03:51] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~2 ~ ~-50 dirt_path
-[10:03:51] [Server thread/INFO]: [DrMinecraft35: Successfully filled 151 block(s)]
-[10:04:10] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~2 ~ ~-50 dirt_path
-[10:04:10] [Server thread/INFO]: [DrMinecraft35: Successfully filled 153 block(s)]
-[10:04:37] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~2 ~ ~-2 dirt_path
-[10:04:37] [Server thread/INFO]: [DrMinecraft35: Successfully filled 9 block(s)]
-[10:04:59] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~20 ~ ~2 dirt_path
-[10:04:59] [Server thread/INFO]: [DrMinecraft35: Successfully filled 60 block(s)]
-[10:05:10] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~20 ~ ~2 dirt_path
-[10:05:10] [Server thread/INFO]: [DrMinecraft35: Successfully filled 63 block(s)]
-[10:05:16] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~20 ~ ~2 dirt_path
-[10:05:16] [Server thread/INFO]: [DrMinecraft35: Successfully filled 63 block(s)]
-[10:06:42] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~20 ~ ~2 oak_fence
-[10:06:42] [Server thread/INFO]: [DrMinecraft35: Successfully filled 63 block(s)]
-[10:06:49] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~20 ~ ~2 air
-[10:06:49] [Server thread/INFO]: [DrMinecraft35: Successfully filled 63 block(s)]
-[10:07:02] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~20 ~ ~ oak_fence
-[10:07:02] [Server thread/INFO]: [DrMinecraft35: Successfully filled 21 block(s)]
-[10:07:20] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~64 ~ ~ oak_fence
-[10:07:20] [Server thread/INFO]: [DrMinecraft35: Successfully filled 44 block(s)]
-[10:08:26] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~ ~ ~2 oak_fence
-[10:08:26] [Server thread/INFO]: [DrMinecraft35: Successfully filled 3 block(s)]
-[10:08:34] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~ ~ ~60 oak_fence
-[10:08:34] [Server thread/INFO]: [DrMinecraft35: Successfully filled 58 block(s)]
-[10:08:47] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~ ~ ~60 oak_fence
-[10:08:47] [Server thread/INFO]: [DrMinecraft35: Successfully filled 61 block(s)]
-[10:08:57] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~ ~ ~60 oak_fence
-[10:08:57] [Server thread/INFO]: [DrMinecraft35: Successfully filled 60 block(s)]
-[10:09:09] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~ ~ ~60 oak_fence
-[10:09:09] [Server thread/INFO]: [DrMinecraft35: Successfully filled 60 block(s)]
-[10:09:51] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~ ~ ~60 oak_fence
-[10:09:51] [Server thread/INFO]: [DrMinecraft35: Successfully filled 61 block(s)]
-[10:09:57] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~ ~ ~60 oak_fence
-[10:09:57] [Server thread/INFO]: [DrMinecraft35: Successfully filled 61 block(s)]
-[10:11:00] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~-12 ~ ~ oak_fence
-[10:11:00] [Server thread/INFO]: [DrMinecraft35: Successfully filled 13 block(s)]
-[10:11:13] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~-30 ~ ~ oak_fence
-[10:11:13] [Server thread/INFO]: [DrMinecraft35: Successfully filled 18 block(s)]
-[10:11:21] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~-30 ~ ~ oak_fence
-[10:11:21] [Server thread/INFO]: [DrMinecraft35: Successfully filled 31 block(s)]
-[10:11:42] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~-30 ~ ~2 dirt_path
-[10:11:42] [Server thread/INFO]: [DrMinecraft35: Successfully filled 93 block(s)]
-[10:11:53] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~-30 ~ ~-2 dirt_path
-[10:11:53] [Server thread/INFO]: [DrMinecraft35: Successfully filled 62 block(s)]
-[10:12:30] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~ ~ ~12 dirt_path
-[10:12:30] [Server thread/INFO]: [DrMinecraft35: Successfully filled 13 block(s)]
-[10:12:38] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~ ~ ~12 dirt
-[10:12:38] [Server thread/INFO]: [DrMinecraft35: Successfully filled 13 block(s)]
-[10:14:02] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~2 ~ ~12 dirt
-[10:14:02] [Server thread/INFO]: [DrMinecraft35: Successfully filled 20 block(s)]
-[10:14:09] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~-2 ~ ~12 dirt
-[10:14:09] [Server thread/INFO]: [DrMinecraft35: Successfully filled 13 block(s)]
-[10:14:14] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~-2 ~ ~12 dirt_path
-[10:14:14] [Server thread/INFO]: [DrMinecraft35: Successfully filled 39 block(s)]
-[10:14:35] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~-2 ~ ~6 dirt_path
-[10:14:35] [Server thread/INFO]: [DrMinecraft35: Successfully filled 21 block(s)]
-[10:16:47] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~-2 ~ ~ oak_fence
-[10:16:47] [Server thread/INFO]: [DrMinecraft35: Successfully filled 2 block(s)]
-[10:17:02] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~ ~ ~2 oak_fence
-[10:17:02] [Server thread/INFO]: [DrMinecraft35: Successfully filled 2 block(s)]
-[10:17:09] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~ ~ ~20 oak_fence
-[10:17:09] [Server thread/INFO]: [DrMinecraft35: Successfully filled 16 block(s)]
-[10:17:57] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~ ~ ~-20 oak_fence
-[10:17:57] [Server thread/INFO]: [DrMinecraft35: Successfully filled 14 block(s)]
-[10:26:58] [Server thread/INFO]: DrMinecraft35 lost connection: Disconnected
-[10:26:58] [Server thread/INFO]: DrMinecraft35 left the game
-[10:27:07] [Server thread/INFO]: Stopping the server
-[10:27:07] [Server thread/INFO]: Stopping server
-[10:27:07] [Server thread/INFO]: [RaspberryJuice] Disabling RaspberryJuice v1.12.1
-[10:27:07] [Server thread/INFO]: [RaspberryJuice] Raspberry Juice Stopped
-[10:27:07] [Server thread/INFO]: [WorldGuard] Disabling WorldGuard v7.0.14+2339-43997ec
-[10:27:07] [Server thread/INFO]: [WorldGuard] Shutting down executor and cancelling any pending tasks...
-[10:27:07] [Server thread/INFO]: [AutoMessage] Disabling AutoMessage v2.0.0
-[10:27:07] [Server thread/INFO]: [AutoMessage] AutoMessage plugin disabled successfully.
-[10:27:07] [Server thread/INFO]: [WorldEdit] Disabling WorldEdit v7.3.17+7262-c7fbe08
-[10:27:07] [Server thread/INFO]: Unregistering com.sk89q.worldedit.bukkit.BukkitServerInterface from WorldEdit
-[10:27:07] [Server thread/INFO]: Saving players
-[10:27:07] [Server thread/INFO]: Saving worlds
-[10:27:07] [Server thread/INFO]: Saving chunks for level 'ServerLevel[isu_world]'/minecraft:overworld
-[10:27:07] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'isu_world'
-[10:27:07] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'isu_world'
-[10:27:07] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'isu_world'
-[10:27:07] [Server thread/INFO]: [ChunkHolderManager] Saved 322 block chunks, 499 entity chunks, 0 poi chunks in world 'isu_world' in 0.09s
-[10:27:07] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'isu_world'
-[10:27:07] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'isu_world'
-[10:27:07] [Server thread/INFO]: Saving chunks for level 'ServerLevel[isu_world_nether]'/minecraft:the_nether
-[10:27:07] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'isu_world_nether'
-[10:27:07] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'isu_world_nether'
-[10:27:07] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'isu_world_nether'
-[10:27:07] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'isu_world_nether' in 0.00s
-[10:27:07] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'isu_world_nether'
-[10:27:07] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'isu_world_nether'
-[10:27:07] [Server thread/INFO]: Saving chunks for level 'ServerLevel[isu_world_the_end]'/minecraft:the_end
-[10:27:07] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'isu_world_the_end'
-[10:27:07] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'isu_world_the_end'
-[10:27:07] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'isu_world_the_end'
-[10:27:07] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'isu_world_the_end' in 0.00s
-[10:27:07] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'isu_world_the_end'
-[10:27:07] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'isu_world_the_end'
-[10:27:07] [Server thread/INFO]: ThreadedAnvilChunkStorage (isu_world): All chunks are saved
-[10:27:07] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[10:27:07] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[10:27:07] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
-[10:27:07] [Server thread/INFO]: Waiting for all RegionFile I/O tasks to complete...
-[10:27:07] [Server thread/INFO]: All RegionFile I/O tasks to complete
-[10:27:07] [Server thread/INFO]: [MoonriseCommon] Awaiting termination of worker pool for up to 60s...
-[10:27:07] [Server thread/INFO]: [MoonriseCommon] Awaiting termination of I/O pool for up to 60s...
+[13:31:00] [Server thread/INFO]: Preparing level "isu_world"
+[13:31:01] [Server thread/INFO]: Loading 0 persistent chunks for world 'minecraft:overworld'...
+[13:31:01] [Server thread/INFO]: Prepared spawn area in 0 ms
+[13:31:01] [Server thread/INFO]: Loading 0 persistent chunks for world 'minecraft:the_nether'...
+[13:31:01] [Server thread/INFO]: Prepared spawn area in 0 ms
+[13:31:01] [Server thread/INFO]: Loading 0 persistent chunks for world 'minecraft:the_end'...
+[13:31:01] [Server thread/INFO]: Prepared spawn area in 0 ms
+[13:31:01] [Server thread/INFO]: Done preparing level "isu_world" (0.351s)
+[13:31:01] [Server thread/INFO]: [AutoMessage] Enabling AutoMessage v2.0.0
+[13:31:01] [Server thread/INFO]: [AutoMessage] AutoMessage plugin enabled.
+[13:31:01] [Server thread/INFO]: [WorldGuard] Enabling WorldGuard v7.0.14+2339-43997ec
+[13:31:01] [Server thread/INFO]: [WorldGuard] (isu_world) TNT ignition is PERMITTED.
+[13:31:01] [Server thread/INFO]: [WorldGuard] (isu_world) Lighters are PERMITTED.
+[13:31:01] [Server thread/INFO]: [WorldGuard] (isu_world) Lava fire is PERMITTED.
+[13:31:01] [Server thread/INFO]: [WorldGuard] (isu_world) Fire spread is UNRESTRICTED.
+[13:31:01] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'isu_world'
+[13:31:01] [Server thread/INFO]: [WorldGuard] (isu_world_nether) TNT ignition is PERMITTED.
+[13:31:01] [Server thread/INFO]: [WorldGuard] (isu_world_nether) Lighters are PERMITTED.
+[13:31:01] [Server thread/INFO]: [WorldGuard] (isu_world_nether) Lava fire is PERMITTED.
+[13:31:01] [Server thread/INFO]: [WorldGuard] (isu_world_nether) Fire spread is UNRESTRICTED.
+[13:31:01] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'isu_world_nether'
+[13:31:01] [Server thread/INFO]: [WorldGuard] (isu_world_the_end) TNT ignition is PERMITTED.
+[13:31:01] [Server thread/INFO]: [WorldGuard] (isu_world_the_end) Lighters are PERMITTED.
+[13:31:01] [Server thread/INFO]: [WorldGuard] (isu_world_the_end) Lava fire is PERMITTED.
+[13:31:01] [Server thread/INFO]: [WorldGuard] (isu_world_the_end) Fire spread is UNRESTRICTED.
+[13:31:01] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'isu_world_the_end'
+[13:31:01] [Server thread/INFO]: [WorldGuard] Loading region data...
+[13:31:02] [Server thread/INFO]: [RaspberryJuice] Enabling RaspberryJuice v1.12.1*
+[13:31:02] [Server thread/INFO]: [RaspberryJuice] Using host:port - 0.0.0.0:4711
+[13:31:02] [Server thread/INFO]: [RaspberryJuice] Using RELATIVE locations
+[13:31:02] [Server thread/INFO]: [RaspberryJuice] Using RIGHT clicks for hits
+[13:31:02] [Server thread/INFO]: [RaspberryJuice] ThreadListener Started
+[13:31:02] [Server thread/INFO]: [spark] Starting background profiler...
+[13:31:02] [Server thread/INFO]: Running delayed init tasks
+[13:31:02] [Server thread/INFO]: Done (12.591s)! For help, type "help"
+[13:32:19] [User Authenticator #0/INFO]: UUID of player DrMinecraft35 is 19995fd4-c323-4599-be07-1072e1df73eb
+[13:32:19] [Server thread/INFO]: [HorriblePlayerLoginEventHack] You have plugins listening to the PlayerLoginEvent, this will cause re-configuration APIs to be unavailable: [WorldGuard]
+[13:32:20] [Server thread/INFO]: Welcome DrMinecraft35
+[13:32:20] [Server thread/INFO]: DrMinecraft35 joined the game
+[13:32:20] [Server thread/INFO]: DrMinecraft35[/127.0.0.1:37850] logged in with entity id 1 at ([isu_world]171.68147402817058, 86.28260091214483, -137.01810055934774)
+[13:33:04] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~ ~3 ~-20 air
+[13:33:04] [Server thread/INFO]: [DrMinecraft35: Successfully filled 23 block(s)]
+[13:33:23] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~2 ~3 ~-20 air
+[13:33:23] [Server thread/INFO]: [DrMinecraft35: Successfully filled 64 block(s)]
+[13:33:33] [Server thread/INFO]: DrMinecraft35 issued server command: /i
+[13:33:43] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~2 ~3 ~-20 air
+[13:33:43] [Server thread/INFO]: [DrMinecraft35: Successfully filled 125 block(s)]
+[13:34:13] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~2 ~-3 ~-20 air
+[13:34:13] [Server thread/INFO]: [DrMinecraft35: Successfully filled 148 block(s)]
+[13:34:38] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~2 ~-8 ~-20 air
+[13:34:38] [Server thread/INFO]: [DrMinecraft35: Successfully filled 271 block(s)]
+[13:34:49] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~2 ~-8 ~-20 air
+[13:34:49] [Server thread/INFO]: [DrMinecraft35: Successfully filled 44 block(s)]
+[13:34:57] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~2 ~-8 ~-20 air
+[13:34:57] [Server thread/INFO]: [DrMinecraft35: Successfully filled 21 block(s)]
+[13:35:38] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~6 ~-8 ~-20 air
+[13:35:38] [Server thread/INFO]: [DrMinecraft35: Successfully filled 3 block(s)]
+[13:35:56] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~6 ~-15 ~-20 air
+[13:35:56] [Server thread/INFO]: [DrMinecraft35: Successfully filled 681 block(s)]
+[13:36:18] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~6 ~-15 ~-20 air
+[13:36:18] [Server thread/INFO]: [DrMinecraft35: Successfully filled 334 block(s)]
+[13:36:55] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~ ~-15 ~-20 minecraft:black_concrete
+[13:36:55] [Server thread/INFO]: [DrMinecraft35: Successfully filled 336 block(s)]
+[13:37:09] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~ ~-15 ~-20 minecraft:black_concrete
+[13:37:09] [Server thread/INFO]: [DrMinecraft35: Successfully filled 336 block(s)]
+[13:37:30] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~ ~ ~-20 minecraft:black_concrete
+[13:37:30] [Server thread/INFO]: [DrMinecraft35: Successfully filled 21 block(s)]
+[13:37:55] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~2 ~-15 ~ minecraft:black_concrete
+[13:37:55] [Server thread/INFO]: [DrMinecraft35: Successfully filled 48 block(s)]
+[13:38:11] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~2 ~-15 ~ minecraft:black_concrete
+[13:38:11] [Server thread/INFO]: [DrMinecraft35: Successfully filled 48 block(s)]
+[13:38:32] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~2 ~-15 ~ minecraft:black_concrete
+[13:38:32] [Server thread/INFO]: [DrMinecraft35: Successfully filled 48 block(s)]
+[13:38:50] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~2 ~-15 ~ minecraft:black_concrete
+[13:38:50] [Server thread/INFO]: [DrMinecraft35: Successfully filled 48 block(s)]
+[13:40:35] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~ ~-15 ~ minecraft:black_concrete
+[13:40:35] [Server thread/INFO]: [DrMinecraft35: Successfully filled 16 block(s)]
+[13:40:46] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~ ~-15 ~ minecraft:black_concrete
+[13:40:46] [Server thread/INFO]: [DrMinecraft35: Successfully filled 16 block(s)]
+[13:41:05] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~ ~ ~-2 minecraft:black_concrete
+[13:41:05] [Server thread/INFO]: [DrMinecraft35: Successfully filled 3 block(s)]
+[13:41:13] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~ ~ ~20 minecraft:black_concrete
+[13:41:13] [Server thread/INFO]: [DrMinecraft35: Successfully filled 20 block(s)]
+[13:41:22] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~ ~ ~20 minecraft:black_concrete
+[13:41:22] [Server thread/INFO]: [DrMinecraft35: Successfully filled 21 block(s)]
+[13:41:29] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~ ~ ~20 minecraft:black_concrete
+[13:41:29] [Server thread/INFO]: [DrMinecraft35: Successfully filled 21 block(s)]
+[13:41:35] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~ ~ ~20 minecraft:black_concrete
+[13:41:35] [Server thread/INFO]: [DrMinecraft35: Successfully filled 21 block(s)]
+[13:42:21] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~ ~ ~20 minecraft:black_concrete
+[13:42:21] [Server thread/INFO]: [DrMinecraft35: Successfully filled 21 block(s)]
+[13:42:32] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~2 ~ ~20 minecraft:black_concrete
+[13:42:32] [Server thread/INFO]: [DrMinecraft35: Successfully filled 63 block(s)]
+[13:42:44] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~ ~ ~20 minecraft:black_concrete
+[13:42:44] [Server thread/INFO]: [DrMinecraft35: Successfully filled 21 block(s)]
+[13:48:42] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~ ~ ~20 minecraft:black_stained_glass
+[13:48:42] [Server thread/INFO]: [DrMinecraft35: Successfully filled 21 block(s)]
+[13:48:57] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~ ~-1 ~-20 minecraft:black_stained_glass
+[13:48:57] [Server thread/INFO]: [DrMinecraft35: Successfully filled 40 block(s)]
+[13:49:42] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~ ~ ~-20 minecraft:black_stained_glass
+[13:49:42] [Server thread/INFO]: [DrMinecraft35: Successfully filled 21 block(s)]
+[13:49:54] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~ ~ ~-20 minecraft:black_stained_glass
+[13:49:54] [Server thread/INFO]: [DrMinecraft35: Successfully filled 20 block(s)]
+[13:50:14] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~ ~ ~20 minecraft:black_stained_glass
+[13:50:14] [Server thread/INFO]: [DrMinecraft35: Successfully filled 19 block(s)]
+[13:50:19] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~ ~ ~20 minecraft:black_stained_glass
+[13:50:19] [Server thread/INFO]: [DrMinecraft35: Successfully filled 19 block(s)]
+[13:50:25] [Server thread/INFO]: DrMinecraft35 issued server command: //
+[13:50:30] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~ ~ ~20 minecraft:black_stained_glass
+[13:50:30] [Server thread/INFO]: [DrMinecraft35: Successfully filled 19 block(s)]
+[13:50:33] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~ ~ ~20 minecraft:black_stained_glass
+[13:50:33] [Server thread/INFO]: [DrMinecraft35: Successfully filled 19 block(s)]
+[13:51:34] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~ ~ ~-20 minecraft:bookshelf
+[13:51:34] [Server thread/INFO]: [DrMinecraft35: Successfully filled 21 block(s)]
+[13:51:40] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~ ~ ~-20 minecraft:bookshelf
+[13:51:40] [Server thread/INFO]: [DrMinecraft35: Successfully filled 21 block(s)]
+[13:51:48] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~ ~ ~-20 minecraft:bookshelf
+[13:51:48] [Server thread/INFO]: [DrMinecraft35: Successfully filled 21 block(s)]
+[13:51:53] [Server thread/INFO]: DrMinecraft35 issued server command: /fill ~0 ~0 ~0 ~ ~ ~-20 minecraft:bookshelf
+[13:51:53] [Server thread/INFO]: [DrMinecraft35: Successfully filled 21 block(s)]
+[13:56:04] [Server thread/INFO]: DrMinecraft35 lost connection: Disconnected
+[13:56:04] [Server thread/INFO]: DrMinecraft35 left the game
+[13:56:17] [Server thread/INFO]: Stopping the server
+[13:56:17] [Server thread/INFO]: Stopping server
+[13:56:17] [Server thread/INFO]: [RaspberryJuice] Disabling RaspberryJuice v1.12.1
+[13:56:17] [Server thread/INFO]: [RaspberryJuice] Raspberry Juice Stopped
+[13:56:17] [Server thread/INFO]: [WorldGuard] Disabling WorldGuard v7.0.14+2339-43997ec
+[13:56:17] [Server thread/INFO]: [WorldGuard] Shutting down executor and cancelling any pending tasks...
+[13:56:17] [Server thread/INFO]: [AutoMessage] Disabling AutoMessage v2.0.0
+[13:56:17] [Server thread/INFO]: [AutoMessage] AutoMessage plugin disabled successfully.
+[13:56:17] [Server thread/INFO]: [WorldEdit] Disabling WorldEdit v7.3.17+7262-c7fbe08
+[13:56:17] [Server thread/INFO]: Unregistering com.sk89q.worldedit.bukkit.BukkitServerInterface from WorldEdit
+[13:56:17] [Server thread/INFO]: Saving players
+[13:56:17] [Server thread/INFO]: Saving worlds
+[13:56:17] [Server thread/INFO]: Saving chunks for level 'ServerLevel[isu_world]'/minecraft:overworld
+[13:56:17] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'isu_world'
+[13:56:17] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'isu_world'
+[13:56:17] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'isu_world'
+[13:56:17] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'isu_world' in 0.00s
+[13:56:17] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'isu_world'
+[13:56:17] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'isu_world'
+[13:56:17] [Server thread/INFO]: Saving chunks for level 'ServerLevel[isu_world_nether]'/minecraft:the_nether
+[13:56:17] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'isu_world_nether'
+[13:56:17] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'isu_world_nether'
+[13:56:17] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'isu_world_nether'
+[13:56:17] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'isu_world_nether' in 0.00s
+[13:56:17] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'isu_world_nether'
+[13:56:17] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'isu_world_nether'
+[13:56:17] [Server thread/INFO]: Saving chunks for level 'ServerLevel[isu_world_the_end]'/minecraft:the_end
+[13:56:17] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'isu_world_the_end'
+[13:56:17] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'isu_world_the_end'
+[13:56:17] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'isu_world_the_end'
+[13:56:17] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'isu_world_the_end' in 0.00s
+[13:56:17] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'isu_world_the_end'
+[13:56:17] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'isu_world_the_end'
+[13:56:17] [Server thread/INFO]: ThreadedAnvilChunkStorage (isu_world): All chunks are saved
+[13:56:17] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[13:56:17] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[13:56:17] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[13:56:17] [Server thread/INFO]: Waiting for all RegionFile I/O tasks to complete...
+[13:56:17] [Server thread/INFO]: All RegionFile I/O tasks to complete
+[13:56:17] [Server thread/INFO]: [MoonriseCommon] Awaiting termination of worker pool for up to 60s...
+[13:56:17] [Server thread/INFO]: [MoonriseCommon] Awaiting termination of I/O pool for up to 60s...
