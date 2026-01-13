@@ -1,0 +1,30 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 127.0.0.1
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1768341748472
+  login: 1768341470952
+money: '0'
+last-account-name: DrMinecraft35
+logoutlocation:
+  world: 5a6e8aaf-c70b-4747-b88a-a41272ebe78a
+  world-name: isu_world
+  x: 153.56644376338355
+  y: 69.07416149305547
+  z: -130.07292942567761
+  yaw: -51.76927185058594
+  pitch: 26.249982833862305
