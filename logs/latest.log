@@ -1,59 +1,60 @@
-[11:30:47] [ServerMain/INFO]: [bootstrap] Running Java 21 (OpenJDK 64-Bit Server VM 21.0.9+10-Ubuntu-122.04; Ubuntu null) on Linux 6.17.9-76061709-generic (amd64)
-[11:30:47] [ServerMain/INFO]: [bootstrap] Loading Paper 1.21.11-38-main@4446f17 (2025-12-09T22:51:57Z) for Minecraft 1.21.11
-[11:30:48] [ServerMain/INFO]: [PluginInitializerManager] Initializing plugins...
-[11:30:48] [ServerMain/INFO]: [PluginInitializerManager] Initialized 10 plugins
-[11:30:48] [ServerMain/INFO]: [PluginInitializerManager] Bukkit plugins (10):
- - Anti-Bee (1.0), AutoMessage (2.0.0), Essentials (2.22.0-dev+55-18233d3), EssentialsChat (2.22.0-dev+55-18233d3), LuckPerms (5.5.24), RaspberryJuice (1.12.1), TAB (5.4.0), Vault (1.7.3-b131), WorldEdit (7.3.17+7262-c7fbe08), WorldGuard (7.0.14+2339-43997ec)
-[11:30:52] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, profilesHost=https://api.mojang.com, name=PROD]
-[11:30:53] [ServerMain/INFO]: Loaded 1470 recipes
-[11:30:53] [ServerMain/INFO]: Loaded 1584 advancements
-[11:30:53] [ServerMain/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Initialising converters for DataConverter...
-[11:30:54] [ServerMain/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Finished initialising converters for DataConverter in 293.0ms
-[11:30:54] [Server thread/INFO]: Starting minecraft server version 1.21.11
-[11:30:54] [Server thread/INFO]: Loading properties
-[11:30:54] [Server thread/INFO]: This server is running Paper version 1.21.11-38-main@4446f17 (2025-12-09T22:51:57Z) (Implementing API version 1.21.11-R0.1-SNAPSHOT)
-[11:30:54] [Server thread/INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
-[11:30:54] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[11:30:54] [Server thread/INFO]: Using 4 threads for Netty based IO
-[11:30:54] [Server thread/INFO]: [MoonriseCommon] Paper is using 4 worker threads, 1 I/O threads
-[11:30:54] [Server thread/INFO]: Default game type: CREATIVE
-[11:30:54] [Server thread/INFO]: Generating keypair
-[11:30:54] [Server thread/INFO]: Starting Minecraft server on *:25565
-[11:30:54] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
-[11:30:54] [Server thread/INFO]: Paper: Using OpenSSL 3.x.x (Linux x86_64) cipher from Velocity.
-[11:30:55] [Server thread/WARN]: [org.bukkit.craftbukkit.legacy.CraftLegacy] Initializing Legacy Material Support. Unless you have legacy plugins and/or data this is a bug!
-[11:31:04] [Server thread/WARN]: Legacy plugin RaspberryJuice v1.12.1 does not specify an api-version.
-[11:31:04] [Server thread/INFO]: [LuckPerms] Loading server plugin LuckPerms v5.5.24
-[11:31:04] [Server thread/INFO]: [LuckPerms] Loading configuration...
-[11:31:04] [Server thread/INFO]: [Vault] Loading server plugin Vault v1.7.3-b131
-[11:31:04] [Server thread/INFO]: [Essentials] Loading server plugin Essentials v2.22.0-dev+55-18233d3
-[11:31:04] [Server thread/INFO]: [WorldEdit] Loading server plugin WorldEdit v7.3.17+7262-c7fbe08
-[11:31:05] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@5bc55f6]
-[11:31:05] [Server thread/INFO]: [Anti-Bee] Loading server plugin Anti-Bee v1.0
-[11:31:05] [Server thread/INFO]: [EssentialsChat] Loading server plugin EssentialsChat v2.22.0-dev+55-18233d3
-[11:31:05] [Server thread/INFO]: [RaspberryJuice] Loading server plugin RaspberryJuice v1.12.1
-[11:31:05] [Server thread/INFO]: [WorldGuard] Loading server plugin WorldGuard v7.0.14+2339-43997ec
-[11:31:05] [Server thread/INFO]: [AutoMessage] Loading server plugin AutoMessage v2.0.0
-[11:31:05] [Server thread/INFO]: [TAB] Loading server plugin TAB v5.4.0
-[11:31:05] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[11:31:05] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v5.5.24
-[11:31:05] [Server thread/INFO]:         __    
-[11:31:05] [Server thread/INFO]:   |    |__)   LuckPerms v5.5.24
-[11:31:05] [Server thread/INFO]:   |___ |      Running on Bukkit - Paper
-[11:31:05] [Server thread/INFO]: 
-[11:31:05] [Server thread/INFO]: [LuckPerms] Loading storage provider... [H2]
-[11:31:06] [Server thread/INFO]: [LuckPerms] Loading internal permission managers...
-[11:31:06] [Server thread/INFO]: [LuckPerms] Performing initial data load...
-[11:31:06] [Server thread/INFO]: [LuckPerms] Successfully enabled. (took 1021ms)
-[11:31:06] [Server thread/INFO]: [Vault] Enabling Vault v1.7.3-b131
-[11:31:06] [Server thread/INFO]: [Vault] [Economy] Essentials Economy found: Waiting
-[11:31:06] [Server thread/INFO]: [Vault] [Permission] SuperPermissions loaded as backup permission system.
-[11:31:06] [Server thread/INFO]: [Vault] Enabled Version 1.7.3-b131
-[11:31:06] [Server thread/INFO]: [LuckPerms] Registered Vault permission & chat hook.
-[11:31:06] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v7.3.17+7262-c7fbe08
-[11:31:06] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
-[11:31:06] [Server thread/INFO]: WEPIF: Vault detected! Using Vault for permissions
-[11:31:07] [Server thread/WARN]: 
+[13:43:43] [ServerMain/INFO]: [bootstrap] Running Java 21 (OpenJDK 64-Bit Server VM 21.0.9+10-Ubuntu-122.04; Ubuntu null) on Linux 6.17.9-76061709-generic (amd64)
+[13:43:43] [ServerMain/INFO]: [bootstrap] Loading Paper 1.21.11-38-main@4446f17 (2025-12-09T22:51:57Z) for Minecraft 1.21.11
+[13:43:43] [ServerMain/INFO]: [PluginInitializerManager] Initializing plugins...
+[13:43:43] [ServerMain/INFO]: [PluginInitializerManager] Initialized 11 plugins
+[13:43:43] [ServerMain/INFO]: [PluginInitializerManager] Bukkit plugins (11):
+ - Anti-Bee (1.0), AutoMessage (2.0.0), ChatFilter (2.0.14), Essentials (2.22.0-dev+55-18233d3), EssentialsChat (2.22.0-dev+55-18233d3), LuckPerms (5.5.24), RaspberryJuice (1.12.1), TAB (5.4.0), Vault (1.7.3-b131), WorldEdit (7.3.17+7262-c7fbe08), WorldGuard (7.0.14+2339-43997ec)
+[13:43:46] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, profilesHost=https://api.mojang.com, name=PROD]
+[13:43:48] [ServerMain/INFO]: Loaded 1470 recipes
+[13:43:48] [ServerMain/INFO]: Loaded 1584 advancements
+[13:43:48] [ServerMain/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Initialising converters for DataConverter...
+[13:43:48] [ServerMain/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Finished initialising converters for DataConverter in 243.0ms
+[13:43:48] [Server thread/INFO]: Starting minecraft server version 1.21.11
+[13:43:48] [Server thread/INFO]: Loading properties
+[13:43:48] [Server thread/INFO]: This server is running Paper version 1.21.11-38-main@4446f17 (2025-12-09T22:51:57Z) (Implementing API version 1.21.11-R0.1-SNAPSHOT)
+[13:43:48] [Server thread/INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
+[13:43:48] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[13:43:48] [Server thread/INFO]: Using 4 threads for Netty based IO
+[13:43:48] [Server thread/INFO]: [MoonriseCommon] Paper is using 4 worker threads, 1 I/O threads
+[13:43:48] [Server thread/INFO]: Default game type: CREATIVE
+[13:43:48] [Server thread/INFO]: Generating keypair
+[13:43:48] [Server thread/INFO]: Starting Minecraft server on *:25565
+[13:43:48] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
+[13:43:48] [Server thread/INFO]: Paper: Using OpenSSL 3.x.x (Linux x86_64) cipher from Velocity.
+[13:43:49] [Server thread/WARN]: [org.bukkit.craftbukkit.legacy.CraftLegacy] Initializing Legacy Material Support. Unless you have legacy plugins and/or data this is a bug!
+[13:43:54] [Server thread/WARN]: Legacy plugin RaspberryJuice v1.12.1 does not specify an api-version.
+[13:43:54] [Server thread/INFO]: [LuckPerms] Loading server plugin LuckPerms v5.5.24
+[13:43:55] [Server thread/INFO]: [LuckPerms] Loading configuration...
+[13:43:55] [Server thread/INFO]: [Vault] Loading server plugin Vault v1.7.3-b131
+[13:43:55] [Server thread/INFO]: [Essentials] Loading server plugin Essentials v2.22.0-dev+55-18233d3
+[13:43:55] [Server thread/INFO]: [WorldEdit] Loading server plugin WorldEdit v7.3.17+7262-c7fbe08
+[13:43:55] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@55ac73a8]
+[13:43:55] [Server thread/INFO]: [Anti-Bee] Loading server plugin Anti-Bee v1.0
+[13:43:55] [Server thread/INFO]: [EssentialsChat] Loading server plugin EssentialsChat v2.22.0-dev+55-18233d3
+[13:43:55] [Server thread/INFO]: [RaspberryJuice] Loading server plugin RaspberryJuice v1.12.1
+[13:43:55] [Server thread/INFO]: [WorldGuard] Loading server plugin WorldGuard v7.0.14+2339-43997ec
+[13:43:55] [Server thread/INFO]: [ChatFilter] Loading server plugin ChatFilter v2.0.14
+[13:43:55] [Server thread/INFO]: [AutoMessage] Loading server plugin AutoMessage v2.0.0
+[13:43:55] [Server thread/INFO]: [TAB] Loading server plugin TAB v5.4.0
+[13:43:55] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[13:43:55] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v5.5.24
+[13:43:55] [Server thread/INFO]:         __    
+[13:43:55] [Server thread/INFO]:   |    |__)   LuckPerms v5.5.24
+[13:43:55] [Server thread/INFO]:   |___ |      Running on Bukkit - Paper
+[13:43:55] [Server thread/INFO]: 
+[13:43:56] [Server thread/INFO]: [LuckPerms] Loading storage provider... [H2]
+[13:43:56] [Server thread/INFO]: [LuckPerms] Loading internal permission managers...
+[13:43:56] [Server thread/INFO]: [LuckPerms] Performing initial data load...
+[13:43:56] [Server thread/INFO]: [LuckPerms] Successfully enabled. (took 665ms)
+[13:43:56] [Server thread/INFO]: [Vault] Enabling Vault v1.7.3-b131
+[13:43:56] [Server thread/INFO]: [Vault] [Economy] Essentials Economy found: Waiting
+[13:43:56] [Server thread/INFO]: [Vault] [Permission] SuperPermissions loaded as backup permission system.
+[13:43:56] [Server thread/INFO]: [Vault] Enabled Version 1.7.3-b131
+[13:43:56] [Server thread/INFO]: [LuckPerms] Registered Vault permission & chat hook.
+[13:43:56] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v7.3.17+7262-c7fbe08
+[13:43:56] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
+[13:43:56] [Server thread/INFO]: WEPIF: Vault detected! Using Vault for permissions
+[13:43:56] [Server thread/WARN]: 
 **********************************************
 ** This WorldEdit version does not fully support your version of Bukkit.
 **
@@ -64,160 +65,161 @@
 ** Please see https://worldedit.enginehub.org/en/latest/faq/#bukkit-adapters
 **********************************************
 
-[11:31:07] [Server thread/INFO]: [Anti-Bee] Enabling Anti-Bee v1.0
-[11:31:07] [Server thread/INFO]: Anti-Bee by JamesAfk
-[11:31:07] [Server thread/INFO]: Plugin has been enabled!
-[11:31:07] [Server thread/INFO]: Enjoy!
-[11:31:07] [Server thread/INFO]: Preparing level "isu_world"
-[11:31:08] [Server thread/INFO]: Loading 0 persistent chunks for world 'minecraft:overworld'...
-[11:31:08] [Server thread/INFO]: Preparing spawn area: 100%
-[11:31:08] [Server thread/INFO]: Prepared spawn area in 2 ms
-[11:31:08] [Server thread/INFO]: Loading 0 persistent chunks for world 'minecraft:the_nether'...
-[11:31:08] [Server thread/INFO]: Prepared spawn area in 0 ms
-[11:31:08] [Server thread/INFO]: Loading 0 persistent chunks for world 'minecraft:the_end'...
-[11:31:08] [Server thread/INFO]: Prepared spawn area in 0 ms
-[11:31:08] [Server thread/INFO]: Done preparing level "isu_world" (0.541s)
-[11:31:08] [Server thread/INFO]: [Essentials] Enabling Essentials v2.22.0-dev+55-18233d3
-[11:31:08] [Server thread/INFO]: [Essentials] Attempting to convert old kits in config.yml to new kits.yml
-[11:31:08] [Server thread/INFO]: [Essentials] No kits found to migrate.
-[11:31:08] [Server thread/INFO]: [Essentials] Selected 1.20.6+ Potion Meta Provider as the provider for PotionMetaProvider
-[11:31:08] [Server thread/INFO]: [Essentials] Selected 1.20.4+ Damage Event Provider as the provider for DamageEventProvider
-[11:31:08] [Server thread/INFO]: [Essentials] Selected 1.13+ Spawn Egg Provider as the provider for SpawnEggProvider
-[11:31:08] [Server thread/INFO]: [Essentials] Selected Paper Biome Key Provider as the provider for BiomeKeyProvider
-[11:31:08] [Server thread/INFO]: [Essentials] Selected 1.12.2+ Player Locale Provider as the provider for PlayerLocaleProvider
-[11:31:08] [Server thread/INFO]: [Essentials] Selected 1.17.1+ World Info Provider as the provider for WorldInfoProvider
-[11:31:08] [Server thread/INFO]: [Essentials] Selected Reflection Formatted Command Alias Provider as the provider for FormattedCommandAliasProvider
-[11:31:08] [Server thread/INFO]: [Essentials] Selected Paper Tick Count Provider as the provider for TickCountProvider
-[11:31:08] [Server thread/INFO]: [Essentials] Selected 1.14+ Sign Data Provider as the provider for SignDataProvider
-[11:31:08] [Server thread/INFO]: [Essentials] Selected 1.12+ Spawner Block Provider as the provider for SpawnerBlockProvider
-[11:31:08] [Server thread/INFO]: [Essentials] Selected 1.21+ InventoryView Interface ABI Provider as the provider for InventoryViewProvider
-[11:31:08] [Server thread/INFO]: [Essentials] Selected Paper Serialization Provider as the provider for SerializationProvider
-[11:31:08] [Server thread/INFO]: [Essentials] Selected Paper Material Tag Provider as the provider for MaterialTagProvider
-[11:31:08] [Server thread/INFO]: [Essentials] Selected 1.8.3+ Spawner Item Provider as the provider for SpawnerItemProvider
-[11:31:08] [Server thread/INFO]: [Essentials] Selected 1.14.4+ Persistent Data Container Provider as the provider for PersistentDataProvider
-[11:31:08] [Server thread/INFO]: [Essentials] Selected Reflection Online Mode Provider as the provider for OnlineModeProvider
-[11:31:08] [Server thread/INFO]: [Essentials] Selected 1.11+ Item Unbreakable Provider as the provider for ItemUnbreakableProvider
-[11:31:08] [Server thread/INFO]: [Essentials] Selected Paper Known Commands Provider as the provider for KnownCommandsProvider
-[11:31:08] [Server thread/INFO]: [Essentials] Selected Paper Server State Provider as the provider for ServerStateProvider
-[11:31:08] [Server thread/INFO]: [Essentials] Selected 1.21.4+ Sync Commands Provider as the provider for SyncCommandsProvider
-[11:31:08] [Server thread/INFO]: [Essentials] Selected Legacy Biome Name Provider as the provider for BiomeNameProvider
-[11:31:08] [Server thread/INFO]: [Essentials] Selected Paper Container Provider as the provider for ContainerProvider
-[11:31:08] [Server thread/INFO]: [Essentials] Selected 1.20.5+ Banner Data Provider as the provider for BannerDataProvider
-[11:31:08] [Server thread/INFO]: [Essentials] Loaded 46309 items from items.json.
-[11:31:08] [Server thread/INFO]: [Essentials] Using locale en_US
-[11:31:09] [Server thread/INFO]: [Essentials] ServerListPingEvent: Spigot iterator API
-[11:31:09] [Server thread/INFO]: [Essentials] Starting Metrics. Opt-out using the global bStats config.
-[11:31:09] [Server thread/INFO]: [Vault] [Economy] Essentials Economy hooked.
-[11:31:09] [Server thread/INFO]: [Essentials] Using Vault based permissions (LuckPerms)
-[11:31:09] [Server thread/INFO]: [EssentialsChat] Enabling EssentialsChat v2.22.0-dev+55-18233d3
-[11:31:09] [Server thread/INFO]: [EssentialsChat] Starting Metrics. Opt-out using the global bStats config.
-[11:31:09] [Server thread/INFO]: [RaspberryJuice] Enabling RaspberryJuice v1.12.1*
-[11:31:09] [Server thread/INFO]: [RaspberryJuice] Using host:port - 0.0.0.0:4711
-[11:31:09] [Server thread/INFO]: [RaspberryJuice] Using RELATIVE locations
-[11:31:09] [Server thread/INFO]: [RaspberryJuice] Using RIGHT clicks for hits
-[11:31:09] [Server thread/INFO]: [RaspberryJuice] ThreadListener Started
-[11:31:09] [Server thread/INFO]: [WorldGuard] Enabling WorldGuard v7.0.14+2339-43997ec
-[11:31:09] [Server thread/INFO]: [WorldGuard] (isu_world) TNT ignition is PERMITTED.
-[11:31:09] [Server thread/INFO]: [WorldGuard] (isu_world) Lighters are PERMITTED.
-[11:31:09] [Server thread/INFO]: [WorldGuard] (isu_world) Lava fire is PERMITTED.
-[11:31:09] [Server thread/INFO]: [WorldGuard] (isu_world) Fire spread is UNRESTRICTED.
-[11:31:09] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'isu_world'
-[11:31:09] [Server thread/INFO]: [WorldGuard] (isu_world_nether) TNT ignition is PERMITTED.
-[11:31:09] [Server thread/INFO]: [WorldGuard] (isu_world_nether) Lighters are PERMITTED.
-[11:31:09] [Server thread/INFO]: [WorldGuard] (isu_world_nether) Lava fire is PERMITTED.
-[11:31:09] [Server thread/INFO]: [WorldGuard] (isu_world_nether) Fire spread is UNRESTRICTED.
-[11:31:09] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'isu_world_nether'
-[11:31:09] [Server thread/INFO]: [WorldGuard] (isu_world_the_end) TNT ignition is PERMITTED.
-[11:31:09] [Server thread/INFO]: [WorldGuard] (isu_world_the_end) Lighters are PERMITTED.
-[11:31:09] [Server thread/INFO]: [WorldGuard] (isu_world_the_end) Lava fire is PERMITTED.
-[11:31:09] [Server thread/INFO]: [WorldGuard] (isu_world_the_end) Fire spread is UNRESTRICTED.
-[11:31:09] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'isu_world_the_end'
-[11:31:09] [Server thread/INFO]: [WorldGuard] Loading region data...
-[11:31:09] [Server thread/INFO]: [AutoMessage] Enabling AutoMessage v2.0.0
-[11:31:10] [Server thread/INFO]: [AutoMessage] AutoMessage plugin enabled.
-[11:31:10] [Server thread/INFO]: [TAB] Enabling TAB v5.4.0
-[11:31:10] [Server thread/INFO]: [TAB] Enabled in 175ms
-[11:31:10] [Server thread/INFO]: [spark] Starting background profiler...
-[11:31:10] [Server thread/INFO]: Running delayed init tasks
-[11:31:10] [Server thread/INFO]: [Essentials] Essentials found a compatible payment resolution method: Vault Compatibility Layer (v1.7.3-b131)!
-[11:31:10] [Craft Scheduler Thread - 3 - Essentials/INFO]: [Essentials] Fetching version information...
-[11:31:10] [Server thread/INFO]: Done (23.423s)! For help, type "help"
-[11:31:10] [Craft Scheduler Thread - 2 - Vault/INFO]: [Vault] Checking for Updates ... 
-[11:31:10] [Craft Scheduler Thread - 2 - Vault/INFO]: [Vault] No new version available
-[11:31:11] [User Authenticator #0/INFO]: UUID of player DrMinecraft35 is 19995fd4-c323-4599-be07-1072e1df73eb
-[11:31:11] [Server thread/INFO]: [HorriblePlayerLoginEventHack] You have plugins listening to the PlayerLoginEvent, this will cause re-configuration APIs to be unavailable: [LuckPerms, WorldGuard]
-[11:31:11] [Server thread/WARN]: [ca.spottedleaf.moonrise.patches.chunk_system.level.entity.EntityLookup] Entity uuid already exists: 0368e657-3bee-41cf-9afb-e20683db129f, mapped to Bat['Bat'/2, uuid='0368e657-3bee-41cf-9afb-e20683db129f', l='ServerLevel[isu_world]', x=91.33, y=-6.83, z=-159.76, cpos=[5, -10], tl=0, v=true], can't add Bat['Bat'/7, uuid='0368e657-3bee-41cf-9afb-e20683db129f', l='ServerLevel[isu_world]', x=90.85, y=-7.47, z=-160.23, cpos=[5, -11], tl=0, v=false]
-[11:31:12] [Server thread/WARN]: [ca.spottedleaf.moonrise.patches.chunk_system.level.entity.EntityLookup] Entity uuid already exists: 9654bb30-f85e-47e9-9a24-4792a510befa, mapped to Frog['Frog'/21, uuid='9654bb30-f85e-47e9-9a24-4792a510befa', l='ServerLevel[isu_world]', x=122.15, y=77.11, z=-144.14, cpos=[7, -10], tl=0, v=false], can't add Frog['Frog'/265, uuid='9654bb30-f85e-47e9-9a24-4792a510befa', l='ServerLevel[isu_world]', x=122.21, y=77.10, z=-143.98, cpos=[7, -9], tl=0, v=false]
-[11:31:12] [Server thread/WARN]: [ca.spottedleaf.moonrise.patches.chunk_system.level.entity.EntityLookup] Entity uuid already exists: 02d1089e-1550-4ad7-88e2-6a97e3b71547, mapped to Parrot['Parrot'/184, uuid='02d1089e-1550-4ad7-88e2-6a97e3b71547', l='ServerLevel[isu_world]', x=124.52, y=71.22, z=-144.01, cpos=[7, -10], tl=0, v=false], can't add Parrot['Parrot'/273, uuid='02d1089e-1550-4ad7-88e2-6a97e3b71547', l='ServerLevel[isu_world]', x=124.66, y=71.26, z=-143.97, cpos=[7, -9], tl=0, v=false]
-[11:31:12] [Server thread/WARN]: [ca.spottedleaf.moonrise.patches.chunk_system.level.entity.EntityLookup] Entity uuid already exists: b4e2d6e5-cfe6-4c0f-9b68-af04db23abe2, mapped to Parrot['Parrot'/83, uuid='b4e2d6e5-cfe6-4c0f-9b68-af04db23abe2', l='ServerLevel[isu_world]', x=117.53, y=71.00, z=-144.02, cpos=[7, -10], tl=0, v=false], can't add Parrot['Parrot'/692, uuid='b4e2d6e5-cfe6-4c0f-9b68-af04db23abe2', l='ServerLevel[isu_world]', x=117.51, y=71.00, z=-144.00, cpos=[7, -9], tl=0, v=false]
-[11:31:12] [Server thread/WARN]: [ca.spottedleaf.moonrise.patches.chunk_system.level.entity.EntityLookup] Entity uuid already exists: fdc1c8c6-3b2e-495b-b37f-5033e19cbe8c, mapped to Frog['Frog'/65, uuid='fdc1c8c6-3b2e-495b-b37f-5033e19cbe8c', l='ServerLevel[isu_world]', x=121.57, y=77.10, z=-144.09, cpos=[7, -10], tl=0, v=false], can't add Frog['Frog'/693, uuid='fdc1c8c6-3b2e-495b-b37f-5033e19cbe8c', l='ServerLevel[isu_world]', x=121.75, y=77.10, z=-143.94, cpos=[7, -9], tl=0, v=false]
-[11:31:12] [Server thread/WARN]: [ca.spottedleaf.moonrise.patches.chunk_system.level.entity.EntityLookup] Entity uuid already exists: 01b1c34c-0bee-413f-b94b-ff22085c2642, mapped to Parrot['Parrot'/53, uuid='01b1c34c-0bee-413f-b94b-ff22085c2642', l='ServerLevel[isu_world]', x=127.82, y=72.01, z=-144.04, cpos=[7, -10], tl=0, v=false], can't add Parrot['Parrot'/694, uuid='01b1c34c-0bee-413f-b94b-ff22085c2642', l='ServerLevel[isu_world]', x=127.77, y=72.01, z=-144.00, cpos=[7, -9], tl=0, v=false]
-[11:31:13] [Server thread/INFO]: Welcome DrMinecraft35
-[11:31:13] [Server thread/INFO]: DrMinecraft35 joined the game
-[11:31:13] [Server thread/INFO]: DrMinecraft35[/127.0.0.1:54208] logged in with entity id 1 at ([isu_world]128.64590916278775, 80.0, -146.484540103708)
-[11:32:03] [Server thread/INFO]: DrMinecraft35 issued server command: /kill @e[type=parrot]
-[11:33:21] [Server thread/INFO]: [Essentials] CONSOLE issued server command: /kill @e[type=parrot]
-[11:33:21] [Server thread/INFO]: Error: Player not found.
-[11:34:13] [Server thread/INFO]: [Essentials] CONSOLE issued server command: /kill @e[type=minecraft:parrot]
-[11:34:13] [Server thread/INFO]: Error: Player not found.
-[11:34:35] [Server thread/INFO]: [Essentials] CONSOLE issued server command: /kill @e[type=minecraft:parrot]
-[11:34:35] [Server thread/INFO]: Error: Player not found.
-[11:37:08] [Server thread/INFO]: DrMinecraft35 issued server command: /butcher parrots
-[11:37:51] [Server thread/INFO]: DrMinecraft35 issued server command: /butcher -ab
-[12:15:33] [Server thread/INFO]: DrMinecraft35 lost connection: Disconnected
-[12:15:33] [Server thread/INFO]: DrMinecraft35 left the game
-[12:15:40] [Server thread/INFO]: Stopping the server
-[12:15:40] [Server thread/INFO]: Stopping server
-[12:15:40] [Server thread/INFO]: [TAB] Disabling TAB v5.4.0
-[12:15:40] [Server thread/INFO]: [TAB] Disabled in 1ms
-[12:15:40] [Server thread/INFO]: [AutoMessage] Disabling AutoMessage v2.0.0
-[12:15:40] [Server thread/INFO]: [AutoMessage] AutoMessage plugin disabled successfully.
-[12:15:40] [Server thread/INFO]: [WorldGuard] Disabling WorldGuard v7.0.14+2339-43997ec
-[12:15:40] [Server thread/INFO]: [WorldGuard] Shutting down executor and cancelling any pending tasks...
-[12:15:40] [Server thread/INFO]: [RaspberryJuice] Disabling RaspberryJuice v1.12.1
-[12:15:40] [Server thread/INFO]: [RaspberryJuice] Raspberry Juice Stopped
-[12:15:40] [Server thread/INFO]: [EssentialsChat] Disabling EssentialsChat v2.22.0-dev+55-18233d3
-[12:15:40] [Server thread/INFO]: [Anti-Bee] Disabling Anti-Bee v1.0
-[12:15:40] [Server thread/INFO]: Anti-Bee by JamesAfk
-[12:15:40] [Server thread/INFO]: Plugin has been disabled!
-[12:15:40] [Server thread/INFO]: Thank you and goodbye!
-[12:15:40] [Server thread/INFO]: [WorldEdit] Disabling WorldEdit v7.3.17+7262-c7fbe08
-[12:15:40] [Server thread/INFO]: Unregistering com.sk89q.worldedit.bukkit.BukkitServerInterface from WorldEdit
-[12:15:40] [Server thread/INFO]: [Essentials] Disabling Essentials v2.22.0-dev+55-18233d3
-[12:15:40] [Server thread/INFO]: [Vault] [Economy] Essentials Economy unhooked.
-[12:15:40] [Server thread/INFO]: [Vault] Disabling Vault v1.7.3-b131
-[12:15:40] [Server thread/INFO]: [LuckPerms] Disabling LuckPerms v5.5.24
-[12:15:40] [Server thread/INFO]: [LuckPerms] Starting shutdown process...
-[12:15:40] [Server thread/INFO]: [LuckPerms] Closing storage...
-[12:15:40] [Server thread/INFO]: [LuckPerms] Goodbye!
-[12:15:40] [Server thread/INFO]: Saving players
-[12:15:40] [Server thread/INFO]: Saving worlds
-[12:15:40] [Server thread/INFO]: Saving chunks for level 'ServerLevel[isu_world]'/minecraft:overworld
-[12:15:40] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'isu_world'
-[12:15:40] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'isu_world'
-[12:15:40] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'isu_world'
-[12:15:40] [Server thread/INFO]: [ChunkHolderManager] Saved 195 block chunks, 213 entity chunks, 0 poi chunks in world 'isu_world' in 0.13s
-[12:15:40] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'isu_world'
-[12:15:40] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'isu_world'
-[12:15:40] [Server thread/INFO]: Saving chunks for level 'ServerLevel[isu_world_nether]'/minecraft:the_nether
-[12:15:40] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'isu_world_nether'
-[12:15:40] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'isu_world_nether'
-[12:15:40] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'isu_world_nether'
-[12:15:40] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'isu_world_nether' in 0.00s
-[12:15:40] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'isu_world_nether'
-[12:15:40] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'isu_world_nether'
-[12:15:40] [Server thread/INFO]: Saving chunks for level 'ServerLevel[isu_world_the_end]'/minecraft:the_end
-[12:15:40] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'isu_world_the_end'
-[12:15:40] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'isu_world_the_end'
-[12:15:40] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'isu_world_the_end'
-[12:15:40] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'isu_world_the_end' in 0.00s
-[12:15:40] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'isu_world_the_end'
-[12:15:40] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'isu_world_the_end'
-[12:15:40] [Server thread/INFO]: ThreadedAnvilChunkStorage (isu_world): All chunks are saved
-[12:15:40] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[12:15:40] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[12:15:40] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
-[12:15:40] [Server thread/INFO]: Waiting for all RegionFile I/O tasks to complete...
-[12:15:40] [Server thread/INFO]: All RegionFile I/O tasks to complete
-[12:15:40] [Server thread/INFO]: [MoonriseCommon] Awaiting termination of worker pool for up to 60s...
-[12:15:40] [Server thread/INFO]: [MoonriseCommon] Awaiting termination of I/O pool for up to 60s...
+[13:43:56] [Server thread/INFO]: [Anti-Bee] Enabling Anti-Bee v1.0
+[13:43:57] [Server thread/INFO]: Anti-Bee by JamesAfk
+[13:43:57] [Server thread/INFO]: Plugin has been enabled!
+[13:43:57] [Server thread/INFO]: Enjoy!
+[13:43:57] [Server thread/INFO]: Preparing level "isu_world"
+[13:43:57] [Server thread/INFO]: Loading 0 persistent chunks for world 'minecraft:overworld'...
+[13:43:57] [Server thread/INFO]: Prepared spawn area in 0 ms
+[13:43:57] [Server thread/INFO]: Loading 0 persistent chunks for world 'minecraft:the_nether'...
+[13:43:57] [Server thread/INFO]: Prepared spawn area in 0 ms
+[13:43:57] [Server thread/INFO]: Loading 0 persistent chunks for world 'minecraft:the_end'...
+[13:43:57] [Server thread/INFO]: Prepared spawn area in 0 ms
+[13:43:57] [Server thread/INFO]: Done preparing level "isu_world" (0.361s)
+[13:43:57] [Server thread/INFO]: [Essentials] Enabling Essentials v2.22.0-dev+55-18233d3
+[13:43:57] [Server thread/INFO]: [Essentials] Attempting to convert old kits in config.yml to new kits.yml
+[13:43:57] [Server thread/INFO]: [Essentials] No kits found to migrate.
+[13:43:57] [Server thread/INFO]: [Essentials] Selected 1.12.2+ Player Locale Provider as the provider for PlayerLocaleProvider
+[13:43:57] [Server thread/INFO]: [Essentials] Selected Paper Material Tag Provider as the provider for MaterialTagProvider
+[13:43:57] [Server thread/INFO]: [Essentials] Selected Paper Serialization Provider as the provider for SerializationProvider
+[13:43:57] [Server thread/INFO]: [Essentials] Selected 1.14+ Sign Data Provider as the provider for SignDataProvider
+[13:43:57] [Server thread/INFO]: [Essentials] Selected Paper Server State Provider as the provider for ServerStateProvider
+[13:43:57] [Server thread/INFO]: [Essentials] Selected 1.20.4+ Damage Event Provider as the provider for DamageEventProvider
+[13:43:57] [Server thread/INFO]: [Essentials] Selected 1.20.5+ Banner Data Provider as the provider for BannerDataProvider
+[13:43:57] [Server thread/INFO]: [Essentials] Selected Legacy Biome Name Provider as the provider for BiomeNameProvider
+[13:43:57] [Server thread/INFO]: [Essentials] Selected 1.11+ Item Unbreakable Provider as the provider for ItemUnbreakableProvider
+[13:43:57] [Server thread/INFO]: [Essentials] Selected 1.14.4+ Persistent Data Container Provider as the provider for PersistentDataProvider
+[13:43:57] [Server thread/INFO]: [Essentials] Selected Paper Biome Key Provider as the provider for BiomeKeyProvider
+[13:43:57] [Server thread/INFO]: [Essentials] Selected 1.12+ Spawner Block Provider as the provider for SpawnerBlockProvider
+[13:43:57] [Server thread/INFO]: [Essentials] Selected 1.13+ Spawn Egg Provider as the provider for SpawnEggProvider
+[13:43:57] [Server thread/INFO]: [Essentials] Selected Reflection Formatted Command Alias Provider as the provider for FormattedCommandAliasProvider
+[13:43:57] [Server thread/INFO]: [Essentials] Selected Paper Known Commands Provider as the provider for KnownCommandsProvider
+[13:43:57] [Server thread/INFO]: [Essentials] Selected Paper Container Provider as the provider for ContainerProvider
+[13:43:57] [Server thread/INFO]: [Essentials] Selected 1.20.6+ Potion Meta Provider as the provider for PotionMetaProvider
+[13:43:57] [Server thread/INFO]: [Essentials] Selected 1.17.1+ World Info Provider as the provider for WorldInfoProvider
+[13:43:57] [Server thread/INFO]: [Essentials] Selected 1.21.4+ Sync Commands Provider as the provider for SyncCommandsProvider
+[13:43:57] [Server thread/INFO]: [Essentials] Selected 1.8.3+ Spawner Item Provider as the provider for SpawnerItemProvider
+[13:43:57] [Server thread/INFO]: [Essentials] Selected 1.21+ InventoryView Interface ABI Provider as the provider for InventoryViewProvider
+[13:43:57] [Server thread/INFO]: [Essentials] Selected Paper Tick Count Provider as the provider for TickCountProvider
+[13:43:57] [Server thread/INFO]: [Essentials] Selected Reflection Online Mode Provider as the provider for OnlineModeProvider
+[13:43:57] [Server thread/INFO]: [Essentials] Loaded 46309 items from items.json.
+[13:43:57] [Server thread/INFO]: [Essentials] Using locale en_US
+[13:43:58] [Server thread/INFO]: [Essentials] ServerListPingEvent: Spigot iterator API
+[13:43:58] [Server thread/INFO]: [Essentials] Starting Metrics. Opt-out using the global bStats config.
+[13:43:58] [Server thread/INFO]: [Vault] [Economy] Essentials Economy hooked.
+[13:43:58] [Server thread/INFO]: [Essentials] Using Vault based permissions (LuckPerms)
+[13:43:58] [Server thread/INFO]: [EssentialsChat] Enabling EssentialsChat v2.22.0-dev+55-18233d3
+[13:43:58] [Server thread/INFO]: [EssentialsChat] Starting Metrics. Opt-out using the global bStats config.
+[13:43:58] [Server thread/INFO]: [RaspberryJuice] Enabling RaspberryJuice v1.12.1*
+[13:43:58] [Server thread/INFO]: [RaspberryJuice] Using host:port - 0.0.0.0:4711
+[13:43:58] [Server thread/INFO]: [RaspberryJuice] Using RELATIVE locations
+[13:43:58] [Server thread/INFO]: [RaspberryJuice] Using RIGHT clicks for hits
+[13:43:58] [Server thread/INFO]: [RaspberryJuice] ThreadListener Started
+[13:43:58] [Server thread/INFO]: [WorldGuard] Enabling WorldGuard v7.0.14+2339-43997ec
+[13:43:58] [Server thread/INFO]: [WorldGuard] (isu_world) TNT ignition is PERMITTED.
+[13:43:58] [Server thread/INFO]: [WorldGuard] (isu_world) Lighters are PERMITTED.
+[13:43:58] [Server thread/INFO]: [WorldGuard] (isu_world) Lava fire is PERMITTED.
+[13:43:58] [Server thread/INFO]: [WorldGuard] (isu_world) Fire spread is UNRESTRICTED.
+[13:43:58] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'isu_world'
+[13:43:58] [Server thread/INFO]: [WorldGuard] (isu_world_nether) TNT ignition is PERMITTED.
+[13:43:58] [Server thread/INFO]: [WorldGuard] (isu_world_nether) Lighters are PERMITTED.
+[13:43:58] [Server thread/INFO]: [WorldGuard] (isu_world_nether) Lava fire is PERMITTED.
+[13:43:58] [Server thread/INFO]: [WorldGuard] (isu_world_nether) Fire spread is UNRESTRICTED.
+[13:43:58] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'isu_world_nether'
+[13:43:58] [Server thread/INFO]: [WorldGuard] (isu_world_the_end) TNT ignition is PERMITTED.
+[13:43:58] [Server thread/INFO]: [WorldGuard] (isu_world_the_end) Lighters are PERMITTED.
+[13:43:58] [Server thread/INFO]: [WorldGuard] (isu_world_the_end) Lava fire is PERMITTED.
+[13:43:58] [Server thread/INFO]: [WorldGuard] (isu_world_the_end) Fire spread is UNRESTRICTED.
+[13:43:58] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'isu_world_the_end'
+[13:43:58] [Server thread/INFO]: [WorldGuard] Loading region data...
+[13:43:58] [Server thread/INFO]: [ChatFilter] Enabling ChatFilter v2.0.14
+[13:43:58] [Server thread/INFO]: [ChatFilter] Loaded using locale: en
+[13:43:58] [Server thread/INFO]: [ChatFilter] 55 Enabled word filters.
+[13:43:58] [Server thread/INFO]: [ChatFilter] 2 Enabled advertising filters.
+[13:43:58] [Server thread/INFO]: [ChatFilter] 348 whitelisted items.
+[13:43:58] [Server thread/INFO]: [AutoMessage] Enabling AutoMessage v2.0.0
+[13:43:58] [Server thread/INFO]: [AutoMessage] AutoMessage plugin enabled.
+[13:43:58] [Server thread/INFO]: [TAB] Enabling TAB v5.4.0
+[13:43:59] [Server thread/INFO]: [TAB] Enabled in 135ms
+[13:43:59] [Server thread/INFO]: [spark] Starting background profiler...
+[13:43:59] [Server thread/INFO]: Running delayed init tasks
+[13:43:59] [Server thread/INFO]: [Essentials] Essentials found a compatible payment resolution method: Vault Compatibility Layer (v1.7.3-b131)!
+[13:43:59] [Craft Scheduler Thread - 3 - Essentials/INFO]: [Essentials] Fetching version information...
+[13:43:59] [Server thread/INFO]: Done (16.177s)! For help, type "help"
+[13:43:59] [Craft Scheduler Thread - 1 - Vault/INFO]: [Vault] Checking for Updates ... 
+[13:43:59] [Craft Scheduler Thread - 1 - Vault/INFO]: [Vault] No new version available
+[13:44:16] [User Authenticator #0/INFO]: UUID of player DrMinecraft35 is 19995fd4-c323-4599-be07-1072e1df73eb
+[13:44:16] [Server thread/INFO]: [HorriblePlayerLoginEventHack] You have plugins listening to the PlayerLoginEvent, this will cause re-configuration APIs to be unavailable: [LuckPerms, WorldGuard]
+[13:44:17] [Server thread/INFO]: Welcome DrMinecraft35
+[13:44:18] [Server thread/INFO]: DrMinecraft35 joined the game
+[13:44:18] [Server thread/INFO]: DrMinecraft35[/127.0.0.1:47930] logged in with entity id 1 at ([isu_world]162.38534889901103, 79.0, -117.46179914542198)
+[13:44:23] [Async Chat Thread - #1/INFO]: <[ADMIN] DrMinecraft35> crap
+[13:44:28] [Async Chat Thread - #1/INFO]: <[ADMIN] DrMinecraft35> fuck
+[13:44:47] [Server thread/INFO]: DrMinecraft35 issued server command: /chatfilter:cf reload
+[13:44:53] [Async Chat Thread - #1/INFO]: <[ADMIN] DrMinecraft35> fuck
+[13:49:31] [Server thread/INFO]: DrMinecraft35 issued server command: /cf help
+[13:49:53] [Server thread/INFO]: DrMinecraft35 issued server command: /chatfilter blacklist add word fuck
+[13:50:05] [Server thread/INFO]: DrMinecraft35 issued server command: /chatfilter blacklist add word gay
+[13:50:12] [Async Chat Thread - #2/INFO]: <[ADMIN] DrMinecraft35> gay
+[14:06:36] [Async Chat Thread - #4/INFO]: <[ADMIN] DrMinecraft35> test
+[14:06:52] [Server thread/INFO]: DrMinecraft35 issued server command: /shoutworld isu_world hello
+[14:06:59] [Server thread/INFO]: DrMinecraft35 issued server command: /shoutworld isu_world gay
+[14:07:11] [Server thread/INFO]: DrMinecraft35 lost connection: Disconnected
+[14:07:11] [Server thread/INFO]: DrMinecraft35 left the game
+[14:07:18] [Server thread/INFO]: Stopping the server
+[14:07:19] [Server thread/INFO]: Stopping server
+[14:07:19] [Server thread/INFO]: [TAB] Disabling TAB v5.4.0
+[14:07:19] [Server thread/INFO]: [TAB] Disabled in 1ms
+[14:07:19] [Server thread/INFO]: [AutoMessage] Disabling AutoMessage v2.0.0
+[14:07:19] [Server thread/INFO]: [AutoMessage] AutoMessage plugin disabled successfully.
+[14:07:19] [Server thread/INFO]: [ChatFilter] Disabling ChatFilter v2.0.14
+[14:07:19] [Server thread/INFO]: [WorldGuard] Disabling WorldGuard v7.0.14+2339-43997ec
+[14:07:19] [Server thread/INFO]: [WorldGuard] Shutting down executor and cancelling any pending tasks...
+[14:07:19] [Server thread/INFO]: [RaspberryJuice] Disabling RaspberryJuice v1.12.1
+[14:07:19] [Server thread/INFO]: [RaspberryJuice] Raspberry Juice Stopped
+[14:07:19] [Server thread/INFO]: [EssentialsChat] Disabling EssentialsChat v2.22.0-dev+55-18233d3
+[14:07:19] [Server thread/INFO]: [Anti-Bee] Disabling Anti-Bee v1.0
+[14:07:19] [Server thread/INFO]: Anti-Bee by JamesAfk
+[14:07:19] [Server thread/INFO]: Plugin has been disabled!
+[14:07:19] [Server thread/INFO]: Thank you and goodbye!
+[14:07:19] [Server thread/INFO]: [WorldEdit] Disabling WorldEdit v7.3.17+7262-c7fbe08
+[14:07:19] [Server thread/INFO]: Unregistering com.sk89q.worldedit.bukkit.BukkitServerInterface from WorldEdit
+[14:07:19] [Server thread/INFO]: [Essentials] Disabling Essentials v2.22.0-dev+55-18233d3
+[14:07:19] [Server thread/INFO]: [Vault] [Economy] Essentials Economy unhooked.
+[14:07:19] [Server thread/INFO]: [Vault] Disabling Vault v1.7.3-b131
+[14:07:19] [Server thread/INFO]: [LuckPerms] Disabling LuckPerms v5.5.24
+[14:07:19] [Server thread/INFO]: [LuckPerms] Starting shutdown process...
+[14:07:19] [Server thread/INFO]: [LuckPerms] Closing storage...
+[14:07:19] [Server thread/INFO]: [LuckPerms] Goodbye!
+[14:07:19] [Server thread/INFO]: Saving players
+[14:07:19] [Server thread/INFO]: Saving worlds
+[14:07:19] [Server thread/INFO]: Saving chunks for level 'ServerLevel[isu_world]'/minecraft:overworld
+[14:07:19] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'isu_world'
+[14:07:19] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'isu_world'
+[14:07:19] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'isu_world'
+[14:07:19] [Server thread/INFO]: [ChunkHolderManager] Saved 28 block chunks, 87 entity chunks, 0 poi chunks in world 'isu_world' in 0.04s
+[14:07:19] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'isu_world'
+[14:07:19] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'isu_world'
+[14:07:19] [Server thread/INFO]: Saving chunks for level 'ServerLevel[isu_world_nether]'/minecraft:the_nether
+[14:07:19] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'isu_world_nether'
+[14:07:19] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'isu_world_nether'
+[14:07:19] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'isu_world_nether'
+[14:07:19] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'isu_world_nether' in 0.00s
+[14:07:19] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'isu_world_nether'
+[14:07:19] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'isu_world_nether'
+[14:07:19] [Server thread/INFO]: Saving chunks for level 'ServerLevel[isu_world_the_end]'/minecraft:the_end
+[14:07:19] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'isu_world_the_end'
+[14:07:19] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'isu_world_the_end'
+[14:07:19] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'isu_world_the_end'
+[14:07:19] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'isu_world_the_end' in 0.00s
+[14:07:19] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'isu_world_the_end'
+[14:07:19] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'isu_world_the_end'
+[14:07:19] [Server thread/INFO]: ThreadedAnvilChunkStorage (isu_world): All chunks are saved
+[14:07:19] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[14:07:19] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[14:07:19] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[14:07:19] [Server thread/INFO]: Waiting for all RegionFile I/O tasks to complete...
+[14:07:19] [Server thread/INFO]: All RegionFile I/O tasks to complete
+[14:07:19] [Server thread/INFO]: [MoonriseCommon] Awaiting termination of worker pool for up to 60s...
+[14:07:19] [Server thread/INFO]: [MoonriseCommon] Awaiting termination of I/O pool for up to 60s...

@@ -113,7 +113,7 @@ messages:
   - sound: entity.player.levelup
   - "<red>\n\nPlease remember to check your syllabus weekly for updates and important information related to the class"
   rules: []
-- name: class-info-it_359
-  notices:
-  - "<white>Today we are going to discuss about x"
-  rules: []
+#- name: class-info-it_359
+#  notices:
+#  - "<white>Today we are going to discuss about x"
+#  rules: []
