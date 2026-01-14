@@ -1,0 +1,55 @@
+{
+  "stats": {
+    "minecraft:dropped": {
+      "minecraft:filled_map": 65,
+      "minecraft:obsidian": 1
+    },
+    "minecraft:used": {
+      "minecraft:minecart": 1,
+      "minecraft:sand": 6,
+      "minecraft:lever": 2,
+      "minecraft:observer": 2,
+      "minecraft:cobblestone_wall": 1,
+      "minecraft:fire_coral_fan": 2,
+      "minecraft:detector_rail": 1,
+      "minecraft:map": 1,
+      "minecraft:tnt": 3,
+      "minecraft:tube_coral_fan": 1,
+      "minecraft:white_wool": 431,
+      "minecraft:stone": 21,
+      "minecraft:slime_block": 11,
+      "minecraft:sticky_piston": 1,
+      "minecraft:flint_and_steel": 249,
+      "minecraft:anvil": 1,
+      "minecraft:stone_bricks": 2825,
+      "minecraft:dirt": 5,
+      "minecraft:obsidian": 481
+    },
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 133245,
+      "minecraft:walk_one_cm": 14871,
+      "minecraft:leave_game": 2,
+      "minecraft:damage_dealt": 92,
+      "minecraft:play_time": 133245,
+      "minecraft:jump": 36,
+      "minecraft:time_since_death": 133245,
+      "minecraft:drop": 3,
+      "minecraft:sprint_one_cm": 1828,
+      "minecraft:total_world_time": 133245,
+      "minecraft:fly_one_cm": 2250631,
+      "minecraft:interact_with_anvil": 1,
+      "minecraft:walk_on_water_one_cm": 505,
+      "minecraft:crouch_one_cm": 1757,
+      "minecraft:sneak_time": 3206
+    },
+    "minecraft:picked_up": {
+      "minecraft:leaf_litter": 40,
+      "minecraft:dandelion": 5,
+      "minecraft:wheat_seeds": 40,
+      "minecraft:cornflower": 3,
+      "minecraft:azure_bluet": 1,
+      "minecraft:oak_sapling": 1
+    }
+  },
+  "DataVersion": 4671
+}
